@@ -93,7 +93,7 @@ export default props => (
           <A.Image
             circle
             maxWidth={270}
-            src="https://images.assetsdelivery.com/compings_v2/mingirov/mingirov1904/mingirov190400568.jpg"
+            src="https://image.flaticon.com/icons/svg/2126/2126085.svg"
           />
         </A.Flex>
         <A.Flex column flex={1}>
@@ -126,7 +126,7 @@ export default props => (
           <A.Image
             circle
             maxWidth={270}
-            src="https://images.assetsdelivery.com/compings_v2/mingirov/mingirov1904/mingirov190400568.jpg"
+            src="https://image.flaticon.com/icons/svg/1189/1189142.svg"
           />
         </A.Flex>
         <A.Flex column flex={1}>
@@ -162,7 +162,7 @@ export default props => (
           <A.Image
             circle
             maxWidth={270}
-            src="https://images.assetsdelivery.com/compings_v2/mingirov/mingirov1904/mingirov190400568.jpg"
+            src="https://image.flaticon.com/icons/svg/2111/2111425.svg"
           />
         </A.Flex>
         <A.Flex column flex={1}>
