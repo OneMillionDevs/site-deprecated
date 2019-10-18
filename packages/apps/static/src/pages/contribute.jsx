@@ -13,7 +13,7 @@ export default props => (
           Contribute to 1 Million Ethereum Developers
         </A.Heading>
         <A.Heading md>
-          Invite Developers - Become a Guide - Launch a Community
+          Invite Developers - Become a Guide - Kickstart a Community
         </A.Heading>
         <A.Heading md>Join the Fellowship</A.Heading>
       </A.Box>
@@ -31,8 +31,9 @@ export default props => (
             their "holy shit" moment? Have friends that have had their "holy
             shit" moment and want to become more active members in the
             community? Refer them to OneMillionDevs.com and earn special rewards
-            as they contribute to the ecosystem!
+            as they contribute to the ecosystem.
           </A.Paragraph>
+          <A.Button>Refer a Friend</A.Button>
         </A.Box>
       </A.Flex>
 
@@ -55,10 +56,12 @@ export default props => (
           <A.Paragraph>
             Enjoy acting as a mentor, teaching others, or publishing educational
             content? Get rewarded for doing so! Become an official Ethereum
-            Guide by subscribing yourself to produce educational content on a
-            periodic basis, and earn special rewards and reputation for your
-            efforts!
+            Guide by subscribing yourself to produce educational content, and
+            earn special rewards and reputation for your efforts.
           </A.Paragraph>
+          <A.Link to="/guide">
+            <A.Button>Become a Guide</A.Button>
+          </A.Link>
         </A.Box>
       </A.Flex>
 
@@ -75,15 +78,19 @@ export default props => (
       <A.Flex center column flex={1} py={50} minHeight="600px">
         <A.Box px={100}>
           <A.Heading xl heavy>
-            Launch a Community
+            Kickstart a Community
           </A.Heading>
-          <A.Heading md>Get Support Growing an Etheruem Community</A.Heading>
+          <A.Heading md>Get Support Growing the Etheruem Community</A.Heading>
           <A.Paragraph>
-            We hope to expand the Ethereum developer family - and to bring that
-            family closer together - by providing an interactive and immersive
-            space for newbies and veterans alike, to learn, collaborate, share,
-            and buidl in a fun and easy manner.
+            Are you a developer with an idea for a new and creative way to
+            onboard new developers to the ecosystem? Are you an active Ethereum
+            user and/or community member with ideas for ways to introduce other
+            community members to cool products, features, theories, or
+            technologies? Kickstart a community by building your own platform,
+            or by leveraging the tools built by others (i.e. EthQuest) - and
+            have your community featured here.
           </A.Paragraph>
+          <A.Button>Learn More</A.Button>
         </A.Box>
       </A.Flex>
 
@@ -104,12 +111,13 @@ export default props => (
           </A.Heading>
           <A.Heading md>Become a OneMillionDevelopers Steward</A.Heading>
           <A.Paragraph>
-            REALLY excited about this initiative and want to get hands-on with
-            its persistence and evolution? Become a OneMillionDevelopers
+            Extremely passionate about this initiative and want to get hands-on
+            with its persistence and evolution? Become a OneMillionDevelopers
             Steward! Help us shape the future of the 1MD initiative, in whatever
             role you prefer - developer, advisor, editor, philanthropist, etc. -
             you name it, we need it!
           </A.Paragraph>
+          <A.Button>Become a Steward</A.Button>
         </A.Box>
       </A.Flex>
 

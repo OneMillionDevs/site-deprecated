@@ -26,35 +26,33 @@ export default props => (
 
       <A.Flex center column flex={3} py={50} minHeight="600px" order={2}>
         <A.Span sm tag="blue" boxShadow="sunset" mb={3}>
-          Mission
+          Guide
         </A.Span>
         <A.Box card boxShadow={7} maxWidth={620} textCenter p={4}>
           <A.Heading xl heavy>
-            Ethereum Community Growth
+            Become an Ethereum Guide
           </A.Heading>
           <A.Heading md>1 Million Active Developers</A.Heading>
           {/* <A.HorizontalRule dash center /> */}
           <A.Flex center my={4}>
             <A.Span xs tag="green" mx={3}>
-              Developer Profiles
+              Mentor Newbies
             </A.Span>
             <A.Span xs tag="blue" mx={3}>
-              Learning Network
+              Publish Content
             </A.Span>
             <A.Span xs tag="primary" mx={3}>
-              Rewards & Incentives
+              Spread the Word
             </A.Span>
           </A.Flex>
           <A.HorizontalRule dash center my={3} />
           <A.Paragraph sm>
-            In a space where all developments contribute to the collective
-            whole, and every new participant brings us one step closer to a more
-            fair and truthful world, the value of community cannot be
-            understated. Our mission is to grow and foster the Ethereum
-            community.
+            The amount of knowledge, content, and new developments in the
+            Ethereum ecosystem is overwhelming. The community needs Guides to
+            help curate digestible distillations of this data.
           </A.Paragraph>
           <A.Paragraph sm>
-            <u>We</u> are Ethereum.
+            Become a <u>Guide</u> today.
           </A.Paragraph>
         </A.Box>
       </A.Flex>
@@ -63,26 +61,23 @@ export default props => (
     <A.Container>
       <A.Box textCenter py={5}>
         <A.Heading xl heavy>
-          What is OneMillionDevs.com?
+          What is is a Guide?
         </A.Heading>
-        <A.Heading as="h4">
-          An open-source hub for tools, platforms, and content focused on
-          Ethereum ecosystem growth
-        </A.Heading>
+        <A.Heading as="h4">A beacon on knowledge in a sea of data</A.Heading>
       </A.Box>
       <A.Flex gutter3 my={3}>
         <Feature
-          title="'Holy Shit' Moments"
+          title="Mentor Newbies"
           tagline="Give Web2 Developers their 'Holy Shit' Ethereum Moments"
           content="We've all had them. Those 'holy shit' moments when you realize the  unbelievable potential of Ethereum. 1MD aims to be a place for discovering, or sharing, these 'Holy Shit' Ethereum moments."
         />
         <Feature
-          title="Developer Resources"
+          title="Publish Content"
           tagline="Community of Resources and Opportunities"
           content="One of Ethereum's distinct advantages over the competition is its treasure trove of developer resources. 1MD aims to supplement Ethereum.org's efforts in coalescing these resources into a manageable state."
         />
         <Feature
-          title="Cooperation Catalyst"
+          title="Spread the Word"
           tagline="Get Hired By Top Companies"
           content="The Ethereum community is by far the largest in the blockchain ecosystem. 1MD aims to foster cooperation, and focus attention, to bring that community closer together - and help it buidl faster and better than ever."
         />
@@ -98,7 +93,7 @@ export default props => (
         </A.Flex>
         <A.Flex column flex={1}>
           <A.Heading xl heavy>
-            Stewarding Growth
+            Lead the Community
           </A.Heading>
           <A.Heading md>
             Helping the Ethereum Community Grow and Connect
@@ -131,7 +126,7 @@ export default props => (
         </A.Flex>
         <A.Flex column flex={1}>
           <A.Heading xl heavy>
-            How You Can Help
+            Earn Rewards
           </A.Heading>
           <A.Heading md>
             Contribute in whatever way best suits your level of involvement and
@@ -167,7 +162,7 @@ export default props => (
         </A.Flex>
         <A.Flex column flex={1}>
           <A.Heading xl heavy>
-            Open Source Project
+            Build Your Reputation
           </A.Heading>
           <A.Heading md> A Blank Canvas and an Open End </A.Heading>
           <A.HorizontalRule dash my={3} />
