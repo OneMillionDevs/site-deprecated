@@ -20,7 +20,9 @@ export default function PageTemplate({ data: { mdx } }) {
           </A.Box>
         }
         <A.Box as='main' flex={1} py={3}>
-          <MDXRenderer>{mdx.body}</MDXRenderer>
+          <Atom.Container>
+            <MDXRenderer>{mdx.body}</MDXRenderer>
+          </Atom.Container>
         </A.Box>
         <RegionFooter bg='#1e1e2d' color='white' borderTop='3px solid #dc448d' p={2}/>
       </A.Flex>

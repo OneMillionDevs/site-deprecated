@@ -11,12 +11,12 @@ const BlogIndex = ({ data }) => {
     <Site>
       <A.Box color='white' gradient='blueDark' py={4} textCenter>
         <A.Flex between px={4}>
-          <A.Heading lg heavy>Community Articles</A.Heading>
-          <A.Button xs variant='green'>Contribute</A.Button>
+          <A.Heading lg heavy>Resources</A.Heading>
+          <A.Button xs variant='green'>Add Resource</A.Button>
         </A.Flex>
       </A.Box>
       <A.Container maxWidth={780} py={4}>
-          {posts.filter(({node: post} )=> post.frontmatter.template === 'article' ).map(({ node: post }) => (
+          {posts.filter(({node: post} )=> post.frontmatter.template === 'resources' ).map(({ node: post }) => (
             <>
               <A.Flex alignEnd color='white' gradient='blueDark' p={3} mb={3} mt={5} minHeight={250}>
                 <A.BackgroundImage ratio={.2} src={post.frontmatter.imageCover} opacity={.3} />
@@ -31,7 +31,7 @@ const BlogIndex = ({ data }) => {
                 </A.Paragraph>
                 <A.Flex between flex={1} mt={3}>
                   <Link to={post.fields.slug}>
-                    <A.Button sm variant='white'>Read Article</A.Button>
+                    <A.Button sm variant='white'>Read Coverage</A.Button>
                   </Link>
                 </A.Flex>
               </A.Box>
@@ -42,14 +42,13 @@ const BlogIndex = ({ data }) => {
   )
 }
 export const pageQuery = graphql`
-  query blogIndex {
+  query resourceIndex {
     allMdx {
       edges {
         node {
           id
           excerpt
           frontmatter {
-            author
             title
             tagline
             template

@@ -1,6 +1,6 @@
 export default props => {
   return (
-    <A.Box card textCenter boxShadow={3} p={4} {...props.styled}>
+    <A.Box card textCenter boxShadow={1} p={4} {...props.styled}>
       <A.Heading lg heavy>
         Subscribe to One Million Developers (1MD)
       </A.Heading>

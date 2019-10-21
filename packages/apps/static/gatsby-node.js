@@ -4,6 +4,9 @@ const { createFilePath } = require("gatsby-source-filesystem")
 const generateSlug = (template, alias) => ({
   content: `${alias}`,
   article: `article/${alias}`,
+  coverage: `coverage/${alias}`,
+  news: `news/${alias}`,
+  resource: `resource/${alias}`,
 }[template || 'content'])
 
 
@@ -53,18 +56,17 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
   const templates = template => ({
     content: path.resolve(__dirname,"./src/components/templates/Content/index.jsx"),
+    news: path.resolve(__dirname,"./src/components/templates/Article/index.jsx"),
     article: path.resolve(__dirname,"./src/components/templates/Article/index.jsx"),
+    resource: path.resolve(__dirname,"./src/components/templates/Article/index.jsx"),
+    coverage: path.resolve(__dirname,"./src/components/templates/Article/index.jsx"),
   }[template || 'article'])
 
-  const generatePath = (template, slug) => ({
-    content: `${slug}`,
-    article: `article${slug}`,
-  }[template || 'content'])
 
   posts.forEach(({ node }, index) => {
     createPage({
       path: node.fields.slug,
-      component: templates(node.fields.template),
+      component: templates('article'),
       context: { 
         id: node.id
       },
@@ -84,6 +86,9 @@ exports.onCreateWebpackConfig = ({ stage, loaders, actions, plugins }) => {
       }),
       plugins.provide({
         'A': '@horizin/design-system'
+      }),
+      plugins.provide({
+        'Atom': '@horizin/design-system'
       }),
     ],
   })

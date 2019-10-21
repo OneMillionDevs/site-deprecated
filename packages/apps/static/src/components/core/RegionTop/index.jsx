@@ -28,16 +28,21 @@ const site = props.data.site.siteMetadata
           <A.Span xs mx={1}>Contribute</A.Span>
         </A.Link>
         <A.Modal content={<FormUpdates />} >
-          <A.Span pointer tag='red' xs mx={1}>Get Updates</A.Span>
+          <A.Span pointer tag='white' xxs mx={1}>Email Updates</A.Span>
         </A.Modal>
 
       </A.Flex>
     </A.Flex>
 
     {/* Right */}
-    <A.Link to='/analytics'>
-      <A.Button xs variant='blue'>Analytics</A.Button>
-    </A.Link>
+    <Atom.Flex>
+      <A.Link to='/started'>
+        <Atom.Span xs tag='red' mr={3}>Get Started</Atom.Span>
+      </A.Link>
+      <A.Link to='/analytics'>
+        <Atom.Span xs tag='blue'>Live Analytics</Atom.Span>
+      </A.Link>
+    </Atom.Flex>
   </A.Flex>
 )}
 

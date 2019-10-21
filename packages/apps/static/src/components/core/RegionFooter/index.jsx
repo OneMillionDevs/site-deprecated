@@ -28,7 +28,7 @@ const site = props.data.site.siteMetadata
       <A.Flex flex={5} pl={6}>
 
         <A.Box >
-          <A.Heading sm heavy>Community</A.Heading>
+          <A.Heading sm heavy>Infomration</A.Heading>
           <A.HorizontalRule dash left />
           <A.Flex {...props.styledMenu}>
             <A.Link to='/articles'>
@@ -44,14 +44,30 @@ const site = props.data.site.siteMetadata
         </A.Box>
         
         <A.Box ml={5} >
+          <A.Heading sm heavy>News</A.Heading>
+          <A.HorizontalRule dash left />
+          <A.Flex {...props.styledMenu}>
+            <A.Link to='/news'>
+              <A.Span xs>News</A.Span>
+            </A.Link>
+            <A.Link to='/coverage'>
+              <A.Span xs>Coverage</A.Span>
+            </A.Link>
+            <A.Link to='/updates'>
+              <A.Span xs>Updates</A.Span>
+            </A.Link>
+          </A.Flex>
+        </A.Box>
+
+        <A.Box ml={5} >
           <A.Heading sm heavy>Overview</A.Heading>
           <A.HorizontalRule dash left />
           <A.Flex {...props.styledMenu}>
             <A.Link to='/about'>
               <A.Span xs>About</A.Span>
             </A.Link>
-            <A.Link to='/team'>
-              <A.Span xs>Team</A.Span>
+            <A.Link to='/stewards'>
+              <A.Span xs>Stewards</A.Span>
             </A.Link>
           </A.Flex>
         </A.Box>

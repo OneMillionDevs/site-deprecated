@@ -41,7 +41,6 @@ export const pageQuery = graphql`
         title
         tagline
         image
-        imageCover
       }
     }
   }

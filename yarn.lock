@@ -6995,6 +6995,16 @@ create-hmac@^1.1.0, create-hmac@^1.1.2, create-hmac@^1.1.4:
     safe-buffer "^5.0.1"
     sha.js "^2.4.8"
 
+create-html-element@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/create-html-element/-/create-html-element-3.0.0.tgz#ff849781d0f2ecb1c3e92237d91c853ca2e6b57c"
+  integrity sha512-ce7uOeddOpUC2BVrwyewE6ZlA2oN7jUotRhgq4somwBqsFvGEvVwbq4mZwC7/6EuFggIfI2Hm57yBl5r3SbZcA==
+  dependencies:
+    escape-goat "^2.0.0"
+    html-tags "^3.0.0"
+    stringify-attributes "^2.0.0"
+    type-fest "^0.5.1"
+
 create-react-context@^0.2.1:
   version "0.2.3"
   resolved "https://registry.yarnpkg.com/create-react-context/-/create-react-context-0.2.3.tgz#9ec140a6914a22ef04b8b09b7771de89567cb6f3"
@@ -8507,6 +8517,11 @@ es6-shim@^0.35.5:
   version "0.35.5"
   resolved "https://registry.yarnpkg.com/es6-shim/-/es6-shim-0.35.5.tgz#46f59dc0a84a1c5029e8ff1166ca0a902077a9ab"
   integrity sha512-E9kK/bjtCQRpN1K28Xh4BlmP8egvZBGJJ+9GtnzOwt7mdqtrjHFuVGr7QJfdjBIKqrlU5duPf3pCBoDrkjVYFg==
+
+escape-goat@^2.0.0:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/escape-goat/-/escape-goat-2.1.1.tgz#1b2dc77003676c457ec760b2dc68edb648188675"
+  integrity sha512-8/uIhbG12Csjy2JEW7D9pHbreaVaS/OpN3ycnyvElTdwM5n6GY6W6e2IPemfvGZeUMqZ9A/3GqIZMgKnBhAw/Q==
 
 escape-html@~1.0.3:
   version "1.0.3"
@@ -11138,6 +11153,11 @@ hash-base@^3.0.0:
     inherits "^2.0.1"
     safe-buffer "^5.0.1"
 
+hash-source@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/hash-source/-/hash-source-1.0.4.tgz#711dae046048c8ea3ab622784d192115cf52b8b3"
+  integrity sha512-UNKYuVzDH11EXWjdN2C/+qKobJBRxmCn91fCHX5xueRsY1ubsZmCY4L8s/TU0DAWUkahuooDQJ/0cI04Ek5QqA==
+
 hash.js@^1.0.0, hash.js@^1.0.3:
   version "1.1.7"
   resolved "https://registry.yarnpkg.com/hash.js/-/hash.js-1.1.7.tgz#0babca538e8d4ee4a0f8988d68866537a003cf42"
@@ -11356,6 +11376,11 @@ html-tags@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/html-tags/-/html-tags-2.0.0.tgz#10b30a386085f43cede353cc8fa7cb0deeea668b"
   integrity sha1-ELMKOGCF9Dzt41PMj6fLDe7qZos=
+
+html-tags@^3.0.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/html-tags/-/html-tags-3.1.0.tgz#7b5e6f7e665e9fb41f30007ed9e0d41e97fb2140"
+  integrity sha512-1qYz89hW3lFDEazhjW0yVAV87lw8lVkrJocr72XmBkMKsoSVJCQx3W8BXsC7hO2qAt8BoVjYjtAcZ9perqGnNg==
 
 html-void-elements@^1.0.1:
   version "1.0.4"
@@ -20902,6 +20927,13 @@ string_decoder@~1.1.1:
   dependencies:
     safe-buffer "~5.1.0"
 
+stringify-attributes@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/stringify-attributes/-/stringify-attributes-2.0.0.tgz#0355827de224ec8a94ca81a267f92a3f5f778820"
+  integrity sha512-wrVfRV6sCCB6wr3gx8OgKsp/9dSWWbKr8ifLfOxEcd/BBoa8d5pAf4BZb/jQW1JZnoZImjvUdxdo3ikYHZmYiw==
+  dependencies:
+    escape-goat "^2.0.0"
+
 stringify-entities@^1.0.1:
   version "1.3.2"
   resolved "https://registry.yarnpkg.com/stringify-entities/-/stringify-entities-1.3.2.tgz#a98417e5471fd227b3e45d3db1861c11caf668f7"
@@ -21792,7 +21824,7 @@ type-fest@^0.4.1:
   resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-0.4.1.tgz#8bdf77743385d8a4f13ba95f610f5ccd68c728f8"
   integrity sha512-IwzA/LSfD2vC1/YDYMv/zHP4rDF1usCwllsDpbolT3D4fUepIO7f9K70jjmUewU/LmGUKJcwcVtDCpnKk4BPMw==
 
-type-fest@^0.5.2:
+type-fest@^0.5.1, type-fest@^0.5.2:
   version "0.5.2"
   resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-0.5.2.tgz#d6ef42a0356c6cd45f49485c3b6281fc148e48a2"
   integrity sha512-DWkS49EQKVX//Tbupb9TFa19c7+MK1XmzkrZUR8TAktmE/DizXoaoJV6TZ/tSIPXipqNiRI6CyAe7x69Jb6RSw==

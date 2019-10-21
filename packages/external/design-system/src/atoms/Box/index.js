@@ -8,7 +8,7 @@ import is from 'styled-is';
 import { withoutProps, ignoreList } from '../../utils'
 
 const Box = styled(withoutProps(ignoreList)('div'))
-`box-sizing: border-box;
+  `box-sizing: border-box;
   ${flexbox}
   ${grid}
   ${position}
@@ -17,10 +17,8 @@ const Box = styled(withoutProps(ignoreList)('div'))
 /* --------------- */
 ${is('card')`
   background-color: #FFF;
-  background: ${props => props.theme.gradient['white'][0]};
-  background-image: -webkit-linear-gradient(${props => props.gradientDir ? props.gradientDir : '180'}deg , ${props => `${props.theme.gradient['white'][0]}, ${props.theme.gradient['white'][1]}`});
-  background-image: linear-gradient(${props => props.gradientDir ? props.gradientDir : '180'}deg , ${props => `${props.theme.gradient['white'][0]}, ${props.theme.gradient['white'][1]}`} );
-  ${props => `box-shadow: ${props.theme.shadows[0]};`}
+  ${props => console.log(props.theme)}
+  ${props => `box-shadow: ${props.theme && props.theme.shadows[0]};`}
   border-radius: 5px;
   padding: 15.5px;
 `};
@@ -75,36 +73,36 @@ ${
   })
   }
   ${
-    variant({
-      prop: 'gem',
-      variants: {
-        white: {
-          background: 'linear-gradient(120deg ,#FFF,#efe8dc)',
-          borderColor: '#64627e80',
-          borderWidth: 2,
-          borderStyle: 'solid',
-          color: '#3e3e3e',
-          bg: '#FFF',
-          "&:hover": {
-            color: '#3e3e3e !important',
-          }
-        },
-        primary: {
-          bg: 'primary',
-          color: '#ffffffe6'
-        },
-        secondary: {
-          bg: 'secondary',
-          color: '#ffffffe6'
-        },
-        tertiary: {
-          bg: 'tertiary',
-          color: '#ffffffe6'
-        },
-    
-      }
-      })
+  variant({
+    prop: 'gem',
+    variants: {
+      white: {
+        background: 'linear-gradient(120deg ,#FFF,#efe8dc)',
+        borderColor: '#64627e80',
+        borderWidth: 2,
+        borderStyle: 'solid',
+        color: '#3e3e3e',
+        bg: '#FFF',
+        "&:hover": {
+          color: '#3e3e3e !important',
+        }
+      },
+      primary: {
+        bg: 'primary',
+        color: '#ffffffe6'
+      },
+      secondary: {
+        bg: 'secondary',
+        color: '#ffffffe6'
+      },
+      tertiary: {
+        bg: 'tertiary',
+        color: '#ffffffe6'
+      },
+
     }
+  })
+  }
   ${is('gem')`
     border-radius: 20px 5px 20px 10px;
     text-transform: uppercase;
@@ -355,7 +353,7 @@ ${is('borderNone')`
     cursor: {
       property: 'cursor',
     },
-  
+
   })}
   ${border}
   ${background}

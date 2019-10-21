@@ -6,10 +6,29 @@ Under Construction
 
 ### Sitemap
 
-- Root
-- Features
-  - Learning Network
-- Projects
+- Articles (Internal Articles)
+- Coverage (External News)
+- Resources (General Resources)
+- News (Important 1MD News)
+- Learning Network (External Platforms)
+
 - About
-  - Overview
-  - Team
+- Mission
+- Contribute
+- Updates (Major 1MD Updates)
+
+#### Navigation
+Information
+- Articles
+- Coverage
+- Resources
+- News
+
+About
+- Stewards
+- Contribute
+- Overview
+- News
+### Content
+
+Quick Start `/resource/quick-start`

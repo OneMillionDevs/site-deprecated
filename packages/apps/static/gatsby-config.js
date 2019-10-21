@@ -2,6 +2,7 @@
 const path = require('path');
 
 module.exports = {
+  pathPrefix: "/",
   siteMetadata: {
     title: `OneMillionDevs`,
     description: `Growing the Ethereum Ecosystem`,

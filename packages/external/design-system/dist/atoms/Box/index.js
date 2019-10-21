@@ -490,7 +490,7 @@ function _templateObject3() {
 }
 
 function _templateObject2() {
-  var data = _taggedTemplateLiteral(["\n  background-color: #FFF;\n  background: ", ";\n  background-image: -webkit-linear-gradient(", "deg , ", ");\n  background-image: linear-gradient(", "deg , ", " );\n  ", "\n  border-radius: 5px;\n  padding: 15.5px;\n"]);
+  var data = _taggedTemplateLiteral(["\n  background-color: #FFF;\n  ", "\n  ", "\n  border-radius: 5px;\n  padding: 15.5px;\n"]);
 
   _templateObject2 = function _templateObject2() {
     return data;
@@ -511,7 +511,7 @@ function _templateObject() {
 
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
-var Box = (0, _styledComponents.default)((0, _utils.withoutProps)(_utils.ignoreList)('div'))(_templateObject(), _styledSystem.flexbox, _styledSystem.grid, _styledSystem.position, (0, _styledIs.default)('card')(_templateObject2(), props => props.theme.gradient['white'][0], props => props.gradientDir ? props.gradientDir : '180', props => "".concat(props.theme.gradient['white'][0], ", ").concat(props.theme.gradient['white'][1]), props => props.gradientDir ? props.gradientDir : '180', props => "".concat(props.theme.gradient['white'][0], ", ").concat(props.theme.gradient['white'][1]), props => "box-shadow: ".concat(props.theme.shadows[0], ";")), (0, _styledIs.default)('cardHover')(_templateObject3(), props => (0, _idx.default)(props, _ => _.theme.shadows['lightHover'])), (0, _styledSystem.variant)({
+var Box = (0, _styledComponents.default)((0, _utils.withoutProps)(_utils.ignoreList)('div'))(_templateObject(), _styledSystem.flexbox, _styledSystem.grid, _styledSystem.position, (0, _styledIs.default)('card')(_templateObject2(), props => console.log(props.theme), props => "box-shadow: ".concat(props.theme && props.theme.shadows[0], ";")), (0, _styledIs.default)('cardHover')(_templateObject3(), props => (0, _idx.default)(props, _ => _.theme.shadows['lightHover'])), (0, _styledSystem.variant)({
   prop: 'layout',
   variants: {
     toast: {

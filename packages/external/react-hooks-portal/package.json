@@ -26,6 +26,7 @@
   },
   "dependencies": {
     "classnames": "^2.2.6",
+    "create-html-element": "^3.0.0",
     "idx": "^2.5.6",
     "prop-types": "^15.7.2",
     "react-transition-group": "^4.3.0",

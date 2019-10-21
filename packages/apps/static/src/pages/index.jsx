@@ -1,6 +1,6 @@
 import { Site } from "templates"
 import { SEO } from "core"
-
+import { FormUpdates } from "core"
 import {
   Heading,
   Flex,
@@ -61,153 +61,168 @@ const IndexPage = () => (
         <Flex center column mt={50} ml={-160} p={30}>
           {/* <BoxLoginCardPledge /> */}
         </Flex>
-        <Absolute layout="topRight" mr={155} mt={220}>
-          <Loading type="ripple" />
-        </Absolute>
-        <Absolute layout="topRight" mr={200} mt={420}>
-          <Loading type="ripple" />
-        </Absolute>
-        <Absolute layout="topRight" mr={30} mt={190}>
-          <Loading type="ripple" />
-        </Absolute>
       </Flex>
     </Flex>
+
+    <Atom.Flex alignCenter between color='white' gradient='blueDark' p={4} my={3} m={5} borderRadius={30}>
+      <Atom.Heading noMargin>200,230 Active Developers</Atom.Heading>
+      <Atom.Button>Sign Pledge</Atom.Button>
+    </Atom.Flex>
 
     <Container mt={5}>
       <Flex center column>
         <Heading xxl heavy>
-          Why Ethereum?
+          The Next Internet Revolution
         </Heading>
-        <Heading lg thin>
-          "I'm happy as a Web2 dev! Why should I get involved?"
-        </Heading>
+        <Atom.Span fontWeight={300}  tag='white' my={3}>Web3 - Built with Ethereum Ideas & Technology</Atom.Span>
       </Flex>
     </Container>
 
-    <A.Container>
-      <A.Flex alignCenter flex={1} minHeight={370}>
-        <A.Flex column flex={1} textRight>
-          <A.Heading xl>The Internet of Value</A.Heading>
-          <A.Heading md thin>
-            A New Layer of the Internet
-          </A.Heading>
-          <A.Paragraph>
-            Why are so many people convinced that Ethereum is the "as big of an
-            invention as the internet"? Why have so many intelligent people
-            dropped whatever they were previously doing, and decided to focus
-            the entirety of their attention on Ethereum?
-          </A.Paragraph>
-          <A.Link to="/features/developer-identity">
-            {/* These "Learn More" buttons should bring people to the next section of the website, which includes the "holy shit" moment platforms*/}
-            <A.Button>Learn More</A.Button>
-          </A.Link>
-        </A.Flex>
-        <A.Flex center column flex={1} p={5}>
-          <A.Image
-            card
-            borderRadius={30}
-            p={1}
-            src="https://imgur.com/0m2yY82.png"
-          />
-        </A.Flex>
-      </A.Flex>
-    </A.Container>
+    <Atom.Container maxWidth={780} mt={5}>
 
-    <A.Container>
-      <A.Flex alignCenter flex={1} minHeight={370}>
-        <A.Flex column flex={1} order={2}>
-          <A.Heading xl>Decentralization & Disintermediation</A.Heading>
-          <A.Heading md thin>
-            A Redistribution of Power and Wealth
-          </A.Heading>
-          <A.Paragraph>
-            Current intermediaries extract a disproportionate amount of value
-            from the value chain. Current incumbents maintain a disproportionate
-            amount of power over their respective domains. Find out how Ethereum
-            can help solve this pressing issue.
-          </A.Paragraph>
-          <A.Link to="/features/learning-network">
-            <A.Button>Learn More</A.Button>
-          </A.Link>
-        </A.Flex>
+      <Atom.Paragraph>
+        What if...
+      </Atom.Paragraph>
+      <Atom.Paragraph>
+        <em>What if the Internet was built differently?</em>
+      </Atom.Paragraph>
+      
+      <Atom.Heading lg heavy>Ethereum</Atom.Heading>
+      <Atom.Paragraph >
+        <strong>Ethereum is a public blockchain. </strong> You might have heard about it in recent news. As a public and global blockchain it provides unique features to both users and developers. Users can achieve true digital ownership. And developers can compose and craft applications in new and interesting ways.
+      </Atom.Paragraph>
 
-        <A.Flex center column flex={1} p={5} order={1}>
-          <A.Image
-            card
-            borderRadius={30}
-            p={1}
-            src="https://i.imgur.com/sVfZX9l.png"
-          />
-        </A.Flex>
-      </A.Flex>
-    </A.Container>
+      <ul>
+        <li>
+          Global Computer (Decentralized Software)
+        </li>
+        <li>
+          Accessible to Everyone (Permissionless Authentication)
+        </li>
+        <li>
+          Decentralized Infrastructure (Cryptocurrency Enabled)
+        </li>
 
-    <A.Container>
-      <A.Flex alignCenter flex={1} minHeight={370}>
-        <A.Flex column flex={1} textRight>
-          <A.Heading xl>Composability</A.Heading>
-          <A.Heading md thin>
-            A Cooperative Network
-          </A.Heading>
-          <A.Paragraph>
-            What if your work could be seen and leveraged by an entire
-            community? What if you could be rewarded and recognized for your
-            open-source contributions? What if everything you built MATTERED to
-            everyone else, in a very significant way?
-          </A.Paragraph>
-          <A.Link to="/features/learning-network">
-            <A.Button>Learn More</A.Button>
-          </A.Link>
-        </A.Flex>
-        <A.Flex center column flex={1} p={5}>
-          <A.Image
-            card
-            borderRadius={30}
-            p={1}
-            src="https://i.imgur.com/HsdO37W.png"
-          />
-        </A.Flex>
-      </A.Flex>
-    </A.Container>
+    </ul>
+
+      <Atom.Flex my={4}>
+        <Atom.Link to='/resource/quick-start'>
+          <Atom.Button xs variant='blue' mr={3}>Ethereum Quick-Start Guide</Atom.Button>
+        </Atom.Link>
+        <Atom.Link to='/blockchain-users'>
+          <Atom.Button xs variant='green'>Not a developer? Explore Here</Atom.Button>
+        </Atom.Link>
+      </Atom.Flex>
+
+      
+
+      <A.Heading lg heavy>
+        Blockchain - A New Layer of the Internet
+      </A.Heading>
+      <Atom.Paragraph sm>
+        Blockchain technology provides the opportunity to re-think and re-imagine how we connect the Internet. Everything from finance, identity, communications, social networks, data discovery, and more are waiting to be rebuilt.
+      </Atom.Paragraph>
+      <Atom.Heading md>Internet Composability</Atom.Heading>
+      <Atom.Paragraph sm>
+        What makes blockchain technology like Ethereum compelling for developers is the unique ability to build applications built using a public infrastructure. The public infrastructure provides an assortment of blockchain primitives, in addition to public smart contract API endpoints. Blockchain primitives transaction signing, and other decentralized account management facilitate the infrastructure. Public smart contract API endpoints is the software layer of the public infrastructure. 
+      </Atom.Paragraph>
+      <Atom.Heading md>Digital Owernship</Atom.Heading>
+      <Atom.Paragraph sm>
+        What makes blockchain technology like Ethereum compelling for developers is the unique ability to build applications built using a public infrastructure. The public infrastructure provides an assortment of blockchain primitives...
+      </Atom.Paragraph>
+      <Atom.Heading md>Scaling Public Internet</Atom.Heading>
+      <Atom.Paragraph sm>
+        What makes blockchain technology like Ethereum compelling for developers is the unique ability to build applications built using a public infrastructure. The public infrastructure provides an assortment of blockchain primitives...
+      </Atom.Paragraph>
+      <Atom.Flex my={4}>
+        <Atom.Link to='/resource/smart-contract-tools'>
+          <Atom.Button xs variant='blue' mr={3}>Smart Contract Tools</Atom.Button>
+        </Atom.Link>
+        <Atom.Link to='/resource/ethereum-roadmap'>
+          <Atom.Button xs variant='green'>The Ethereum Roadmap</Atom.Button>
+        </Atom.Link>
+      </Atom.Flex>
+    </Atom.Container>
+
+
 
     <A.Box color="white" gradient="blueDark" py={4}>
-      <Heading xxl heavy alignCenter>
-        Discover your "holy shit" moment
-      </Heading>
-      <A.Container>
-        <A.Flex alignCenter flex={1} minHeight={370}>
-          <A.Flex center column flex={1} p={5}>
-            <A.Box width="130%" left="-30%">
-              <A.Image
-                card
-                boxShadow="blueBottom"
-                borderRadius={10}
-                p={1}
-                src="https://i.imgur.com/XmLfVL6.png"
-              />
-            </A.Box>
-          </A.Flex>
-          <A.Flex column flex={1}>
-            <A.Heading md>Featured Platform</A.Heading>
-            <A.Heading xxl heavy>
-              Gitcoin Quests
-            </A.Heading>
-            <A.Paragraph>
-              Gitcoin Quests is a fun, gamified way to learn about the web3
-              ecosystem, compete with your friends, earn rewards, and level up
-              your decentralization-fu!
-            </A.Paragraph>
-            <A.Link to="/features/learning-network">
-              <A.Button>Start Questing</A.Button>
-            </A.Link>
-          </A.Flex>
-        </A.Flex>
+
+      <A.Container my={4}>
+
+        <Atom.Box textCenter>
+          <Atom.Heading xxl heavy center>Developer Resource Network</Atom.Heading>
+          <Atom.Paragraph>
+            Discover the Tool that is Perfect For You.
+          </Atom.Paragraph>
+          <Atom.Span xxs tag='white'>Click here to learn <strong>why</strong> and <strong>how</strong> we promote community tools.</Atom.Span>
+        </Atom.Box>
+
+        <Atom.Flex gutter3 my={4} flex={1}>
+        
+          <PlatformCard
+            title='Gitcoin Quests'
+            tagline='Battle the Baddies and Learn about Etheruem'
+            summary='Nulla malesuada, nisi in mollis volutpat, urna mi ultrices libero, non fermentum metus ante auctor eros. Nullam a facilisis felis.'
+            imageCover='https://i.imgur.com/cHtxC04.png'
+          />
+          {/* <PlatformCard
+            title='3Box Developer Profile'
+            tagline='Conquer Decentraland in Style'
+            summary='Nulla malesuada, nisi in mollis volutpat, urna mi ultrices libero, non fermentum metus ante auctor eros. Nullam a facilisis felis.'
+            imageCover='https://i.imgur.com/DpyjcVt.png'
+          /> */}
+          <PlatformCard
+            title='EthQuest'
+            tagline='Challenge Yourself To Complete All Tasks'
+            summary='Nulla malesuada, nisi in mollis volutpat, urna mi ultrices libero, non fermentum metus ante auctor eros. Nullam a facilisis felis.'
+            imageCover='https://i.imgur.com/vaTcwti.png'
+          />
+          <PlatformCard
+            title='Add Application'
+            tagline='Create A New Application to Share'
+            summary='Nulla malesuada, nisi in mollis volutpat, urna mi ultrices libero, non fermentum metus ante auctor eros. Nullam a facilisis felis.'
+            imageCover='https://s3.envato.com/files/f209c8a8-c7fc-49be-a948-6aa185b7fb4b/inline_image_preview.jpg'
+          />
+
+        </Atom.Flex>
+
+        <Atom.Flex center mt={4}>
+          <Atom.Span sm tag='green' mx={2}>View Catalog</Atom.Span>
+        </Atom.Flex>
+        <Atom.Flex center column mt={3}>
+          <Atom.Button sm>Funding to Build Platform</Atom.Button>
+          <Atom.Span sm mt={2}>Do you have a good idea to help new developers in Ethereum? <strong>Get Funded</strong></Atom.Span>
+        </Atom.Flex>
       </A.Container>
     </A.Box>
 
-    <QuestPlaform />
+    <A.Flex gradient="gray" flex={1}>
+      <A.Flex center column flex={3} py={50} minHeight="600px" order={2}>
+        <FormUpdates />
+      </A.Flex>
+    </A.Flex>
   </Site>
+
 )
+const PlatformCard = props => { 
+ return(
+  <Atom.Flex column >
+    <A.Flex center column flex={1}>
+      <A.Image src={props.imageCover} />
+    </A.Flex>
+    <Atom.Box bg='white' color='charcoal' p={3}>
+      <Atom.Heading md heavy>{props.title}</Atom.Heading>
+      <Atom.Heading sm thin>{props.tagline}</Atom.Heading>
+      <Atom.Paragraph xs>
+        {props.summary}
+      </Atom.Paragraph>
+      <Atom.Flex justifyEnd flex={1}>
+        <Atom.Button xs>Go</Atom.Button>
+      </Atom.Flex>
+    </Atom.Box>
+  </Atom.Flex>
+)}
 
 const QuestPlaform = props => {
   return (

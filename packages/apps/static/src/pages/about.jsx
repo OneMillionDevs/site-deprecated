@@ -24,40 +24,6 @@ export default props => (
         src="https://static.vecteezy.com/system/resources/previews/000/202/998/original/ethereum-currency-illustration-based-on-world-map-background-vector.jpg"
       />
 
-      <A.Flex center column flex={3} py={50} minHeight="600px" order={2}>
-        <A.Span sm tag="blue" boxShadow="sunset" mb={3}>
-          Mission
-        </A.Span>
-        <A.Box card boxShadow={7} maxWidth={620} textCenter p={4}>
-          <A.Heading xl heavy>
-            Ethereum Community Growth
-          </A.Heading>
-          <A.Heading md>1 Million Active Developers</A.Heading>
-          {/* <A.HorizontalRule dash center /> */}
-          <A.Flex center my={4}>
-            <A.Span xs tag="green" mx={3}>
-              Developer Profiles
-            </A.Span>
-            <A.Span xs tag="blue" mx={3}>
-              Learning Network
-            </A.Span>
-            <A.Span xs tag="primary" mx={3}>
-              Rewards & Incentives
-            </A.Span>
-          </A.Flex>
-          <A.HorizontalRule dash center my={3} />
-          <A.Paragraph sm>
-            In a space where all developments contribute to the collective
-            whole, and every new participant brings us one step closer to a more
-            fair and truthful world, the value of community cannot be
-            understated. Our mission is to grow and foster the Ethereum
-            community.
-          </A.Paragraph>
-          <A.Paragraph sm>
-            <u>We</u> are Ethereum.
-          </A.Paragraph>
-        </A.Box>
-      </A.Flex>
     </A.Flex>
 
     <A.Container py={5}>
@@ -88,74 +54,7 @@ export default props => (
         />
       </A.Flex>
 
-      <A.Flex alignCenter flex={1} mt={5}>
-        <A.Flex center column flex={1}>
-          <A.Image
-            circle
-            maxWidth={270}
-            src="https://image.flaticon.com/icons/svg/2126/2126085.svg"
-          />
-        </A.Flex>
-        <A.Flex column flex={1}>
-          <A.Heading xl heavy>
-            Stewarding Growth
-          </A.Heading>
-          <A.Heading md>
-            Helping the Ethereum Community Grow and Connect
-          </A.Heading>
-          <A.HorizontalRule dash my={3} />
-          <A.Paragraph sm>
-            We are Ethereum - the community. As a platform, Ethereum would not
-            exist in its current form if it weren't for the thousands of
-            buidlers, developers, visionaries, entrepreneurs, philosophers,
-            economists, mathematicians, and leaders (and anyone we left out!)
-            who have gotten us to where we are today.
-          </A.Paragraph>
-          <A.Paragraph sm>
-            Every new member of our community is another unique perspective,
-            another source of potential talent and tools and ideas, another
-            teammate, and another friend. Our goal is to grow and foster this
-            community. To attract the best and the brightest. And to make sure
-            they stick around.
-          </A.Paragraph>
-        </A.Flex>
-      </A.Flex>
-
-      <A.Flex alignCenter flex={1} mt={5}>
-        <A.Flex center column flex={1} order={2}>
-          <A.Image
-            circle
-            maxWidth={270}
-            src="https://image.flaticon.com/icons/svg/1189/1189142.svg"
-          />
-        </A.Flex>
-        <A.Flex column flex={1}>
-          <A.Heading xl heavy>
-            How You Can Help
-          </A.Heading>
-          <A.Heading md>
-            Contribute in whatever way best suits your level of involvement and
-            skillset
-          </A.Heading>
-          <A.HorizontalRule dash my={3} />
-          <A.Paragraph sm>
-            Are you a developer? A journalist? An economist? No matter your
-            background, level of involvement, or skillset, you can contribute to
-            Ethereum's growth. 1MD aims to assist you in this process by linking
-            you to, and encouraging the development of, the tools necessary to
-            kickstart community contribution.
-          </A.Paragraph>
-          <A.Paragraph sm>
-            Whether it is referring friends, publishing content, curating
-            experiences, developing platforms, or showing off the work you've
-            done, 1MD aims to act as the foundation for fostering a space in
-            which contributions are easy, welcomed, recognized, and rewarded.
-          </A.Paragraph>
-          <A.Link to="/contribute">
-            <A.Button>Make An Impact</A.Button>
-          </A.Link>
-        </A.Flex>
-      </A.Flex>
+    
 
       <A.Flex alignCenter flex={1} mt={5}>
         <A.Flex center column flex={1}>

@@ -1,9 +1,20 @@
 {
   "name": "one-million-devs",
-  "private": true,
+  "private": false,
+  "homepage": "https://onemilliondevs.com",
   "description": "One Million Devs",
   "version": "0.0.1",
   "author": "Kames <kamescg>",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "predeploy": "gatsby build --prefix-paths",
+    "deploy": "gh-pages -d public",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
+  },
   "workspaces": {
     "nohoist": [
       "webpack",
@@ -35,6 +46,7 @@
     "styled-components": "^4.4.0"
   },
   "devDependencies": {
+    "hash-source": "^1.0.4",
     "prettier": "^1.18.2",
     "webpack": "^4.41.2"
   },
@@ -43,14 +55,6 @@
     "web3"
   ],
   "license": "MIT",
-  "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
-    "start": "npm run develop",
-    "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/gatsbyjs/gatsby-starter-default"
