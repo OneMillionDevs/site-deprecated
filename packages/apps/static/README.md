@@ -31,4 +31,7 @@ About
 - News
 ### Content
 
+
+### Needs to be built
 Quick Start `/resource/quick-start`
+Initial Setup `/resource/initial-setup`
