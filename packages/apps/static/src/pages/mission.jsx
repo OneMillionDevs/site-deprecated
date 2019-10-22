@@ -25,7 +25,7 @@ export default props => (
       />
 
       <A.Flex center column flex={3} py={50} minHeight="600px" order={2}>
-        <A.Span sm tag="blue" boxShadow="sunset" mb={3}>
+        <A.Span sm tag="blue" mb={3}>
           Mission
         </A.Span>
         <A.Box card boxShadow={7} maxWidth={620} textCenter p={4}>

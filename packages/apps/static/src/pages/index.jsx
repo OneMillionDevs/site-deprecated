@@ -177,13 +177,6 @@ const IndexPage = () => (
 
         </Atom.Flex>
 
-        <Atom.Flex center mt={4}>
-          <Atom.Span sm tag='green' mx={2}>View Catalog</Atom.Span>
-        </Atom.Flex>
-        <Atom.Flex center column mt={3}>
-          <Atom.Button sm>Funding to Build Platform</Atom.Button>
-          <Atom.Span sm mt={2}>Do you have a good idea to help new developers in Ethereum? <strong>Get Funded</strong></Atom.Span>
-        </Atom.Flex>
       </A.Container>
     </A.Box>
 
