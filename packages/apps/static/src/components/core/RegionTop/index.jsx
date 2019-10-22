@@ -24,23 +24,23 @@ const site = props.data.site.siteMetadata
         <A.Link to='/mission'>
           <A.Span xs mx={1}>Mission</A.Span>
         </A.Link>
-        <A.Link to='/contribute'>
-          <A.Span xs mx={1}>Contribute</A.Span>
-        </A.Link>
-        <A.Modal content={<FormUpdates />} >
-          <A.Span pointer tag='white' xxs mx={1}>Email Updates</A.Span>
-        </A.Modal>
+        
 
       </A.Flex>
     </A.Flex>
 
+
+    {/* <A.Link to='/learn'>
+      <Atom.Span xs tag='green' mr={3}>Learning Center</Atom.Span>
+    </A.Link> */}
+
     {/* Right */}
     <Atom.Flex>
+      <A.Modal content={<FormUpdates />} >
+        <A.Span pointer tag='white' xxs>Email Updates</A.Span>
+      </A.Modal>
       <A.Link to='/started'>
-        <Atom.Span xs tag='red' mr={3}>Get Started</Atom.Span>
-      </A.Link>
-      <A.Link to='/analytics'>
-        <Atom.Span xs tag='blue'>Live Analytics</Atom.Span>
+        <Atom.Span xs tag='red' mx={3}>Get Started</Atom.Span>
       </A.Link>
     </Atom.Flex>
   </A.Flex>

@@ -28,13 +28,13 @@ export default props => (
 
     <A.Container py={5}>
 
-    
+
       <A.Box textCenter py={5}>
         <A.Heading xl heavy>
           Project Contributors
         </A.Heading>
         <A.Heading as="h4">
-          One Million Developers is an Open Collaboration but someone must tend the fields. 
+          One Million Developers is an Open Collaboration but someone must tend the fields.
         </A.Heading>
       </A.Box>
 
@@ -43,9 +43,7 @@ export default props => (
           image='https://pbs.twimg.com/profile_images/1180616709629083648/sNLGeMk8_400x400.jpg'
           title="Kevin Owocki"
           tagline="Gitcoin Exraordinaire"
-          content="- NOT going to invest in your ICO.
-          - NOT looking for work ( Updated July 2019 )
-          - I do NOT work with 3rd party recruiters offshore development shops, or agencies. Kindly fuck off or I will mark your connection request as spam."
+          content="NOT going to invest in your ICO. NOT looking for work ( Updated July 2019 ). I do NOT work with 3rd party recruiters offshore development shops, or agencies. Kindly fuck off."
         />
         <Feature
           image='https://avatars2.githubusercontent.com/u/84076?s=460&v=4'
@@ -55,14 +53,14 @@ export default props => (
         />
         <Feature
           image='https://media.licdn.com/dms/image/C4E03AQEdE6EMs0gaSQ/profile-displayphoto-shrink_200_200/0?e=1577318400&v=beta&t=qfByokFF2uECSKcVVUkuBGJ49oDlCYyl1UUp-DZLOfw'
-          title="Purpose Driven Work"
+          title="Bryan Peters"
           tagline="Helping Connect Everything"
           content="My current mission is to find ways to leverage technology to facilitate more purpose driven, decentralized, people oriented ways of working."
         />
 
       </A.Flex>
 
-    
+
       <A.Box textCenter py={5}>
         <A.Heading xl heavy>
           Project Stewards
@@ -92,7 +90,7 @@ export default props => (
           content="Managing project infrastructure."
         />
       </A.Flex>
-    
+
     </A.Container>
     <A.Flex gradient="gray" flex={1}>
       <A.Flex center column flex={3} py={50} minHeight="600px" order={2}>
@@ -106,14 +104,14 @@ const Feature = props => {
   return (
     <A.Flex card center column textCenter p={2}>
       <Atom.Flex
-          mb={3}
-          mt={-40}
-          circle
-          card
-          overflow='hidden'
-          height={80}
-          width={80}
-          >
+        mb={3}
+        mt={-40}
+        circle
+        card
+        overflow='hidden'
+        height={80}
+        width={80}
+      >
         <A.BackgroundImage
           src={props.image || "https://images.assetsdelivery.com/compings_v2/mingirov/mingirov1904/mingirov190400568.jpg"}
         />

@@ -191,9 +191,6 @@ export default props => (
           <A.Link to="/">
             <A.Button>Github</A.Button>
           </A.Link>
-          <A.Link to="/">
-            <A.Button>Contact Us</A.Button>
-          </A.Link>
         </A.Flex>
       </A.Flex>
     </A.Container>

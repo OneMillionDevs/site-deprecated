@@ -74,7 +74,7 @@ const IndexPage = () => (
         <Heading xxl heavy>
           The Next Internet Revolution
         </Heading>
-        <Atom.Span fontWeight={300}  tag='white' my={3}>Web3 - Built with Ethereum Ideas & Technology</Atom.Span>
+        <Atom.Span fontWeight={300} tag='white' my={3}>Web3 - Built with Ethereum Ideas & Technology</Atom.Span>
       </Flex>
     </Container>
 
@@ -86,7 +86,7 @@ const IndexPage = () => (
       <Atom.Paragraph>
         <em>What if the Internet was built differently?</em>
       </Atom.Paragraph>
-      
+
       <Atom.Heading lg heavy>Ethereum</Atom.Heading>
       <Atom.Paragraph >
         <strong>Ethereum is a public blockchain. </strong> You might have heard about it in recent news. As a public and global blockchain it provides unique features to both users and developers. Users can achieve true digital ownership. And developers can compose and craft applications in new and interesting ways.
@@ -103,18 +103,8 @@ const IndexPage = () => (
           Decentralized Infrastructure (Cryptocurrency Enabled)
         </li>
 
-    </ul>
+      </ul>
 
-      <Atom.Flex my={4}>
-        <Atom.Link to='/resource/quick-start'>
-          <Atom.Button xs variant='blue' mr={3}>Ethereum Quick-Start Guide</Atom.Button>
-        </Atom.Link>
-        <Atom.Link to='/blockchain-users'>
-          <Atom.Button xs variant='green'>Not a developer? Explore Here</Atom.Button>
-        </Atom.Link>
-      </Atom.Flex>
-
-      
 
       <A.Heading lg heavy>
         Blockchain - A New Layer of the Internet
@@ -124,7 +114,7 @@ const IndexPage = () => (
       </Atom.Paragraph>
       <Atom.Heading md>Internet Composability</Atom.Heading>
       <Atom.Paragraph sm>
-        What makes blockchain technology like Ethereum compelling for developers is the unique ability to build applications built using a public infrastructure. The public infrastructure provides an assortment of blockchain primitives, in addition to public smart contract API endpoints. Blockchain primitives transaction signing, and other decentralized account management facilitate the infrastructure. Public smart contract API endpoints is the software layer of the public infrastructure. 
+        What makes blockchain technology like Ethereum compelling for developers is the unique ability to build applications built using a public infrastructure. The public infrastructure provides an assortment of blockchain primitives, in addition to public smart contract API endpoints. Blockchain primitives transaction signing, and other decentralized account management facilitate the infrastructure. Public smart contract API endpoints is the software layer of the public infrastructure.
       </Atom.Paragraph>
       <Atom.Heading md>Digital Owernship</Atom.Heading>
       <Atom.Paragraph sm>
@@ -159,7 +149,7 @@ const IndexPage = () => (
         </Atom.Box>
 
         <Atom.Flex gutter3 my={4} flex={1}>
-        
+
           <PlatformCard
             title='Gitcoin Quests'
             tagline='Battle the Baddies and Learn about Etheruem'
@@ -205,24 +195,25 @@ const IndexPage = () => (
   </Site>
 
 )
-const PlatformCard = props => { 
- return(
-  <Atom.Flex column >
-    <A.Flex center column flex={1}>
-      <A.Image src={props.imageCover} />
-    </A.Flex>
-    <Atom.Box bg='white' color='charcoal' p={3}>
-      <Atom.Heading md heavy>{props.title}</Atom.Heading>
-      <Atom.Heading sm thin>{props.tagline}</Atom.Heading>
-      <Atom.Paragraph xs>
-        {props.summary}
-      </Atom.Paragraph>
-      <Atom.Flex justifyEnd flex={1}>
-        <Atom.Button xs>Go</Atom.Button>
-      </Atom.Flex>
-    </Atom.Box>
-  </Atom.Flex>
-)}
+const PlatformCard = props => {
+  return (
+    <Atom.Flex column >
+      <A.Flex center column flex={1}>
+        <A.Image src={props.imageCover} />
+      </A.Flex>
+      <Atom.Box bg='white' color='charcoal' p={3}>
+        <Atom.Heading md heavy>{props.title}</Atom.Heading>
+        <Atom.Heading sm thin>{props.tagline}</Atom.Heading>
+        <Atom.Paragraph xs>
+          {props.summary}
+        </Atom.Paragraph>
+        <Atom.Flex justifyEnd flex={1}>
+          <Atom.Button xs>Go</Atom.Button>
+        </Atom.Flex>
+      </Atom.Box>
+    </Atom.Flex>
+  )
+}
 
 const QuestPlaform = props => {
   return (

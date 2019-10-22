@@ -31,6 +31,9 @@ const site = props.data.site.siteMetadata
           <A.Heading sm heavy>Infomration</A.Heading>
           <A.HorizontalRule dash left />
           <A.Flex {...props.styledMenu}>
+            <A.Link to='/contribute'>
+              <A.Span xs mx={1}>Contribute</A.Span>
+            </A.Link>
             <A.Link to='/articles'>
               <A.Span xs>Articles</A.Span>
             </A.Link>
@@ -69,10 +72,19 @@ const site = props.data.site.siteMetadata
             <A.Link to='/stewards'>
               <A.Span xs>Stewards</A.Span>
             </A.Link>
+            <A.Link to='/coalition'>
+              <A.Span xs>Coalition</A.Span>
+            </A.Link>
           </A.Flex>
         </A.Box>
 
       </A.Flex>
+
+      <Atom.Flex>
+        <A.Link to='/analytics'>
+          <Atom.Span xs tag='blue'>Live Analytics</Atom.Span>
+        </A.Link>
+      </Atom.Flex>
       </A.Flex>
 
     {/* Right */}
