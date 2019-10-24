@@ -2,11 +2,6 @@
 import { ThemeProvider } from 'styled-components'
 import { TabProvider } from '@horizin/react-hooks-tabs'
 import { PortalProvider, PortalTree } from '@horizin/react-hooks-portal'
-import {
-	createHistory,
-	LocationProvider,
-} from "@reach/router";
-import createHashSource from 'hash-source'
 
 /* --- Local --- */
 import theme from './assets/theme'
@@ -25,24 +20,9 @@ class Providers extends React.Component {
   // Mounted
   componentDidMount()
   {
-    let source = createHashSource();
-    let history = createHistory(source)
-    this.setState({
-      source,
-      history,
-      isLoading: false,
-    })
-  }
-  // Updated
-  componentDidUpdate()
-  {
-
+    this.setState({isLoading: false})
   }
 
-  // Error Catched
-  componentDidCatch() {
-    
-  }
 
 
   render(){
@@ -50,7 +30,6 @@ class Providers extends React.Component {
     const { element } = this.props
     return(
       isLoading ? null :
-      <LocationProvider history={this.state.history}>
       <ThemeProvider theme={theme}>
         <PortalProvider>
             <TabProvider>
@@ -59,7 +38,6 @@ class Providers extends React.Component {
             </TabProvider>
         </PortalProvider>
       </ThemeProvider>
-      </LocationProvider>
     )
   }
 }

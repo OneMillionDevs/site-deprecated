@@ -16,10 +16,10 @@ const BlogIndex = ({ data }) => {
         </A.Flex>
       </A.Box>
       <A.Container maxWidth={780} py={4}>
-          {posts.filter(({node: post} )=> post.frontmatter.template === 'resources' ).map(({ node: post }) => (
+          {posts.filter(({node: post} )=> post.frontmatter.template === 'resource' ).map(({ node: post }) => (
             <>
               <A.Flex alignEnd color='white' gradient='blueDark' p={3} mb={3} mt={5} minHeight={250}>
-                <A.BackgroundImage ratio={.2} src={post.frontmatter.imageCover} opacity={.3} />
+                <A.BackgroundImage ratio={.2} src={post.frontmatter.image} opacity={.3} />
                 <Link to={post.fields.slug}>
                   <A.Heading as='h2' noMargin xl heavy>{post.frontmatter.title}</A.Heading>
                   <A.Heading as='h5' md>{post.frontmatter.tagline}</A.Heading>
@@ -31,7 +31,7 @@ const BlogIndex = ({ data }) => {
                 </A.Paragraph>
                 <A.Flex between flex={1} mt={3}>
                   <Link to={post.fields.slug}>
-                    <A.Button sm variant='white'>Read Coverage</A.Button>
+                    <A.Button sm variant='white'>View Resource</A.Button>
                   </Link>
                 </A.Flex>
               </A.Box>

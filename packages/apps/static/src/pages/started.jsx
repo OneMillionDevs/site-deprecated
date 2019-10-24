@@ -15,21 +15,47 @@ export default props =>
           <A.Heading xl heavy>Get Started</A.Heading>
           <A.Heading md thin>Interact With the Ethereum Blockchain Today</A.Heading>
           <Atom.Paragraph sm>
-            Start interacting with Ethereum technology via the popular developer tools below. Select from the right wallet, build environment and javascript libraries to start your new project today.
+            So, you’ve made it this far. You’re interested, but not yet sold on the whole “Ethereum” thing. Don’t worry,  everyone was in your position at one point - until they began to truly understand it. Until they had their “ah-ha” Ethereum moment. We’re here to help give you those moments.
           </Atom.Paragraph>
-          <A.HorizontalRule dash my={3} />
           <A.Button xs variant='green'>View All Resources</A.Button>
         </A.Box>
     </A.Flex>
   </A.Flex>
 
   <Atom.Box>
+<Atom.Container maxWidth={780} my={4}>
+  <Atom.Heading lg heavy>A Beginning List of Resources</Atom.Heading>
+  <Atom.Paragraph>
+    The Ethereum community has created a collection of sites, portals, hubs, lists and repos to assist developers just starting with Ethereum. Below you'll find a list of all the resources available to you as a developer.
+  </Atom.Paragraph>
+
+  <Atom.Heading>High Level Knowledge Bases</Atom.Heading>
+  <ul>
+    <li><a href='http://ethereum.org/' target="_blank" >Ethereum Foundation</a></li>
+    <li><a href='https://kauri.io/' target="_blank" >Kauri</a></li>
+    <li><a href='https://ethhub.io/' target="_blank" >EthHub</a></li>
+    <li><a href='' target="_blank" >ConsenSys Developers</a></li>
+    <li><a href='' target="_blank" >ConsenSys Academy</a></li>
+    <li><a href='' target="_blank" ></a></li>
+  </ul>
+  <Atom.Heading>Developer Tools</Atom.Heading>
+  <ul>
+    <li><a href='http://ethereum.org/' target="_blank" >MetaMask</a></li>
+    <li><a href='https://embark.status.im/' target="_blank" >Embark</a></li>
+    <li><a href='https://www.trufflesuite.com/ganache' target="_blank" >Truffle</a></li>
+    <li><a href='' target="_blank" ></a></li>
+  </ul>
+  <Atom.Heading>Javascript Libraries</Atom.Heading>
+  <ul>
+    <li><a href='https://docs.ethers.io/ethers.js/html/index.html' target="_blank" >Ethers.js</a></li>
+    <li><a href='https://github.com/ethereum/web3.js/' target="_blank" >Web3.js</a></li>
+    <li><a href='https://github.com/ethjs' target="_blank" >Eth.js</a></li>
+    <li><a href='' target="_blank" ></a></li>
+  </ul>
+
+</Atom.Container>
   <Atom.Container maxWidth={1080} py={5}>
 
-  <Atom.Heading lg heavy>Installing The Essentials</Atom.Heading>
-    <Atom.Paragraph >
-      When developing with any new technology it's always required to setup a few essentials. The Ethereum stack in addition to installing the regular compilers and loaders, also requires a wallet an ETH to interact with the designated network.
-    </Atom.Paragraph>
 
     <WalletSelection />
     <BuildToolsSelection styled={{mt: 4}} />

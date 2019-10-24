@@ -58,7 +58,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     content: path.resolve(__dirname,"./src/components/templates/Content/index.jsx"),
     news: path.resolve(__dirname,"./src/components/templates/Article/index.jsx"),
     article: path.resolve(__dirname,"./src/components/templates/Article/index.jsx"),
-    resource: path.resolve(__dirname,"./src/components/templates/Article/index.jsx"),
+    resource: path.resolve(__dirname,"./src/components/templates/Resource/index.jsx"),
     coverage: path.resolve(__dirname,"./src/components/templates/Article/index.jsx"),
   }[template || 'article'])
 
@@ -66,7 +66,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   posts.forEach(({ node }, index) => {
     createPage({
       path: node.fields.slug,
-      component: templates('article'),
+      component: templates(node.fields.template),
       context: { 
         id: node.id
       },

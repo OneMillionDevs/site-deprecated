@@ -22,8 +22,14 @@ const site = props.data.site.siteMetadata
       {/* Menu */}
       <A.Flex {...props.styledMenu}>
         <A.Link to='/mission'>
-          <A.Span xs mx={1}>Mission</A.Span>
+          <A.Span xs tag='green' mx={1}>Our Mission</A.Span>
         </A.Link>
+        <Atom.Link to='/beginner'>
+          <A.Span tag='blue' xs mx={1}>Beginner</A.Span>
+        </Atom.Link>
+        <Atom.Link to='/contribute'>
+          <A.Span xs tag='red' mx={1}>Advanced</A.Span>
+        </Atom.Link>
         
 
       </A.Flex>

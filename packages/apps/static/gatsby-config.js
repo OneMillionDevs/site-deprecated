@@ -49,6 +49,7 @@ module.exports = {
           'did': '@kames/3box-state',
           'cms': '@kames/3box-system',
           core: path.resolve(__dirname, './src/components/core'),
+          forms: path.resolve(__dirname, './src/components/forms'),
           templates: path.resolve(__dirname, './src/components/templates'),
           views: path.resolve(__dirname, './src/components/views'),
           query: path.resolve(__dirname, './src/components/query'),

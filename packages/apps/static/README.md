@@ -32,6 +32,12 @@ About
 ### Content
 
 
+#### Ideas
+- Monthly Developer Survey Email
+- Monlthy Guide Resource Pack Email
+- Monthly Analytics Email
+
+
 ### Needs to be built
 Quick Start `/resource/quick-start`
 Initial Setup `/resource/initial-setup`
