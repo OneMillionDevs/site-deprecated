@@ -70,11 +70,11 @@ export default props => (
           />
         </A.Flex>
         <A.Flex column flex={1}>
-          <A.Heading giga heavy>
-            Why 1 Million Devs?
+          <A.Heading xxl heavy>
+            Why 1 Million Developers?
           </A.Heading>
           <A.Heading md>
-            Helping the Ethereum Community Grow and Connect
+            Why we care about growing the Ethereum developer community
           </A.Heading>
           <A.HorizontalRule dash my={3} />
           <A.Paragraph>
@@ -99,10 +99,13 @@ export default props => (
     </Atom.Container>
 
     <Atom.Container my={4}>
-      <A.Heading xl heavy>
-        What Is The 1 Million Devs Initiative?
+      <A.Heading xl heavy center>
+        What Is The '1 Million Developers' Initiative?
       </A.Heading>
-      <A.Flex alignCenter flex={1} mt={5}>
+      <A.Heading md center>
+        What we hope to do | What we aim to achieve to achieve
+      </A.Heading>
+      <A.Flex alignCenter flex={1}>
         <A.Flex column flex={1}>
           <A.Heading xl heavy>
             Developer Inspiration
@@ -181,12 +184,10 @@ export default props => (
           />
         </A.Flex>
         <A.Flex column flex={1}>
-          <A.Heading giga heavy>
+          <A.Heading xxl heavy>
             How Will We Do It?
           </A.Heading>
-          <A.Heading md>
-            Helping the Ethereum Community Grow and Connect
-          </A.Heading>
+          <A.Heading md>How we plan to carry out our mission</A.Heading>
           <A.HorizontalRule dash my={3} />
           <A.Paragraph>
             One Million Developers, as a site, aims to act as a hub for
@@ -213,11 +214,11 @@ export default props => (
 
     <Atom.Container>
       <A.Flex column flex={1} order={1} p={5}>
-        <A.Heading xl heavy>
+        <A.Heading xl heavy center>
           What Now?
         </A.Heading>
         <A.HorizontalRule dash my={3} />
-        <A.Paragraph sm>
+        <A.Paragraph sm center>
           Reaching 1,000,000 Ethereum developers will be no easy task, but it
           will be a victory shared by all. The open, transparent, decentralized,
           composable nature of Ethereum has made the Ethereum community feel

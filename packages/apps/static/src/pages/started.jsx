@@ -44,15 +44,25 @@ export default props => (
         src="https://wallpaperaccess.com/full/1267681.jpg"
       />
 
-      <A.Flex column flex={3} py={50} order={2} p={5} py={7} ml={4} my={5}>
+      <A.Flex
+        center
+        column
+        flex={3}
+        py={50}
+        order={2}
+        p={5}
+        py={7}
+        ml={4}
+        my={5}
+      >
         <A.Box card flex={1} boxShadow={7} maxWidth={620} p={4}>
-          <A.Heading xl heavy>
+          <A.Heading xl heavy center>
             Begin Your Adventure
           </A.Heading>
-          <A.Heading md thin>
+          <A.Heading md thin center>
             Start Interacting With Ethereum Today
           </A.Heading>
-          <Atom.Paragraph sm>
+          <Atom.Paragraph sm center>
             No matter your level of involvement or expertise, we've provided a
             few methods for you to start your Ethereum developer journey.
           </Atom.Paragraph>
