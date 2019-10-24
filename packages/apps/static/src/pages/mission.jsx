@@ -232,10 +232,6 @@ export default props => (
       </A.Flex>
     </Atom.Container>
 
-    <VitalikQote />
-
-    <GetInvolved />
-
     <A.Flex gradient="gray" flex={1}>
       <A.Flex center column flex={3} py={50} minHeight="600px" order={2}>
         <FormUpdates />
