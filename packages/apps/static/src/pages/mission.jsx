@@ -71,13 +71,22 @@ export default props => (
         </A.Flex>
         <A.Flex column flex={1}>
           <A.Heading giga heavy>
-            Why?
+            Why 1 Million Devs?
           </A.Heading>
           <A.Heading md>
             Helping the Ethereum Community Grow and Connect
           </A.Heading>
           <A.HorizontalRule dash my={3} />
           <A.Paragraph>
+            We are Ethereum - the community. As a platform, Ethereum would not
+            exist in its current form if it were not for its dominant community.
+            This community is magnitudes larger than the next biggest blockchain
+            competitor - comprised of the thousands of buidlers, developers,
+            visionaries, entrepreneurs, philosophers, economists,
+            mathematicians, and leaders (and anyone we left out!) who have
+            gotten us to where we are today.
+            <br />
+            <br />
             Every new member of our community is another unique perspective,
             another source of potential talent and tools and ideas, another
             teammate, and another friend. Our goal is to grow and foster this
@@ -91,7 +100,7 @@ export default props => (
 
     <Atom.Container my={4}>
       <A.Heading xl heavy>
-        What?
+        What Is The 1 Million Devs Initiative?
       </A.Heading>
       <A.Flex alignCenter flex={1} mt={5}>
         <A.Flex column flex={1}>
@@ -173,7 +182,7 @@ export default props => (
         </A.Flex>
         <A.Flex column flex={1}>
           <A.Heading giga heavy>
-            How?
+            How Will We Do It?
           </A.Heading>
           <A.Heading md>
             Helping the Ethereum Community Grow and Connect
