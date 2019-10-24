@@ -27,8 +27,14 @@ const site = props.data.site.siteMetadata
         <Atom.Link to='/beginner'>
           <A.Span tag='blue' xs mx={1}>Beginner</A.Span>
         </Atom.Link>
-        <Atom.Link to='/contribute'>
-          <A.Span xs tag='red' mx={1}>Advanced</A.Span>
+        <Atom.Link to='/guide'>
+          <A.Span xxs tag='white' mx={1}>Become A Guide</A.Span>
+        </Atom.Link>
+        <Atom.Link to='/community'>
+          <A.Span xxs tag='white'  mx={1}>Start Community</A.Span>
+        </Atom.Link>
+        <Atom.Link to='/platforms'>
+          <A.Span xxs tag='white'  mx={1}>Platforms</A.Span>
         </Atom.Link>
         
 
@@ -42,6 +48,12 @@ const site = props.data.site.siteMetadata
 
     {/* Right */}
     <Atom.Flex>
+      <A.Link to='/analytics'>
+        <Atom.Span xs mx={2}>Analytics</Atom.Span>
+      </A.Link>
+      <A.Link to='/experiment'>
+        <Atom.Span xs mx={2}>Experiment</Atom.Span>
+      </A.Link>
       <A.Modal content={<FormUpdates />} >
         <A.Span pointer tag='white' xxs>Email Updates</A.Span>
       </A.Modal>

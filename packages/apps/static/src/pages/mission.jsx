@@ -215,7 +215,7 @@ const VitalikQote = props => {
                     <Atom.Heading md>Make a difference in the future of decentralized</Atom.Heading>
                     <Atom.Box my={4}>
                       <Atom.Paragraph>
-                        <em>Whereas most technologies tend to automate workers on the periphery doing menial tasks, blockchains automate away the center. Instead of putting the taxi driver out of a job, blockchain puts Uber out of a job and lets the taxi drivers work with the customer directly.</em>
+                        <em>The killerness of the ecosystem is not the nodes, it's the links - it's the fact that, every single application that gets built is not just an application in its own right, it's also a component that every future thing in the Ethereum ecosystem can benefit from..</em>
                       </Atom.Paragraph>
                         <cite>Vitalik Buterin - Etheruem Founder</cite>
                     </Atom.Box>
@@ -254,8 +254,9 @@ const GetInvolved = props => {
                     <Atom.Heading md>Make a difference in the future of decentralized</Atom.Heading>
                     <Atom.Box my={4}>
                       <Atom.Paragraph>
-                        <em>Donec auctor vehicula turpis. In nulla elit, interdum vel dui at, venenatis fermentum mi. Aenean pretium nulla ac faucibus facilisis. Fusce sit amet felis in turpis pretium congue. Etiam non volutpat nibh, dictum facilisis nulla. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris venenatis nisi nibh, accumsan tempor nibh cursus id.</em>
+                        <em>The killer characteristic of the Ethereum ecosystem is composability - the fact that you can glue or compose a bunch of different protocols or products together into a more complex product, or that they can easily build upon one another, permissionlessly, is a breakthrough. It was described that the internet was architected in a way that if it saw censorship, it would route around that censorship and treat it as damage to the system. The decentralized world wide web will see silos as damage, and route around those..</em>
                       </Atom.Paragraph>
+                      <cite>Joe Lubin - Etheruem Founder</cite>
                     </Atom.Box>
                     <Atom.Heading lg heavy>Become A Guide</Atom.Heading>
                     <Atom.Paragraph>
@@ -266,7 +267,6 @@ const GetInvolved = props => {
                       Donec auctor vehicula turpis. In nulla elit, interdum vel dui at, venenatis fermentum mi. Aenean pretium nulla ac faucibus facilisis. Fusce sit amet felis in turpis pretium congue. Etiam non volutpat nibh, dictum facilisis nulla. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris venenatis nisi nibh, accumsan tempor nibh cursus id.
                     </Atom.Paragraph>
                 </Atom.Box>
-                <cite>Joe Lubin - Etheruem Founder</cite>
              </Atom.Box>
             <Atom.Absolute top={0} bottom={0} right={0} m={-5}>
               <Atom.Image circle card p={1} maxWidth={200} src='https://media.xconomy.com/wordpress/wp-content/images/2017/10/06153519/Joe-Lubin.jpg'/>

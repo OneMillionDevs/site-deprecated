@@ -36,7 +36,7 @@ export default function PageTemplate({ data: { mdx } }) {
             <MDXRenderer>{mdx.body}</MDXRenderer>
           </A.Container>
         </A.Box>
-        <RegionFooter bg='#1e1e2d' color='white' borderTop='3px solid #dc448d' p={2}/>
+        <RegionFooter  bg='#1e1e2d' color='white' borderTop='3px solid #dc448d' py={5}/>
       </A.Flex>
     </>
   )

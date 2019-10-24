@@ -78,63 +78,11 @@ const IndexPage = () => (
       </Flex>
     </Container>
 
-    <Atom.Container maxWidth={780} mt={5}>
-
-      <Atom.Paragraph>
-        What if...
-      </Atom.Paragraph>
-      <Atom.Paragraph>
-        <em>What if the Internet was built differently?</em>
-      </Atom.Paragraph>
-
-      <Atom.Heading lg heavy>Ethereum</Atom.Heading>
-      <Atom.Paragraph >
-        <strong>Ethereum is a public blockchain. </strong> You might have heard about it in recent news. As a public and global blockchain it provides unique features to both users and developers. Users can achieve true digital ownership. And developers can compose and craft applications in new and interesting ways.
-      </Atom.Paragraph>
-
-      <ul>
-        <li>
-          Global Computer (Decentralized Software)
-        </li>
-        <li>
-          Accessible to Everyone (Permissionless Authentication)
-        </li>
-        <li>
-          Decentralized Infrastructure (Cryptocurrency Enabled)
-        </li>
-
-      </ul>
-
-
-      <A.Heading lg heavy>
-        Blockchain - A New Layer of the Internet
-      </A.Heading>
-      <Atom.Paragraph sm>
-        Blockchain technology provides the opportunity to re-think and re-imagine how we connect the Internet. Everything from finance, identity, communications, social networks, data discovery, and more are waiting to be rebuilt.
-      </Atom.Paragraph>
-      <Atom.Heading md>Internet Composability</Atom.Heading>
-      <Atom.Paragraph sm>
-        What makes blockchain technology like Ethereum compelling for developers is the unique ability to build applications built using a public infrastructure. The public infrastructure provides an assortment of blockchain primitives, in addition to public smart contract API endpoints. Blockchain primitives transaction signing, and other decentralized account management facilitate the infrastructure. Public smart contract API endpoints is the software layer of the public infrastructure.
-      </Atom.Paragraph>
-      <Atom.Heading md>Digital Owernship</Atom.Heading>
-      <Atom.Paragraph sm>
-        What makes blockchain technology like Ethereum compelling for developers is the unique ability to build applications built using a public infrastructure. The public infrastructure provides an assortment of blockchain primitives...
-      </Atom.Paragraph>
-      <Atom.Heading md>Scaling Public Internet</Atom.Heading>
-      <Atom.Paragraph sm>
-        What makes blockchain technology like Ethereum compelling for developers is the unique ability to build applications built using a public infrastructure. The public infrastructure provides an assortment of blockchain primitives...
-      </Atom.Paragraph>
-      <Atom.Flex my={4}>
-        <Atom.Link to='/resource/smart-contract-tools'>
-          <Atom.Button xs variant='blue' mr={3}>Smart Contract Tools</Atom.Button>
-        </Atom.Link>
-        <Atom.Link to='/resource/ethereum-roadmap'>
-          <Atom.Button xs variant='green'>The Ethereum Roadmap</Atom.Button>
-        </Atom.Link>
-      </Atom.Flex>
+    <Atom.Container maxWidth={780}>
+      <MainFeature/>
     </Atom.Container>
 
-
+    
 
     <A.Box color="white" gradient="blueDark" py={4}>
 
@@ -313,3 +261,43 @@ const QuestPlaform = props => {
 }
 
 export default IndexPage
+
+
+
+const MainFeature = props => { 
+ return(
+  <Atom.Box>
+    <Atom.Heading lg heavy>What is a Web 2.0 Developer?</Atom.Heading>
+    <Atom.Paragraph>
+      That’s you. The first iteration of the web was basic landing pages, tools, and protocols with limited functionality. Web 2.0 saw the addition of more interactive content, such as web apps, social media networking, and cloud storage. People are the product and data is the price.
+    </Atom.Paragraph>
+    <Atom.Heading lg heavy>What is a Web 3.0 Developer?</Atom.Heading>
+    <Atom.Paragraph>
+      Web 3.0 is an Internet that can handle data, and rules for changing the state of that data, in the way that the Internet handles messaging today — more or less decentralized. an internet where your data is your own, your identity is self-sovereign, and walled gardens are dissolved. an internet where value can be exchanged as easily as data, and your assets are inarguably yours.
+    </Atom.Paragraph>
+
+    <Atom.Heading>You already have most of the skills:</Atom.Heading>
+      <ul>
+        <li>The skills you have gained building products in Web 2.0 are directly transferable to  Web 3.0. </li>
+      </ul>
+    <Atom.Heading>We’ve already done the hard work for you.</Atom.Heading>
+      <ul>
+        <li>In the first few years of blockchain development, we laid the scaffolding to make building on Ethereum easy </li>
+      </ul>
+
+    <Atom.Heading lg heavy>Why you, why now, and why Ethereum?</Atom.Heading>
+    <Atom.Paragraph>
+      You already have the skills necessary to be a great asset to the “history of the future.” Many of the coding skills you use daily are transferable to what we do. You also get to play with a whole new set of developer tools and write smart contracts (aka programmable money). 
+    </Atom.Paragraph>
+
+    <Atom.Paragraph>
+      There’s an old Chinese proverb that was adapted to the blockchain space: “The best time to plant a tree was 20 years ago, the second best time is now.” The protocols are aligned, the dev tools are built, and teams are ramping up hiring. When we look back on today, you’ll still be able to say you planted one of the first trees in the landscape.
+    </Atom.Paragraph>
+
+    <Atom.Paragraph>
+      You understand why Web 3.0 is important, but you might not be sold on why Ethereum is the right place for you. There are other projects competing to be “The World Computer,” but Ethereum remains the gold standard for smart contracts and decentralized apps (dApps). With the largest developer community, the largest user base, and the most amount of tools at your disposal, Ethereum is the logical choice for contributing to the Web3 movement.
+    </Atom.Paragraph>
+
+
+  </Atom.Box>
+)}

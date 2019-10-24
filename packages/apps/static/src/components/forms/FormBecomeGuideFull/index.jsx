@@ -41,9 +41,19 @@ export default () => {
       />
       <A.Field
         disabled={isSubmit}
-        name="organization"
-        label='Organization'
-        placeholder="Organization"
+        name="github"
+        label='Github'
+        placeholder="Github"
+      />
+      <A.Field
+        disabled={isSubmit}
+        inputAs='textarea'
+        name="interests"
+        label='Interests'
+        placeholder="What are you interests in the Ethereum ecosystem?"
+        styledInput={{
+          minHeight: 100
+        }}
       />
       <A.Button type="submit" lg disabled={isSubmit} fullWidth width={1} variant="green">
         {

@@ -1,19 +1,19 @@
 import { Site } from "templates"
-import { FormBecomeGuide, FormBecomeGuideFull } from 'forms'
+import { FormBecomeGuide, FormBecomeGuideFull, FormBecomeCommunityManager } from 'forms'
 
 const GuideRegistration = props => { 
  return(
-  <Atom.Flex card center column>
+  <Atom.Flex card center column flex={1}>
     <Atom.Heading lg heavy>Ethereum Community Guide</Atom.Heading>
     <Atom.Heading sm normal>Help Etheruem Reach it's Full Potential</Atom.Heading>
     <Atom.HorizontalRule dash center />
-    <Atom.Flex flex={1} p={3} width='100%'>
+    <Atom.Flex flex={2} p={3} width='100%'>
       <Atom.Flex flex={1}>
-        <FormBecomeGuide/>
+        <FormBecomeGuide />
       </Atom.Flex>
       <Atom.Flex center column flex={1}>
-        <Atom.Box>
-          <Atom.Image card p={1} src='https://imgur.com/9hqmKMZ.png' maxWidth={180}/>
+        <Atom.Box card p={1} display='inline-block'>
+          <Atom.Image src='https://imgur.com/bXAJm7B.png' maxWidth={180} display='inline-block'/>
         </Atom.Box>
       </Atom.Flex>
     </Atom.Flex>
@@ -29,67 +29,64 @@ export default props => (
           <A.BackgroundImage
             opacity={0.3}
             ratio={0.5}
-            src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80"
+            src="https://images.unsplash.com/photo-1476304884326-cd2c88572c5f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80"
           />
           <A.Heading giga heavy>
-            Become A Guide
+            Start a Community
           </A.Heading>
           <A.Heading lg thin>
-            Help Grow the Next Wave of Ethereum Developers
+            Get Support Starting a Community Online and in the Real World
           </A.Heading>
         </A.Box>
       </A.Box>
   
-      <Atom.Container maxWidth={1080}>
-          <Atom.Flex alignCenter card between mt={-50} p={4} mt={-50}>
-            <Atom.Box>
-              <Atom.Heading thin>Get The Ethereum Guide Resource Kit</Atom.Heading>
-              <Atom.Paragraph sm heavy mb={0}>Teach Others. Start a meetup. Start a Open Source project.</Atom.Paragraph>
+      <Atom.Container maxWidth={980}>
+        <Atom.Flex alignCenter card between mt={-50} p={4} mt={-50}>
+          <Atom.Box>
+            <Atom.Heading thin>Community Manager Resource Kit</Atom.Heading>
+            <Atom.Paragraph sm heavy mb={0}>Get your network involved. <strong>And get rewarded for doing it</strong>.</Atom.Paragraph>
+          </Atom.Box>
+          <Atom.Modal content={<GuideRegistration/>} >
+            <Atom.Button variant='green'>Download Guide Kit</Atom.Button>  
+          </Atom.Modal>
+        </Atom.Flex>
+      </Atom.Container>
+
+
+      <Atom.Container maxWidth={1080} my={5}>
+        <Atom.Flex>
+          <Atom.Flex center column flex={1}>
+            <Atom.Box p={4}>
+              <Atom.Image card p={1} boxShadow={4} src='https://imgur.com/bXAJm7B.png' maxWidth={320}/>
             </Atom.Box>
-            <Atom.Modal content={<GuideRegistration/>} >
-              <Atom.Button variant='green'>Download Guide Kit</Atom.Button>  
-            </Atom.Modal>
           </Atom.Flex>
+          <Atom.Flex column card between p={4} my={4} flex={1}>
+              <Atom.Box>
+                <Atom.Heading md heavy>Have A Passion for Community Management?</Atom.Heading>
+                <Atom.Paragraph>
+                  Connect the dots. Organize the people. And help shape the foundation for Ethereum to blossom. <strong>People are the heart of a project.</strong> It's essential we teach new developers best practices. Get users familiar with best practices 
+                </Atom.Paragraph>
+    
+                <Atom.Heading>Earn DEV token for Onboarding Developers</Atom.Heading>
+                <Atom.Paragraph>
+                  That is where the Guide program comes in. By curating a list of guides, segregated by expertise, we hope to allow leaders to find followers, and followers to find leaders - and to encourage other parties to become leaders in the space.
+                </Atom.Paragraph>
+                <Atom.Modal content={<GuideRegistration/>} >
+                  <Atom.Button variant='green'>Download Community Guide Kit</Atom.Button>  
+                </Atom.Modal>
+              </Atom.Box>
+          </Atom.Flex>
+        </Atom.Flex>
       </Atom.Container>
       
     <Atom.Box textCenter mt={5}>
-        <Atom.Heading xxl heavy>Push Ethereum Forward</Atom.Heading>
-        <Atom.Heading lg thin>Help the network grow, evolve and adapt.</Atom.Heading>
+        <Atom.Heading xxl heavy>Join the Community Manager Network</Atom.Heading>
+        <Atom.Heading lg thin>Get connected with the people that connect the people.</Atom.Heading>
      </Atom.Box>
-      <Atom.Container maxWidth={980} card my={5}>
-        <Atom.Flex alignCenter>
-          <Atom.Flex flex={1} p={4}>
-            <Atom.Box>
-              <Atom.Image card p={1} boxShadow={4} src='https://imgur.com/9hqmKMZ.png' maxWidth={320}/>
-            </Atom.Box>
-          </Atom.Flex>
-          <Atom.Flex flex={2}>
-            <FormBecomeGuideFull/>
-          </Atom.Flex>
-        </Atom.Flex>
+      <Atom.Container maxWidth={600} card my={5}>
+        <FormBecomeCommunityManager/>
       </Atom.Container>
-  
-      <Atom.Container maxWidth={680} my={5}>
-        <Atom.Flex column card between p={4} my={4}>
-            <Atom.Heading lg heavy>Estabish Your Presence in the Commuity</Atom.Heading>
-            <Atom.Paragraph>
-              The Ethereum community is full of educators, mentors, and thought leaders, each individually delivering their own thoughts and guidance through a wide array of disparate mediums. For new ecosystem participants, filtering out the signal from the noise - and determining who to follow and where to follow them - can be a difficult task. 
-            </Atom.Paragraph>
 
-            <Atom.Heading>Mentor 1-3 Developers</Atom.Heading>
-            <Atom.Paragraph>
-              That is where the Guide program comes in. By curating a list of guides, segregated by expertise, we hope to allow leaders to find followers, and followers to find leaders - and to encourage other parties to become leaders in the space.
-            </Atom.Paragraph>
-            <Atom.Heading>Regularily Publish Content</Atom.Heading>
-            <Atom.Paragraph>
-              That is where the Guide program comes in. By curating a list of guides, segregated by expertise, we hope to allow leaders to find followers, and followers to find leaders - and to encourage other parties to become leaders in the space.
-            </Atom.Paragraph>
-            <Atom.Heading>Maintain an Open Source Project</Atom.Heading>
-            <Atom.Paragraph>
-              That is where the Guide program comes in. By curating a list of guides, segregated by expertise, we hope to allow leaders to find followers, and followers to find leaders - and to encourage other parties to become leaders in the space.
-            </Atom.Paragraph>
-        </Atom.Flex>
-      </Atom.Container>
        
       <Atom.Container my={5}>
         <A.Flex flex={1}>
