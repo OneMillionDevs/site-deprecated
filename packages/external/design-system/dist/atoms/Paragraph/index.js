@@ -26,6 +26,7 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 var Span = (0, _styledComponents.default)(_Text.default)(_templateObject());
 Span.defaultProps = {
   as: 'p',
+  fontSize: '.9em',
   display: 'block',
   fontFamily: 'Ubuntu',
   fontWeight: 'normal',

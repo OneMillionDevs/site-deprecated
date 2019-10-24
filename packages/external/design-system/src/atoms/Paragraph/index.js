@@ -8,6 +8,7 @@ const Span = styled(Text)
 
 Span.defaultProps = {
   as: 'p',
+  fontSize: '.9em',
   display: 'block',
   fontFamily: 'Ubuntu',
   fontWeight: 'normal',
