@@ -161,7 +161,7 @@ const IndexPage = () => (
 
     <Atom.Container>
       <A.Flex alignCenter flex={1} mt={5}>
-        <A.Flex column flex={1} mr={5}>
+        <A.Flex center column flex={1} mr={5}>
           <A.Heading xxl heavy center>
             Embark On Your Web3 Journey
           </A.Heading>
@@ -175,9 +175,11 @@ const IndexPage = () => (
             a solid foundation, or hop right in by exploring and installing the
             basic tools required to operate effectively in the Ethereum space.
           </A.Paragraph>
-          <Atom.Button variant="green">Get Started</Atom.Button>
+          <A.Link to="/started">
+            <Atom.Button variant="green">Get Started</Atom.Button>
+          </A.Link>
         </A.Flex>
-        <A.Flex column flex={1}>
+        <A.Flex center column flex={1}>
           <A.Heading xxl heavy center>
             Contribute
           </A.Heading>
@@ -196,7 +198,11 @@ const IndexPage = () => (
             the “Contribute” page to learn more about the different ways you can
             help the cause.
           </A.Paragraph>
-          <Atom.Button variant="blue">Contribute</Atom.Button>
+          <A.Link to="/contribute">
+            <Atom.Button variant="blue" center>
+              Contribute
+            </Atom.Button>
+          </A.Link>
         </A.Flex>
       </A.Flex>
     </Atom.Container>
