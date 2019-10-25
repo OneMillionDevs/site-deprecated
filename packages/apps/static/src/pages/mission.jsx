@@ -123,8 +123,8 @@ export default props => (
             those “ah-ha” moments to developers who are new to the ecosystem, to
             inspire them to hop on board the train (chugga chugga).
           </A.Paragraph>
-          <A.Link to="/contribute">
-            <A.Button>Make An Impact</A.Button>
+          <A.Link to="/platforms">
+            <A.Button>Get Inspired</A.Button>
           </A.Link>
         </A.Flex>
         <A.Flex column flex={1} order={1} p={5}>
