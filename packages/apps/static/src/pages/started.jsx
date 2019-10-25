@@ -66,6 +66,17 @@ export default props => (
             No matter your level of involvement or expertise, we've provided a
             few methods for you to start your Ethereum developer journey.
           </Atom.Paragraph>
+          <A.Flex center my={1}>
+            <A.Span xs tag="green" mx={3}>
+              Web2 Dev
+            </A.Span>
+            <A.Span xs tag="blue" mx={3}>
+              Beginner Web3 Dev
+            </A.Span>
+            <A.Span xs tag="primary" mx={3}>
+              Expert Web3 Dev
+            </A.Span>
+          </A.Flex>
         </A.Box>
       </A.Flex>
     </A.Flex>
