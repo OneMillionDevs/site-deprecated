@@ -123,9 +123,11 @@ export default props => (
             those “ah-ha” moments to developers who are new to the ecosystem, to
             inspire them to hop on board the train (chugga chugga).
           </A.Paragraph>
-          <A.Link to="/platforms">
-            <A.Button>Get Inspired</A.Button>
-          </A.Link>
+          <A.Container align="center">
+            <A.Link to="/platforms">
+              <A.Button variant="green">Get Inspired</A.Button>
+            </A.Link>
+          </A.Container>
         </A.Flex>
         <A.Flex column flex={1} order={1} p={5}>
           <A.Heading xl heavy>
@@ -145,11 +147,13 @@ export default props => (
             “contributing” by connecting them to the tools, resources, and
             platforms they need.
           </A.Paragraph>
-          <A.Link to="/contribute">
-            <A.Button>Make An Impact</A.Button>
-          </A.Link>
+          <A.Container align="center">
+            <A.Link to="/started">
+              <A.Button variant="green">Learn the Basics</A.Button>
+            </A.Link>
+          </A.Container>
         </A.Flex>
-        <A.Flex column flex={1} order={1} p={5}>
+        <A.Flex column flex={1} order={1}>
           <A.Heading xl heavy>
             Contribution
           </A.Heading>
@@ -167,9 +171,11 @@ export default props => (
             primary goals - one of those goals being the pursuit of 1,000,000
             Ethereum developers.
           </A.Paragraph>
-          <A.Link to="/contribute">
-            <A.Button>Make An Impact</A.Button>
-          </A.Link>
+          <A.Container align="center">
+            <A.Link to="/contribute">
+              <A.Button variant="green">Make An Impact</A.Button>
+            </A.Link>
+          </A.Container>
         </A.Flex>
       </A.Flex>
     </Atom.Container>
@@ -230,14 +236,15 @@ export default props => (
           effectively channeled towards the community’s primary goals - one of
           those goals being the pursuit of 1,000,000 Ethereum developers.
         </A.Paragraph>
+
         <A.Link to="/started">
-          <A.Button>Learn</A.Button>
+          <A.Button variant="green">Learn</A.Button>
         </A.Link>
         <A.Link to="/contribute">
-          <A.Button>Contribute</A.Button>
+          <A.Button variant="green">Contribute</A.Button>
         </A.Link>
         <A.Link to="/news">
-          <A.Button>Attend an Event</A.Button>
+          <A.Button variant="green">Attend an Event</A.Button>
         </A.Link>
       </A.Flex>
     </Atom.Container>
