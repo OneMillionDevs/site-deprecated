@@ -373,7 +373,7 @@ const GetInvolved = props => {
                 <cite>Joe Lubin - Etheruem Founder</cite>
               </Atom.Box>
               <Atom.Heading lg heavy>
-                Become A Guide
+                Become A Mentor
               </Atom.Heading>
               <Atom.Paragraph>
                 Donec auctor vehicula turpis. In nulla elit, interdum vel dui

@@ -92,8 +92,8 @@ const Branding = props => {
             </A.Heading>
             <A.HorizontalRule dash left />
             <A.Flex {...props.styledMenu}>
-              <A.Link to="/guide">
-                <A.Span xs>Guide Program</A.Span>
+              <A.Link to="/mentor">
+                <A.Span xs>Mentor Program</A.Span>
               </A.Link>
               <A.Link to="/community">
                 <A.Span xs>Community Program</A.Span>
