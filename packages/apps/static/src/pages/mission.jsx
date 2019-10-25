@@ -151,7 +151,7 @@ export default props => (
         </A.Flex>
         <A.Flex column flex={1} order={1} p={5}>
           <A.Heading xl heavy>
-            Developer Contribution
+            Contribution
           </A.Heading>
           <A.HorizontalRule dash my={3} />
           <A.Paragraph sm>
