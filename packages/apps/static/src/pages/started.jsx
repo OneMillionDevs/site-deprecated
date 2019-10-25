@@ -10,7 +10,7 @@ const GuideRegistration = props => {
   return (
     <Atom.Flex card center column flex={1}>
       <Atom.Heading lg heavy>
-        Ethereum Community Guide
+        Ethereum Community Mentor
       </Atom.Heading>
       <Atom.Heading sm normal>
         Help Etheruem Reach it's Full Potential
@@ -455,7 +455,7 @@ const BecomeAGuide = props => {
         <Atom.Flex column card between p={4} my={4} flex={1}>
           <Atom.Box>
             <Atom.Heading lg heavy>
-              Become A Guide
+              Become A Mentor
             </Atom.Heading>
             <Atom.Paragraph>
               Invite new people to ecosystem, regularily publish content or help
@@ -491,7 +491,7 @@ const BecomeAGuide = props => {
             </Atom.Flex>
             <Atom.Flex>
               <Atom.Modal content={<GuideRegistration />}>
-                <Atom.Button variant="primary">Guide Program</Atom.Button>
+                <Atom.Button variant="primary">Mentor Program</Atom.Button>
               </Atom.Modal>
               <Atom.Button variant="green" ml={3}>
                 View Kudos
@@ -566,7 +566,7 @@ const CommunityDevelopment = props => {
             </Atom.Paragraph>
             <Atom.Modal content={<GuideRegistration />}>
               <Atom.Button variant="green">
-                Download Community Guide Kit
+                Download Community Mentor Kit
               </Atom.Button>
             </Atom.Modal>
           </Atom.Box>

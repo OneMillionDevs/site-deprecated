@@ -35,11 +35,6 @@ const Branding = props => {
               Contribute
             </A.Span>
           </Atom.Link>
-          <Atom.Link to="/team">
-            <A.Span xxs tag="white" mx={1}>
-              Team
-            </A.Span>
-          </Atom.Link>
           <Atom.Link to="/mentors">
             <A.Span xxs tag="white" mx={1}>
               Mentors
@@ -74,6 +69,11 @@ const Branding = props => {
             Resources
           </Atom.Span>
         </A.Link>
+        <Atom.Link to="/team">
+          <A.Span xxs tag="white" mx={1}>
+            Team
+          </A.Span>
+        </Atom.Link>
         <A.Modal content={<FormUpdates />}>
           <A.Span pointer tag="white" xxs>
             Subscribe

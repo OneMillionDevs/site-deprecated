@@ -3,18 +3,15 @@ import { FormJoinCoalition } from "core/actions"
 
 export default props => (
   <Site>
-    <A.Box>
-      <A.Box fullWidth color="white" gradient="blueOcean" py={6} textCenter>
-        <A.BackgroundImage
-          opacity={0.3}
-          ratio={0.3}
-          src="https://images.ui8.net/uploads/preview_6_1569070974155.png"
-        />
-        <A.Heading giga heavy>
-          Upcoming Events
+    <A.Box color="white" gradient="blueDark" py={4} textCenter>
+      <A.Flex between px={4}>
+        <A.Heading lg heavy>
+          Events
         </A.Heading>
-        <A.Heading lg>Find in-person events near you!</A.Heading>
-      </A.Box>
+        <A.Button xs variant="green">
+          Add Event
+        </A.Button>
+      </A.Flex>
     </A.Box>
   </Site>
 )
