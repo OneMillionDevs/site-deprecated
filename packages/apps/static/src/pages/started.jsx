@@ -290,11 +290,24 @@ export default props => (
           </A.Heading>
           <A.HorizontalRule dash my={3} />
           <A.Paragraph>
-            You've made it far enough to consider yourself a Web3 citizen!
-            Congratulations! Welcome to the future. We're glad to have you
-            onboard. To get you started developing on Ethereum, we've provided
-            two distinct paths for you to follow:
+            You're already a Web3 master. You don't need these platforms or
+            resources! You're busy cranking out code and content! Well don't
+            worry - we need your participation more than anyone else's.
           </A.Paragraph>
+          <A.Paragraph>
+            The One Million Developers initiative is meant to be an open,
+            collaborative effort, owned by no one, but stewarded by everyone. We
+            cannot reach our goal of 1,000,000 developers alone. We need
+            collaboration with, and contribution from, the community.
+          </A.Paragraph>
+          <A.Paragraph>
+            Regardless of your skillset, experience, or background, there is
+            something for you to do. Head on over to the{" "}
+            <A.Link to="/contribute">Contribute</A.Link> page to learn more.
+          </A.Paragraph>
+          <A.Link to="/contribute">
+            <A.Button>Start Contributing</A.Button>
+          </A.Link>
         </A.Flex>
       </A.Flex>
     </Atom.Container>
