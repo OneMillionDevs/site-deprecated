@@ -1,5 +1,6 @@
 import { Site } from "templates"
 import { FormJoinCoalition } from "core/actions"
+import { FormBecomeGuide, FormBecomeGuideFull } from "forms"
 
 export default props => (
   <Site>
@@ -18,6 +19,20 @@ export default props => (
         </A.Heading>
       </A.Box>
     </A.Box>
+
+    <Atom.Container maxWidth={1080}>
+      <Atom.Flex alignCenter card between mt={-50} p={4} mt={-50}>
+        <Atom.Box>
+          <Atom.Heading thin>Become a Mentor</Atom.Heading>
+          <Atom.Paragraph sm heavy mb={0}>
+            Teach Others. Start a meetup. Start a Open Source project.
+          </Atom.Paragraph>
+        </Atom.Box>
+        <A.Link to="/guide">
+          <Atom.Button variant="green">Mentor Program</Atom.Button>
+        </A.Link>
+      </Atom.Flex>
+    </Atom.Container>
 
     <A.Container py={5}>
       <A.Heading xxl heavy center>
@@ -242,6 +257,35 @@ const CardLarge = props => {
           </Atom.Heading>
           <Atom.Paragraph sm>{props.summary}</Atom.Paragraph>
         </Atom.Box>
+      </Atom.Flex>
+    </Atom.Flex>
+  )
+}
+
+const GuideRegistration = props => {
+  return (
+    <Atom.Flex card center column>
+      <Atom.Heading lg heavy>
+        Ethereum Community Guide
+      </Atom.Heading>
+      <Atom.Heading sm normal>
+        Help Etheruem Reach it's Full Potential
+      </Atom.Heading>
+      <Atom.HorizontalRule dash center />
+      <Atom.Flex flex={1} p={3} width="100%">
+        <Atom.Flex flex={1}>
+          <FormBecomeGuide />
+        </Atom.Flex>
+        <Atom.Flex center column flex={1}>
+          <Atom.Box>
+            <Atom.Image
+              card
+              p={1}
+              src="https://imgur.com/9hqmKMZ.png"
+              maxWidth={180}
+            />
+          </Atom.Box>
+        </Atom.Flex>
       </Atom.Flex>
     </Atom.Flex>
   )

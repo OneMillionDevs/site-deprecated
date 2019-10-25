@@ -40,7 +40,7 @@ const Branding = props => {
               Team
             </A.Span>
           </Atom.Link>
-          <Atom.Link to="/guide">
+          <Atom.Link to="/mentors">
             <A.Span xxs tag="white" mx={1}>
               Mentors
             </A.Span>
