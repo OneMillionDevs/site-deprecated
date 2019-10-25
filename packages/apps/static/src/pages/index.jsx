@@ -64,45 +64,66 @@ const IndexPage = () => (
       </Flex>
     </Flex>
 
-    <Atom.Flex alignCenter between color='white' gradient='blueDark' p={4} my={3} m={5} borderRadius={30}>
+    <Atom.Flex
+      alignCenter
+      between
+      color="white"
+      gradient="blueDark"
+      p={4}
+      my={3}
+      m={5}
+      borderRadius={30}
+    >
       <Atom.Heading noMargin>200,230 Active Developers</Atom.Heading>
       <Atom.Button>Sign Pledge</Atom.Button>
     </Atom.Flex>
 
     <Container mt={5}>
       <Flex center column>
+        <Heading xl heavy italic>
+          Take Part In <br />
+        </Heading>
         <Heading xxl heavy>
           The Next Internet Revolution
         </Heading>
-        <Atom.Span fontWeight={300} tag='white' my={3}>Web3 - Built with Ethereum Ideas & Technology</Atom.Span>
+        <Atom.Span fontWeight={300} tag="white" my={3}>
+          Web3 - Built with Ethereum Ideas & Technology
+        </Atom.Span>
       </Flex>
     </Container>
 
-    <Atom.Container maxWidth={780}>
-      <MainFeature/>
+    <Atom.Container left maxWidth={780}>
+      <MainFeature />
     </Atom.Container>
 
-    
-
     <A.Box color="white" gradient="blueDark" py={4}>
-
       <A.Container my={4}>
-
         <Atom.Box textCenter>
-          <Atom.Heading xxl heavy center>Developer Resource Network</Atom.Heading>
+          <Atom.Heading xxl heavy center>
+            Discover Your "A-Ha" Moment
+          </Atom.Heading>
           <Atom.Paragraph>
-            Discover the Tool that is Perfect For You.
+            If you’re not sold yet, don’t worry - in the world of Ethereum,
+            moving from a state of “intrigued” to “sold” typically takes the
+            discovery of an “ah-ha” moment - a moment when things finally click,
+            and the user understands why so many people believe an economic and
+            digital [r]evolution is taking place. <br />
+            In the past, discovering that “ah-ha” moment could take months.
+            Maybe years. Luckily, the Ethereum community has since built some
+            tools to help.
           </Atom.Paragraph>
-          <Atom.Span xxs tag='white'>Click here to learn <strong>why</strong> and <strong>how</strong> we promote community tools.</Atom.Span>
+          <Atom.Span xxs tag="white">
+            Click here to learn <strong>why</strong> and <strong>how</strong> we
+            promote community tools.
+          </Atom.Span>
         </Atom.Box>
 
         <Atom.Flex gutter3 my={4} flex={1}>
-
           <PlatformCard
-            title='Gitcoin Quests'
-            tagline='Battle the Baddies and Learn about Etheruem'
-            summary='Nulla malesuada, nisi in mollis volutpat, urna mi ultrices libero, non fermentum metus ante auctor eros. Nullam a facilisis felis.'
-            imageCover='https://i.imgur.com/cHtxC04.png'
+            title="Gitcoin Quests"
+            tagline="Battle the Baddies and Learn about Etheruem"
+            summary="Gitcoin Quests is a fun, gamified way to learn about the web3 ecosystem, compete with your friends, earn rewards, and level up your decentralization-fu!"
+            imageCover="https://i.imgur.com/cHtxC04.png"
           />
           {/* <PlatformCard
             title='3Box Developer Profile'
@@ -111,22 +132,80 @@ const IndexPage = () => (
             imageCover='https://i.imgur.com/DpyjcVt.png'
           /> */}
           <PlatformCard
-            title='EthQuest'
-            tagline='Challenge Yourself To Complete All Tasks'
-            summary='Nulla malesuada, nisi in mollis volutpat, urna mi ultrices libero, non fermentum metus ante auctor eros. Nullam a facilisis felis.'
-            imageCover='https://i.imgur.com/vaTcwti.png'
+            title="RAPID Adventures"
+            tagline="Earn Rewards for Interacting With Ethereum"
+            summary="RAPID Adventures provides a gamified way to interact with the Ethereum ecosystem itself. Whether its learning about how to set up a wallet, deploying your first contract, or interacting with some of the amazing dApps that have already been built, RAPID Adventures introduces you to Ethereum in an immersive and rewarding way."
+            imageCover="https://i.imgur.com/vaTcwti.png"
           />
           <PlatformCard
-            title='Add Application'
-            tagline='Create A New Application to Share'
-            summary='Nulla malesuada, nisi in mollis volutpat, urna mi ultrices libero, non fermentum metus ante auctor eros. Nullam a facilisis felis.'
-            imageCover='https://s3.envato.com/files/f209c8a8-c7fc-49be-a948-6aa185b7fb4b/inline_image_preview.jpg'
+            title="Add Application"
+            tagline="Create A New Application to Share"
+            summary="This site is meant to be an open, communal hub of resources! Want your platform featured on One Million Devs? Submit a request here!"
+            imageCover="https://s3.envato.com/files/f209c8a8-c7fc-49be-a948-6aa185b7fb4b/inline_image_preview.jpg"
           />
-
         </Atom.Flex>
-
       </A.Container>
     </A.Box>
+
+    <Container mt={5}>
+      <Flex center column>
+        <Heading xxl heavy>
+          Start Buidling
+        </Heading>
+        <Atom.Paragraph>
+          What are you waiting for? Dive head-first into the action by
+          journeying down the path of your choice:
+        </Atom.Paragraph>
+      </Flex>
+    </Container>
+
+    <Atom.Container>
+      <A.Flex alignCenter flex={1} mt={5}>
+        <A.Flex center column flex={1} mr={5}>
+          <A.Heading xxl heavy center>
+            Embark On Your Web3 Journey
+          </A.Heading>
+          <A.Heading md center>
+            Learn about Ethereum and how to develop decentralized applications
+          </A.Heading>
+          <A.HorizontalRule dash my={3} />
+          <A.Paragraph>
+            Kickstart your Ethereum developer journey by getting hands on with
+            buidling dApps. Leverage easy-to-use educational platforms to build
+            a solid foundation, or hop right in by exploring and installing the
+            basic tools required to operate effectively in the Ethereum space.
+          </A.Paragraph>
+          <A.Link to="/started">
+            <Atom.Button variant="green">Get Started</Atom.Button>
+          </A.Link>
+        </A.Flex>
+        <A.Flex center column flex={1}>
+          <A.Heading xxl heavy center>
+            Contribute
+          </A.Heading>
+          <A.Heading md center>
+            Help the Ethereum community grow and connect
+          </A.Heading>
+          <A.HorizontalRule dash my={3} />
+          <A.Paragraph>
+            Are you already an Ethereum veteran and want to contribute to the
+            One Million Developers movement? Whether you’re a developer,
+            journalist, economist, or armchair philosopher, no matter your
+            background or skillset, you can contribute to Ethereum’s growth by
+            supporting the One Million Developers initiative. Whether it is
+            referring friends, publishing content, curating experiences,
+            developing platforms, or showing off the work you've done, check out
+            the “Contribute” page to learn more about the different ways you can
+            help the cause.
+          </A.Paragraph>
+          <A.Link to="/contribute" mb={3}>
+            <Atom.Button variant="blue" center>
+              Contribute
+            </Atom.Button>
+          </A.Link>
+        </A.Flex>
+      </A.Flex>
+    </Atom.Container>
 
     <A.Flex gradient="gray" flex={1}>
       <A.Flex center column flex={3} py={50} minHeight="600px" order={2}>
@@ -134,20 +213,21 @@ const IndexPage = () => (
       </A.Flex>
     </A.Flex>
   </Site>
-
 )
 const PlatformCard = props => {
   return (
-    <Atom.Flex column >
+    <Atom.Flex column>
       <A.Flex center column flex={1}>
         <A.Image src={props.imageCover} />
       </A.Flex>
-      <Atom.Box bg='white' color='charcoal' p={3}>
-        <Atom.Heading md heavy>{props.title}</Atom.Heading>
-        <Atom.Heading sm thin>{props.tagline}</Atom.Heading>
-        <Atom.Paragraph xs>
-          {props.summary}
-        </Atom.Paragraph>
+      <Atom.Box bg="white" color="charcoal" p={3}>
+        <Atom.Heading md heavy>
+          {props.title}
+        </Atom.Heading>
+        <Atom.Heading sm thin>
+          {props.tagline}
+        </Atom.Heading>
+        <Atom.Paragraph xs>{props.summary}</Atom.Paragraph>
         <Atom.Flex justifyEnd flex={1}>
           <Atom.Button xs>Go</Atom.Button>
         </Atom.Flex>
@@ -262,42 +342,73 @@ const QuestPlaform = props => {
 
 export default IndexPage
 
+const MainFeature = props => {
+  return (
+    <Atom.Box>
+      <Atom.Heading lg heavy left>
+        What is a Web 2.0 Developer?
+      </Atom.Heading>
+      <Atom.Paragraph>
+        That’s you. The first iteration of the web was basic landing pages,
+        tools, and protocols with limited functionality. Web 2.0 saw the
+        addition of more interactive content, such as web apps, social media
+        networking, and cloud storage. People are the product and data is the
+        price.
+      </Atom.Paragraph>
+      <Atom.Heading lg heavy>
+        What is a Web 3.0 Developer?
+      </Atom.Heading>
+      <Atom.Paragraph>
+        Web 3.0 is an Internet that can handle data, and rules for changing the
+        state of that data, in the way that the Internet handles messaging today
+        — more or less decentralized. an internet where your data is your own,
+        your identity is self-sovereign, and walled gardens are dissolved. an
+        internet where value can be exchanged as easily as data, and your assets
+        are inarguably yours.
+      </Atom.Paragraph>
 
-
-const MainFeature = props => { 
- return(
-  <Atom.Box>
-    <Atom.Heading lg heavy>What is a Web 2.0 Developer?</Atom.Heading>
-    <Atom.Paragraph>
-      That’s you. The first iteration of the web was basic landing pages, tools, and protocols with limited functionality. Web 2.0 saw the addition of more interactive content, such as web apps, social media networking, and cloud storage. People are the product and data is the price.
-    </Atom.Paragraph>
-    <Atom.Heading lg heavy>What is a Web 3.0 Developer?</Atom.Heading>
-    <Atom.Paragraph>
-      Web 3.0 is an Internet that can handle data, and rules for changing the state of that data, in the way that the Internet handles messaging today — more or less decentralized. an internet where your data is your own, your identity is self-sovereign, and walled gardens are dissolved. an internet where value can be exchanged as easily as data, and your assets are inarguably yours.
-    </Atom.Paragraph>
-
-    <Atom.Heading>You already have most of the skills:</Atom.Heading>
+      <Atom.Heading>You already have most of the skills:</Atom.Heading>
       <ul>
-        <li>The skills you have gained building products in Web 2.0 are directly transferable to  Web 3.0. </li>
+        <li>
+          The skills you have gained building products in Web 2.0 are directly
+          transferable to Web 3.0.{" "}
+        </li>
       </ul>
-    <Atom.Heading>We’ve already done the hard work for you.</Atom.Heading>
+      <Atom.Heading>We’ve already done the hard work for you.</Atom.Heading>
       <ul>
-        <li>In the first few years of blockchain development, we laid the scaffolding to make building on Ethereum easy </li>
+        <li>
+          In the first few years of blockchain development, we laid the
+          scaffolding to make building on Ethereum easy{" "}
+        </li>
       </ul>
 
-    <Atom.Heading lg heavy>Why you, why now, and why Ethereum?</Atom.Heading>
-    <Atom.Paragraph>
-      You already have the skills necessary to be a great asset to the “history of the future.” Many of the coding skills you use daily are transferable to what we do. You also get to play with a whole new set of developer tools and write smart contracts (aka programmable money). 
-    </Atom.Paragraph>
+      <Atom.Heading lg heavy>
+        Why you, why now, and why Ethereum?
+      </Atom.Heading>
+      <Atom.Paragraph>
+        You already have the skills necessary to be a great asset to the
+        “history of the future.” Many of the coding skills you use daily are
+        transferable to what we do. You also get to play with a whole new set of
+        developer tools and write smart contracts (aka programmable money).
+      </Atom.Paragraph>
 
-    <Atom.Paragraph>
-      There’s an old Chinese proverb that was adapted to the blockchain space: “The best time to plant a tree was 20 years ago, the second best time is now.” The protocols are aligned, the dev tools are built, and teams are ramping up hiring. When we look back on today, you’ll still be able to say you planted one of the first trees in the landscape.
-    </Atom.Paragraph>
+      <Atom.Paragraph>
+        There’s an old Chinese proverb that was adapted to the blockchain space:
+        “The best time to plant a tree was 20 years ago, the second best time is
+        now.” The protocols are aligned, the dev tools are built, and teams are
+        ramping up hiring. When we look back on today, you’ll still be able to
+        say you planted one of the first trees in the landscape.
+      </Atom.Paragraph>
 
-    <Atom.Paragraph>
-      You understand why Web 3.0 is important, but you might not be sold on why Ethereum is the right place for you. There are other projects competing to be “The World Computer,” but Ethereum remains the gold standard for smart contracts and decentralized apps (dApps). With the largest developer community, the largest user base, and the most amount of tools at your disposal, Ethereum is the logical choice for contributing to the Web3 movement.
-    </Atom.Paragraph>
-
-
-  </Atom.Box>
-)}
+      <Atom.Paragraph>
+        You understand why Web 3.0 is important, but you might not be sold on
+        why Ethereum is the right place for you. There are other projects
+        competing to be “The World Computer,” but Ethereum remains the gold
+        standard for smart contracts and decentralized apps (dApps). With the
+        largest developer community, the largest user base, and the most amount
+        of tools at your disposal, Ethereum is the logical choice for
+        contributing to the Web3 movement.
+      </Atom.Paragraph>
+    </Atom.Box>
+  )
+}
