@@ -230,13 +230,13 @@ export default props => (
           effectively channeled towards the community’s primary goals - one of
           those goals being the pursuit of 1,000,000 Ethereum developers.
         </A.Paragraph>
-        <A.Link to="/contribute">
+        <A.Link to="/started">
           <A.Button>Learn</A.Button>
         </A.Link>
         <A.Link to="/contribute">
           <A.Button>Contribute</A.Button>
         </A.Link>
-        <A.Link to="/contribute">
+        <A.Link to="/news">
           <A.Button>Attend an Event</A.Button>
         </A.Link>
       </A.Flex>

@@ -92,7 +92,7 @@ const IndexPage = () => (
       </Flex>
     </Container>
 
-    <Atom.Container maxWidth={780}>
+    <Atom.Container left maxWidth={780}>
       <MainFeature />
     </Atom.Container>
 
@@ -133,7 +133,7 @@ const IndexPage = () => (
           /> */}
           <PlatformCard
             title="RAPID Adventures"
-            tagline="Challenge Yourself To Complete All Tasks"
+            tagline="Earn Rewards for Interacting With Ethereum"
             summary="RAPID Adventures provides a gamified way to interact with the Ethereum ecosystem itself. Whether its learning about how to set up a wallet, deploying your first contract, or interacting with some of the amazing dApps that have already been built, RAPID Adventures introduces you to Ethereum in an immersive and rewarding way."
             imageCover="https://i.imgur.com/vaTcwti.png"
           />
@@ -198,7 +198,7 @@ const IndexPage = () => (
             the “Contribute” page to learn more about the different ways you can
             help the cause.
           </A.Paragraph>
-          <A.Link to="/contribute">
+          <A.Link to="/contribute" mb={3}>
             <Atom.Button variant="blue" center>
               Contribute
             </Atom.Button>
@@ -345,7 +345,7 @@ export default IndexPage
 const MainFeature = props => {
   return (
     <Atom.Box>
-      <Atom.Heading lg heavy>
+      <Atom.Heading lg heavy left>
         What is a Web 2.0 Developer?
       </Atom.Heading>
       <Atom.Paragraph>
