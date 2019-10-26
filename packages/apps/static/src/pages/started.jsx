@@ -139,7 +139,7 @@ export default props => (
       </A.Flex>
     </Atom.Container>
 
-    <Atom.Box color="white" gradient="blueDark" py={4}>
+    <Atom.Box color="white" gradient="blueDark" py={5}>
       <Atom.Heading xl heavy center>
         Guided Learning Experiences
       </Atom.Heading>
@@ -189,7 +189,7 @@ export default props => (
       </A.Container>
     </Atom.Box>
 
-    <Atom.Box color="white" gradient="blue" py={4}>
+    <Atom.Box color="white" gradient="blue" py={5}>
       <Atom.Heading xl heavy center>
         Developer Resources
       </Atom.Heading>
@@ -332,9 +332,14 @@ const ToolCard = props => {
           </Atom.Heading>
         </Atom.Flex>
         {/* <Atom.Span xxs>Created By</Atom.Span> */}
-        <Atom.Flex justifyEnd flex={1}>
-          <Atom.Button xs>Go</Atom.Button>
-        </Atom.Flex>
+        {
+          props.url && 
+          <Atom.Flex justifyEnd flex={1}>
+            <a href={url}>
+              <Atom.Button xs>Go</Atom.Button>
+            </a>
+          </Atom.Flex>
+        }
       </Atom.Box>
     </Atom.Flex>
   )
@@ -397,8 +402,8 @@ const MonthlyAnalytics = props => {
 
 const PlatformCard = props => {
   return (
-    <Atom.Flex column>
-      <A.Flex center column flex={1}>
+    <Atom.Flex column >
+      <A.Flex center columnflex={1}>
         <A.Image src={props.imageCover} />
       </A.Flex>
       <Atom.Box bg="white" color="charcoal" p={3}>
@@ -409,9 +414,14 @@ const PlatformCard = props => {
           {props.tagline}
         </Atom.Heading>
         <Atom.Paragraph xs>{props.summary}</Atom.Paragraph>
-        <Atom.Flex justifyEnd flex={1}>
-          <Atom.Button xs>Go</Atom.Button>
-        </Atom.Flex>
+        {
+          props.url && 
+          <Atom.Flex justifyEnd flex={1}>
+            <a href={url}>
+              <Atom.Button xs>Go</Atom.Button>
+            </a>
+          </Atom.Flex>
+        }
       </Atom.Box>
     </Atom.Flex>
   )
