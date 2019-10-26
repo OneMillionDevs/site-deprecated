@@ -1,5 +1,7 @@
 import { Site } from "templates"
 import { FormUpdates } from "core"
+import { SEO } from "core"
+import { Helmet } from "react-helmet"
 import {
   FormBecomeGuide,
   FormBecomeGuideFull,
@@ -78,9 +80,18 @@ export default props => (
             </A.Span>
           </A.Flex>
         </A.Box>
-          <Atom.Box mt={3}>
-            <Atom.Span card circle xs center p={4} pb={2}> <strong>Keep Scrolling to<br/>Learn More</strong><br/><Atom.Span lg>👇</Atom.Span></Atom.Span>
-          </Atom.Box>
+        <Atom.Box mt={3}>
+          <Atom.Span card circle xs center p={4} pb={2}>
+            {" "}
+            <strong>
+              Keep Scrolling to
+              <br />
+              Learn More
+            </strong>
+            <br />
+            <Atom.Span lg>👇</Atom.Span>
+          </Atom.Span>
+        </Atom.Box>
       </A.Flex>
     </A.Flex>
 
@@ -129,6 +140,7 @@ export default props => (
           tagline="Battle the Baddies and Learn about Etheruem"
           summary="Gitcoin Quests is a fun, gamified way to learn about the web3 ecosystem, compete with your friends, earn rewards, and level up your decentralization-fu!"
           imageCover="https://i.imgur.com/cHtxC04.png"
+          url="https://gitcoin.co/quests"
         />
         {/* <PlatformCard
             title='3Box Developer Profile'
@@ -141,12 +153,14 @@ export default props => (
           tagline="Earn Rewards for Interacting With Ethereum"
           summary="RAPID Adventures provides a gamified way to interact with the Ethereum ecosystem itself. Whether its learning about how to set up a wallet, deploying your first contract, or interacting with some of the amazing dApps that have already been built, RAPID Adventures introduces you to Ethereum in an immersive and rewarding way."
           imageCover="https://i.imgur.com/vaTcwti.png"
+          url="/adventures"
         />
         <PlatformCard
           title="Add Application"
           tagline="Create A New Application to Share"
           summary="This site is meant to be an open, communal hub of resources! Want your platform featured on One Million Devs? Submit a request here!"
           imageCover="https://s3.envato.com/files/f209c8a8-c7fc-49be-a948-6aa185b7fb4b/inline_image_preview.jpg"
+          url="community"
         />
       </Atom.Flex>
       <A.Container align="center">
@@ -207,6 +221,7 @@ export default props => (
           image="https://cryptozombies.io/course/static/image/preview-zombie.png"
           imageCover="https://i.imgur.com/L6jfpUz.jpg"
           imageCreatedBy="https://cdn-images-1.medium.com/max/1200/1*K76UVoLq-FOL7l-_Fag-Qw@2x.png"
+          url="https://cryptozombies.io/"
         />
         <ToolCard
           title="Ethereum Studio"
@@ -216,6 +231,7 @@ export default props => (
           image="https://superblocks.com/static/img/lab/icon-blockchain-black.png"
           imageCover="https://i.imgur.com/E3bkmPX.png"
           imageCreatedBy="https://avatars1.githubusercontent.com/u/37122442?s=280&v=4"
+          url="https://studio.ethereum.org/"
         />
         <ToolCard
           title="Your Platform Here"
@@ -224,7 +240,7 @@ export default props => (
           summary="This site is meant to be an open, communal hub of resources! Want your platform featured on One Million Devs? Submit a request here!"
           image="https://avatars0.githubusercontent.com/u/16297473?s=280&v=4"
           imageCover="https://pbs.twimg.com/profile_images/3440615952/a385bce25fc4862ddf34adcddc434929_400x400.jpeg"
-          imageCreatedBy="https://pbs.twimg.com/profile_images/3440615952/a385bce25fc4862ddf34adcddc434929_400x400.jpeg"
+          url="/community"
         />
       </Atom.Flex>
       <A.Container align="center">
@@ -247,32 +263,29 @@ export default props => (
         </A.Paragraph>
       </Atom.Container>
       <Atom.Flex gutter3 my={4} mx={5} flex={1}>
-        <ToolCard
+        <PlatformCard
           title="Ethereum Developer Portal"
-          createdBy="ConsenSys"
           tagline="dev tools"
           summary="This developer portal is a place to get started and find the tools you need to develop and build applications on the Ethereum blockchain. Here you’ll find the most popular knowledge bases, infrastructure tools, programming libraries, and more that will teach you how to build software on Ethereum. "
           image="https://i.imgur.com/VCw60DN.png"
           imageCover="https://i.imgur.com/UeuyLD2.png"
-          imageCreatedBy="https://i.imgur.com/akQZCgw.png"
+          url="https://consensys.net/developers/"
         />
-        <ToolCard
+        <PlatformCard
           title="ConsenSys Academy"
-          createdBy="ConsenSys"
           tagline="education"
           summary="ConsenSys Academy’s mission is to develop the global blockchain ecosystem by bridging the Ethereum knowledge gap and being a beacon for Ethereum education. They offer a suite of offerings, both free and paid, to educate web 2 and web 3 developers about Ethereum and related technologies. They have offerings for non-developers as well."
           image="https://i.imgur.com/94G4REa.png"
           imageCover="https://consensys.net/academy/wp-content/themes/philosophie_consensys/assets/consensys_academy_02.jpg"
-          imageCreatedBy="https://i.imgur.com/akQZCgw.png"
+          url="https://consensys.net/academy/"
         />
-        <ToolCard
+        <PlatformCard
           title="Kauri"
-          createdBy="ConsenSys"
           tagline="education"
           summary="Kauri is a portal where project teams and individuals can engage, generate, and curate high quality and up-to-date technical resources, committed to enabling the community to curate the decentralized knowledge base and support network that the Ethereum ecosystem needs to reach its full potential. Kauri provides both new and experienced developers with completely free access to a curated, high-quality, and continuously expanding Ethereum knowledge base"
           image="https://miro.medium.com/fit/c/256/256/1*vxAe934PUE00NMflnJzX3g.png"
-          imageCover="https://miro.medium.com/max/2084/0*OOXE6y6nBaZRMG5f."
-          imageCreatedBy="https://i.imgur.com/akQZCgw.png"
+          imageCover="https://miro.medium.com/max/1200/0*1vVDRlGXhwwAZtzM"
+          url="https://kauri.io/"
         />
       </Atom.Flex>
       <A.Container align="center">
@@ -319,12 +332,16 @@ export default props => (
             something for you to do. Head on over to the{" "}
             <A.Link to="/contribute">Contribute</A.Link> page to learn more.
           </A.Paragraph>
-          <A.Link to="/contribute">
-            <A.Button>Start Contributing</A.Button>
-          </A.Link>
+          <A.Container align="center">
+            <A.Link to="/contribute">
+              <A.Button variant="green">Start Contributing</A.Button>
+            </A.Link>
+          </A.Container>
         </A.Flex>
       </A.Flex>
     </Atom.Container>
+
+    <A.HorizontalRule my={5} />
 
     <Atom.Box>
       <MonthlyAnalytics />
@@ -377,14 +394,13 @@ const ToolCard = props => {
           </Atom.Heading>
         </Atom.Flex>
         {/* <Atom.Span xxs>Created By</Atom.Span> */}
-        {
-          props.url && 
+        {props.url && (
           <Atom.Flex justifyEnd flex={1}>
-            <a href={url}>
+            <a href={props.url}>
               <Atom.Button xs>Go</Atom.Button>
             </a>
           </Atom.Flex>
-        }
+        )}
       </Atom.Box>
     </Atom.Flex>
   )
@@ -427,7 +443,7 @@ const MonthlyAnalytics = props => {
             </Atom.Paragraph>
             <Atom.Modal content={<div></div>}>
               <Atom.Button variant="blue">
-                Register for Monthly Repots
+                Register for Monthly Reports
               </Atom.Button>
             </Atom.Modal>
             <Atom.Paragraph xs mt={3} mb={0}>
@@ -512,7 +528,7 @@ const BecomeAGuide = props => {
 
 const PlatformCard = props => {
   return (
-    <Atom.Flex column >
+    <Atom.Flex column>
       <A.Flex center columnflex={1}>
         <A.Image src={props.imageCover} />
       </A.Flex>
@@ -524,14 +540,13 @@ const PlatformCard = props => {
           {props.tagline}
         </Atom.Heading>
         <Atom.Paragraph xs>{props.summary}</Atom.Paragraph>
-        {
-          props.url && 
+        {props.url && (
           <Atom.Flex justifyEnd flex={1}>
-            <a href={url}>
+            <a href={props.url}>
               <Atom.Button xs>Go</Atom.Button>
             </a>
           </Atom.Flex>
-        }
+        )}
       </Atom.Box>
     </Atom.Flex>
   )

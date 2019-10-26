@@ -100,7 +100,7 @@ const IndexPage = () => (
       <MainFeature />
     </Atom.Container>
 
-    <Atom.Box bg='gray' mt={5}>
+    <Atom.Box bg="gray" mt={5}>
       <QuotesFull />
     </Atom.Box>
 
@@ -132,7 +132,7 @@ const IndexPage = () => (
             tagline="Battle the Baddies and Learn about Etheruem"
             summary="Gitcoin Quests is a fun, gamified way to learn about the web3 ecosystem, compete with your friends, earn rewards, and level up your decentralization-fu!"
             imageCover="https://i.imgur.com/cHtxC04.png"
-            url='https://gitcoin.co/quests'
+            url="https://gitcoin.co/quests"
           />
           {/* <PlatformCard
             title='3Box Developer Profile'
@@ -145,12 +145,14 @@ const IndexPage = () => (
             tagline="Earn Rewards for Interacting With Ethereum"
             summary="RAPID Adventures provides a gamified way to interact with the Ethereum ecosystem itself. Whether its learning about how to set up a wallet, deploying your first contract, or interacting with some of the amazing dApps that have already been built, RAPID Adventures introduces you to Ethereum in an immersive and rewarding way."
             imageCover="https://i.imgur.com/vaTcwti.png"
+            url="/adventures"
           />
           <PlatformCard
             title="Add Application"
             tagline="Create A New Application to Share"
             summary="This site is meant to be an open, communal hub of resources! Want your platform featured on One Million Devs? Submit a request here!"
             imageCover="https://s3.envato.com/files/f209c8a8-c7fc-49be-a948-6aa185b7fb4b/inline_image_preview.jpg"
+            url="/community"
           />
         </Atom.Flex>
       </A.Container>

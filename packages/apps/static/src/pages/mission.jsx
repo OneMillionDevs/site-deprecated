@@ -103,7 +103,7 @@ export default props => (
         What Is The '1 Million Developers' Initiative?
       </A.Heading>
       <A.Heading md center>
-        What we hope to do | What we aim to achieve to achieve
+        What we hope to do | What we aim to achieve
       </A.Heading>
       <A.Flex alignCenter flex={1}>
         <A.Flex column flex={1}>
