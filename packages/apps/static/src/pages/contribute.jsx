@@ -15,7 +15,7 @@ export default props => (
             Join the Etheruem Developer Commuity
           </A.Heading>
           <A.Heading lg thin>
-            Invite Developers - Become a Guide - Kickstart a Community
+            Invite Developers - Become a Mentor - Kickstart a Community
           </A.Heading>
         </A.Box>
       </A.Box>
@@ -107,13 +107,13 @@ export default props => (
           <A.Flex center column flex={3} order={2}>
             <A.Box px={100}>
               <A.Heading xl heavy>
-                Become a Guide
+                Become a Mentor
               </A.Heading>
               <A.Heading md>Teach Others About Ethereum</A.Heading>
               <A.Paragraph>
                 Enjoy acting as a mentor, teaching others, or publishing
                 educational content? Get rewarded for doing so! Become an
-                official Ethereum Guide by subscribing yourself to produce
+                official Ethereum Mentor by subscribing yourself to produce
                 educational content, and earn special rewards and reputation for
                 your efforts.
               </A.Paragraph>
