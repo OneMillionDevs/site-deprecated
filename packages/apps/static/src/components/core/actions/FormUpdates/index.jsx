@@ -14,8 +14,8 @@ export default props => {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          organization: values.organization,
-          listType: "coalition",
+          email: values.email,
+          listType: "general",
         }),
       })
       .then(res => {

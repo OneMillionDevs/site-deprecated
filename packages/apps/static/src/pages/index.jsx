@@ -20,11 +20,6 @@ import { QuotesFull } from 'views'
 
 const IndexPage = () => (
   <Site>
-    <Helmet>
-          <meta charSet="utf-8" />
-          <link rel="stylesheet" type="text/css" charset="UTF-8" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />
-          <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
-        </Helmet>
     {/* <SEO title="Home" /> */}
     <Flex flex={1}>
       <Flex center column flex={3} py={50} minHeight="600px">

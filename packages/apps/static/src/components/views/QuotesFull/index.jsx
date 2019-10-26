@@ -4,7 +4,7 @@ import Slider from "react-slick";
 class SimpleSlider extends React.Component {
   render() {
     var settings = {
-      dots: false,
+      dots: true,
       infinite: true,
       speed: 500,
       slidesToShow: 1,
@@ -49,6 +49,20 @@ class SimpleSlider extends React.Component {
             </em>
             </Atom.Paragraph>
             <cite>Joe Lubin - Etheruem Founder</cite>
+        </Atom.Flex>
+        </Atom.Container>
+        </div>
+        <div>
+        <Atom.Container maxWidth={700} py={4}>
+        <Atom.Flex center column my={4}>
+            <Atom.Image card circle maxWidth={200} my={3} p={1} alt='Joe Lubin' src="https://media.licdn.com/dms/image/C5603AQGWj1F3oNrhHQ/profile-displayphoto-shrink_200_200/0?e=1577318400&v=beta&t=oyOTpzFrSwGdSfTz6E1-drJcQLjCkt0DNQ-m6mRXBfc"
+            />
+            <Atom.Paragraph center>
+            <em>
+            Back when I was first learning about Ethereum, one of the first things I thought was really cool about it was just that, woah, I don't have to run my own servers. I don't have to provision my own servers, I don't have to maintain servers—it's just Ethereum, and it's always there. I thought that was really cool on its own.
+            </em>
+            </Atom.Paragraph>
+            <cite>Mike Goldin- ConsenSys & Inventor of the TCR</cite>
         </Atom.Flex>
         </Atom.Container>
         </div>

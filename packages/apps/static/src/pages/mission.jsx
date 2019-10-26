@@ -217,7 +217,7 @@ export default props => (
         <A.Heading xl heavy center>
           What Now?
         </A.Heading>
-        <A.HorizontalRule dash my={3} />
+        <A.HorizontalRule center dash my={3} />
         <A.Paragraph sm center>
           Reaching 1,000,000 Ethereum developers will be no easy task, but it
           will be a victory shared by all. The open, transparent, decentralized,
@@ -230,15 +230,6 @@ export default props => (
           effectively channeled towards the community’s primary goals - one of
           those goals being the pursuit of 1,000,000 Ethereum developers.
         </A.Paragraph>
-        <A.Link to="/started">
-          <A.Button>Learn</A.Button>
-        </A.Link>
-        <A.Link to="/contribute">
-          <A.Button>Contribute</A.Button>
-        </A.Link>
-        <A.Link to="/news">
-          <A.Button>Attend an Event</A.Button>
-        </A.Link>
       </A.Flex>
     </Atom.Container>
 
