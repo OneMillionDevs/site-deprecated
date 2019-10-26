@@ -1,6 +1,7 @@
 import { Site } from "templates"
 import { SEO } from "core"
 import { FormUpdates } from "core"
+import { Helmet } from "react-helmet"
 import {
   Heading,
   Flex,
@@ -13,6 +14,9 @@ import {
   Paragraph,
   Container,
 } from "@horizin/design-system"
+
+import { QuotesFull } from 'views'
+
 
 const IndexPage = () => (
   <Site>
@@ -64,7 +68,7 @@ const IndexPage = () => (
       </Flex>
     </Flex>
 
-    <Atom.Flex
+    {/* <Atom.Flex
       alignCenter
       between
       color="white"
@@ -76,7 +80,7 @@ const IndexPage = () => (
     >
       <Atom.Heading noMargin>200,230 Active Developers</Atom.Heading>
       <Atom.Button>Sign Pledge</Atom.Button>
-    </Atom.Flex>
+    </Atom.Flex> */}
 
     <Container mt={5}>
       <Flex center column>
@@ -95,6 +99,10 @@ const IndexPage = () => (
     <Atom.Container left maxWidth={780}>
       <MainFeature />
     </Atom.Container>
+
+    <Atom.Box bg='gray' mt={5}>
+      <QuotesFull />
+    </Atom.Box>
 
     <A.Box color="white" gradient="blueDark" py={4}>
       <A.Container my={4}>
@@ -124,6 +132,7 @@ const IndexPage = () => (
             tagline="Battle the Baddies and Learn about Etheruem"
             summary="Gitcoin Quests is a fun, gamified way to learn about the web3 ecosystem, compete with your friends, earn rewards, and level up your decentralization-fu!"
             imageCover="https://i.imgur.com/cHtxC04.png"
+            url='https://gitcoin.co/quests'
           />
           {/* <PlatformCard
             title='3Box Developer Profile'
@@ -228,9 +237,15 @@ const PlatformCard = props => {
           {props.tagline}
         </Atom.Heading>
         <Atom.Paragraph xs>{props.summary}</Atom.Paragraph>
-        <Atom.Flex justifyEnd flex={1}>
-          <Atom.Button xs>Go</Atom.Button>
-        </Atom.Flex>
+        {
+          props.url &&
+          <Atom.Flex justifyEnd flex={1}>
+            <a href={props.url}>
+              <Atom.Button xs>Go</Atom.Button>
+            </a>
+          </Atom.Flex>
+
+        }
       </Atom.Box>
     </Atom.Flex>
   )

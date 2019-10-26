@@ -78,6 +78,9 @@ export default props => (
             </A.Span>
           </A.Flex>
         </A.Box>
+          <Atom.Box mt={3}>
+            <Atom.Span card circle xs center p={4} pb={2}> <strong>Keep Scrolling to<br/>Learn More</strong><br/><Atom.Span lg>👇</Atom.Span></Atom.Span>
+          </Atom.Box>
       </A.Flex>
     </A.Flex>
 
@@ -181,7 +184,7 @@ export default props => (
       </A.Flex>
     </Atom.Container>
 
-    <Atom.Box color="white" gradient="blueDark" py={4}>
+    <Atom.Box color="white" gradient="blueDark" py={5}>
       <Atom.Heading xl heavy center>
         Guided Learning Experiences
       </Atom.Heading>
@@ -231,7 +234,7 @@ export default props => (
       </A.Container>
     </Atom.Box>
 
-    <Atom.Box color="white" gradient="blue" py={4}>
+    <Atom.Box color="white" gradient="blue" py={5}>
       <Atom.Heading xl heavy center>
         Developer Resources
       </Atom.Heading>
@@ -325,8 +328,6 @@ export default props => (
 
     <Atom.Box>
       <MonthlyAnalytics />
-      <BecomeAGuide />
-      <CommunityDevelopment />
     </Atom.Box>
   </Site>
 )
@@ -376,9 +377,14 @@ const ToolCard = props => {
           </Atom.Heading>
         </Atom.Flex>
         {/* <Atom.Span xxs>Created By</Atom.Span> */}
-        <Atom.Flex justifyEnd flex={1}>
-          <Atom.Button xs>Go</Atom.Button>
-        </Atom.Flex>
+        {
+          props.url && 
+          <Atom.Flex justifyEnd flex={1}>
+            <a href={url}>
+              <Atom.Button xs>Go</Atom.Button>
+            </a>
+          </Atom.Flex>
+        }
       </Atom.Box>
     </Atom.Flex>
   )
@@ -419,7 +425,7 @@ const MonthlyAnalytics = props => {
               will do it's best to pinpoint important metrics and distill top
               data points, so you can can quickly and easily consume the data.
             </Atom.Paragraph>
-            <Atom.Modal content={<GuideRegistration />}>
+            <Atom.Modal content={<div></div>}>
               <Atom.Button variant="blue">
                 Register for Monthly Repots
               </Atom.Button>
@@ -506,8 +512,8 @@ const BecomeAGuide = props => {
 
 const PlatformCard = props => {
   return (
-    <Atom.Flex column>
-      <A.Flex center column flex={1}>
+    <Atom.Flex column >
+      <A.Flex center columnflex={1}>
         <A.Image src={props.imageCover} />
       </A.Flex>
       <Atom.Box bg="white" color="charcoal" p={3}>
@@ -518,9 +524,14 @@ const PlatformCard = props => {
           {props.tagline}
         </Atom.Heading>
         <Atom.Paragraph xs>{props.summary}</Atom.Paragraph>
-        <Atom.Flex justifyEnd flex={1}>
-          <Atom.Button xs>Go</Atom.Button>
-        </Atom.Flex>
+        {
+          props.url && 
+          <Atom.Flex justifyEnd flex={1}>
+            <a href={url}>
+              <Atom.Button xs>Go</Atom.Button>
+            </a>
+          </Atom.Flex>
+        }
       </Atom.Box>
     </Atom.Flex>
   )

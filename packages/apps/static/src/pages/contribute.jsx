@@ -185,23 +185,171 @@ export default props => (
           </Atom.Flex>
         </A.Flex>
       </Atom.Container>
+  
+      <Atom.Container>
+        <BecomeAGuide/>
+        <CommunityDevelopment />
+      </Atom.Container>
+
     </Atom.Box>
+    
+
   </Site>
 )
 
-const ReferAFriend = props => {
+
+const ReferAFriend = props => { 
+ return(
+  <A.Box card>
+    <Atom.Heading lg heavy>The Growing Etheruem Community</Atom.Heading>
+    <Atom.Paragraph sm>
+      Proin placerat, nibh vel porta fermentum, justo felis elementum odio, sed porttitor purus massa eu eros. Nam mollis lorem eget pretium interdum. Fusce consequat, lacus nec imperdiet posuere, ligula tortor vulputate felis, quis sodales arcu nibh vel nibh. Curabitur sit amet metus eleifend.
+    </Atom.Paragraph>
+  </A.Box>
+)}
+
+const GuideRegistration = props => {
   return (
-    <A.Box card>
+    <Atom.Flex card center column flex={1}>
       <Atom.Heading lg heavy>
-        The Growing Etheruem Community
+        Ethereum Community Guide
       </Atom.Heading>
-      <Atom.Paragraph sm>
-        Proin placerat, nibh vel porta fermentum, justo felis elementum odio,
-        sed porttitor purus massa eu eros. Nam mollis lorem eget pretium
-        interdum. Fusce consequat, lacus nec imperdiet posuere, ligula tortor
-        vulputate felis, quis sodales arcu nibh vel nibh. Curabitur sit amet
-        metus eleifend.
-      </Atom.Paragraph>
-    </A.Box>
+      <Atom.Heading sm normal>
+        Help Etheruem Reach it's Full Potential
+      </Atom.Heading>
+      <Atom.HorizontalRule dash center />
+      <Atom.Flex flex={2} p={3} width="100%">
+        <Atom.Flex flex={1}>
+          <FormBecomeGuide />
+        </Atom.Flex>
+        <Atom.Flex center column flex={1}>
+          <Atom.Box card p={1} display="inline-block">
+            <Atom.Image
+              src="https://imgur.com/bXAJm7B.png"
+              maxWidth={180}
+              display="inline-block"
+            />
+          </Atom.Box>
+        </Atom.Flex>
+      </Atom.Flex>
+    </Atom.Flex>
+  )
+}
+
+
+const BecomeAGuide = props => {
+  return (
+    <Atom.Container maxWidth={1080} my={5}>
+      <Atom.Flex>
+        <Atom.Flex center column flex={1}>
+          <Atom.Box p={4}>
+            <Atom.Image
+              card
+              p={1}
+              boxShadow={4}
+              src="https://i.imgur.com/9hqmKMZ.png"
+              maxWidth={320}
+            />
+          </Atom.Box>
+        </Atom.Flex>
+        <Atom.Flex column card between p={4} my={4} flex={1}>
+          <Atom.Box>
+            <Atom.Heading lg heavy>
+              Become A Guide
+            </Atom.Heading>
+            <Atom.Paragraph>
+              Invite new people to ecosystem, regularily publish content or help
+              maintain an Open Source project. As you contribute more and more
+              to the community, you will earn Kudos and other "stunning" flair
+              for your developer profile.
+            </Atom.Paragraph>
+
+            <Atom.Heading>Earn DEV Tokens. Get rewarded. </Atom.Heading>
+            <Atom.Paragraph>
+              Earn DEV tokens. Collect kudos. Become a star in the Ethereum
+              developer ecosystem.
+            </Atom.Paragraph>
+            <Atom.Flex my={3}>
+              <Atom.Span p={3} mx={2}>
+                <Atom.Image
+                  maxWidth={50}
+                  src="https://gitcoin.co/dynamic/kudos/1921/the_alchemist"
+                />
+              </Atom.Span>
+              <Atom.Span p={3} mx={2}>
+                <Atom.Image
+                  maxWidth={50}
+                  src="https://gitcoin.co/dynamic/kudos/430/resilience"
+                />
+              </Atom.Span>
+              <Atom.Span p={3} mx={2}>
+                <Atom.Image
+                  maxWidth={50}
+                  src="https://gitcoin.co/dynamic/kudos/388/ipfs"
+                />
+              </Atom.Span>
+            </Atom.Flex>
+            <Atom.Flex>
+              <Atom.Modal content={<GuideRegistration />}>
+                <Atom.Button variant="primary">Guide Program</Atom.Button>
+              </Atom.Modal>
+              <Atom.Button variant="green" ml={3}>
+                View Kudos
+              </Atom.Button>
+            </Atom.Flex>
+          </Atom.Box>
+        </Atom.Flex>
+      </Atom.Flex>
+    </Atom.Container>
+  )
+}
+
+const CommunityDevelopment = props => {
+  return (
+    <Atom.Container maxWidth={1080} my={5}>
+      <Atom.Flex>
+        <Atom.Flex center column flex={1}>
+          <Atom.Box p={4}>
+            <Atom.Image
+              card
+              p={1}
+              boxShadow={4}
+              src="https://imgur.com/bXAJm7B.png"
+              maxWidth={320}
+            />
+          </Atom.Box>
+        </Atom.Flex>
+        <Atom.Flex column card between p={4} my={4} flex={1}>
+          <Atom.Box>
+            <Atom.Heading kg heavy>
+              Community Growth Managers
+            </Atom.Heading>
+            <Atom.Paragraph>
+              Connect the dots. Organize the people. And help shape the
+              foundation for Ethereum to blossom.{" "}
+              <strong>People are the heart of a project.</strong> It's essential
+              we teach new developers best practices. Get users familiar with
+              best practices
+            </Atom.Paragraph>
+
+            <Atom.Heading>Experience the Roots of ETH</Atom.Heading>
+            <Atom.Paragraph>
+              Help others stay connected with meetups, local hackthons, event
+              sponsors, coding parties, and other interesting events happening
+              in your area.{" "}
+              <strong>
+                The world is a big place and there is lots to do, so we need as
+                much help as possible!
+              </strong>
+            </Atom.Paragraph>
+            <Atom.Modal content={<GuideRegistration />}>
+              <Atom.Button variant="green">
+                Download Community Guide Kit
+              </Atom.Button>
+            </Atom.Modal>
+          </Atom.Box>
+        </Atom.Flex>
+      </Atom.Flex>
+    </Atom.Container>
   )
 }
