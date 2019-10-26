@@ -237,15 +237,23 @@ export default props => (
           those goals being the pursuit of 1,000,000 Ethereum developers.
         </A.Paragraph>
 
-        <A.Link to="/started">
-          <A.Button variant="green">Learn</A.Button>
-        </A.Link>
-        <A.Link to="/contribute">
-          <A.Button variant="green">Contribute</A.Button>
-        </A.Link>
-        <A.Link to="/news">
-          <A.Button variant="green">Attend an Event</A.Button>
-        </A.Link>
+        <A.Flex row justityContent={"space-around"} center>
+          <A.Link to="/started" mx={5}>
+            <A.Button variant="green" minWidth={"250px"}>
+              Learn
+            </A.Button>
+          </A.Link>
+          <A.Link to="/contribute" mx={5}>
+            <A.Button variant="green" minWidth={"250px"}>
+              Contribute
+            </A.Button>
+          </A.Link>
+          <A.Link to="/events" mx={5}>
+            <A.Button variant="green" minWidth={"250px"}>
+              Attend an Event
+            </A.Button>
+          </A.Link>
+        </A.Flex>
       </A.Flex>
     </Atom.Container>
 
