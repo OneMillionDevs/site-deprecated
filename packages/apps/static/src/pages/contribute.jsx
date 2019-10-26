@@ -12,7 +12,7 @@ export default props => (
             src="https://cdn.dribbble.com/users/1314508/screenshots/6437101/cryptocurrency_hero_landing_page_illustration_4x.jpg"
           />
           <A.Heading xxl heavy>
-            Join the Etheruem Developer Commuity
+            Join the Etheruem Developer Community
           </A.Heading>
           <A.Heading lg thin>
             Invite Developers - Become a Mentor - Kickstart a Community

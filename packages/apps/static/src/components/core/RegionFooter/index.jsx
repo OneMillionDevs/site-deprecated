@@ -98,7 +98,7 @@ const Branding = props => {
               <A.Link to="/community">
                 <A.Span xs>Community Program</A.Span>
               </A.Link>
-              <A.Link to="/steward">
+              <A.Link to="/stewards">
                 <A.Span xs>Steward Program</A.Span>
               </A.Link>
               <A.Link to="/feedback">

@@ -48,9 +48,9 @@ const BlogIndex = ({ data }) => {
       <A.Container py={0}>
         <A.Box textCenter py={5}>
           <A.Heading xl heavy>
-            Other Media
+            Ecosystem Material
           </A.Heading>
-          <A.Heading as="h4">Other pertinent videos and articles</A.Heading>
+          <A.Heading as="h4">Useful articles and videos published by the Ethereum community</A.Heading>
         </A.Box>
       </A.Container>
 
