@@ -14,7 +14,7 @@ export default () => {
         "email": values.email,
         "name": values.name,
         "organization": values.organization,
-        "listType": 'coalition'
+        "listType": 'guide'
       })
     }).then(res => {
       if (res.json) res.json().then(msg => {

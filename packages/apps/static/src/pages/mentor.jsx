@@ -1,13 +1,9 @@
 import { Site } from "templates"
-import {
-  FormBecomeGuide,
-  FormBecomeGuideFull,
-  FormBecomeCommunityManager,
-} from "forms"
+import { FormBecomeGuide, FormBecomeGuideFull } from "forms"
 
 const GuideRegistration = props => {
   return (
-    <Atom.Flex card center column flex={1}>
+    <Atom.Flex card center column>
       <Atom.Heading lg heavy>
         Ethereum Community Mentor
       </Atom.Heading>
@@ -15,16 +11,17 @@ const GuideRegistration = props => {
         Help Etheruem Reach it's Full Potential
       </Atom.Heading>
       <Atom.HorizontalRule dash center />
-      <Atom.Flex flex={2} p={3} width="100%">
+      <Atom.Flex flex={1} p={3} width="100%">
         <Atom.Flex flex={1}>
           <FormBecomeGuide />
         </Atom.Flex>
         <Atom.Flex center column flex={1}>
-          <Atom.Box card p={1} display="inline-block">
+          <Atom.Box>
             <Atom.Image
-              src="https://imgur.com/bXAJm7B.png"
+              card
+              p={1}
+              src="https://imgur.com/9hqmKMZ.png"
               maxWidth={180}
-              display="inline-block"
             />
           </Atom.Box>
         </Atom.Flex>
@@ -41,24 +38,25 @@ export default props => (
           <A.BackgroundImage
             opacity={0.3}
             ratio={0.5}
-            src="https://images.unsplash.com/photo-1476304884326-cd2c88572c5f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80"
+            src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80"
           />
           <A.Heading giga heavy>
-            Start a Community
+            Become A Mentor
           </A.Heading>
           <A.Heading lg thin>
-            Get Support Starting a Community Online and in the Real World
+            Help Grow the Next Wave of Ethereum Developers
           </A.Heading>
         </A.Box>
       </A.Box>
 
-      <Atom.Container maxWidth={980}>
+      <Atom.Container maxWidth={1080}>
         <Atom.Flex alignCenter card between mt={-50} p={4} mt={-50}>
           <Atom.Box>
-            <Atom.Heading thin>Community Manager Resource Kit</Atom.Heading>
+            <Atom.Heading thin>
+              Get The Ethereum Mentor Resource Kit
+            </Atom.Heading>
             <Atom.Paragraph sm heavy mb={0}>
-              Get your network involved.{" "}
-              <strong>And get rewarded for doing it</strong>.
+              Teach Others. Start a meetup. Start a Open Source project.
             </Atom.Paragraph>
           </Atom.Box>
           <Atom.Modal content={<GuideRegistration />}>
@@ -67,61 +65,63 @@ export default props => (
         </Atom.Flex>
       </Atom.Container>
 
-      <Atom.Container maxWidth={1080} my={5}>
-        <Atom.Flex>
-          <Atom.Flex center column flex={1}>
-            <Atom.Box p={4}>
-              <Atom.Image
-                card
-                p={1}
-                boxShadow={4}
-                src="https://imgur.com/bXAJm7B.png"
-                maxWidth={320}
-              />
-            </Atom.Box>
-          </Atom.Flex>
-          <Atom.Flex column card between p={4} my={4} flex={1}>
-            <Atom.Box>
-              <Atom.Heading md heavy>
-                Have A Passion for Community Management?
-              </Atom.Heading>
-              <Atom.Paragraph>
-                Connect the dots. Organize the people. And help shape the
-                foundation for Ethereum to blossom.{" "}
-                <strong>People are the heart of a project.</strong> It's
-                essential we teach new developers best practices. Get users
-                familiar with best practices
-              </Atom.Paragraph>
+      <Atom.Container maxWidth={680} my={5}>
+        <Atom.Flex column card between p={4} my={4}>
+          <Atom.Heading lg heavy>
+            Make Yourself Known
+          </Atom.Heading>
+          <Atom.Paragraph>
+            The Ethereum community is full of educators, mentors, and thought
+            leaders, each individually delivering their own thoughts and
+            guidance through a wide array of disparate mediums. For new
+            ecosystem participants, filtering out the signal from the noise -
+            and determining who to follow and where to follow them - can be a
+            difficult task.
+          </Atom.Paragraph>
 
-              <Atom.Heading>
-                Earn DEV token for Onboarding Developers
-              </Atom.Heading>
-              <Atom.Paragraph>
-                That is where the Mentor program comes in. By curating a list of
-                mentors, segregated by expertise, we hope to allow leaders to
-                find followers, and followers to find leaders - and to encourage
-                other parties to become leaders in the space.
-              </Atom.Paragraph>
-              <Atom.Modal content={<GuideRegistration />}>
-                <Atom.Button variant="green">
-                  Download Community Mentor Kit
-                </Atom.Button>
-              </Atom.Modal>
-            </Atom.Box>
-          </Atom.Flex>
+          <Atom.Heading>The Mentor Program</Atom.Heading>
+          <Atom.Paragraph>
+            That is where the Mentor program comes in. By curating a list of
+            mentors, segregated by expertise, we hope to allow leaders to find
+            followers, and followers to find leaders - and to encourage other
+            parties to become leaders in the space.
+          </Atom.Paragraph>
+
+          <Atom.Heading md>Who Qualifies?</Atom.Heading>
+          <Atom.Paragraph>
+            Whether you're mentoring developers, regularly publishing content,
+            or maintaining an open source project, sign up to become a Mentor so
+            that newbies to the space know who you are, and where to look for
+            your content.
+          </Atom.Paragraph>
         </Atom.Flex>
       </Atom.Container>
 
       <Atom.Box textCenter mt={5}>
         <Atom.Heading xxl heavy>
-          Join the Community Manager Network
+          Push Ethereum Forward
         </Atom.Heading>
         <Atom.Heading lg thin>
-          Get connected with the people that connect the people.
+          Help the network grow, evolve and adapt.
         </Atom.Heading>
       </Atom.Box>
-      <Atom.Container maxWidth={600} card my={5}>
-        <FormBecomeCommunityManager />
+      <Atom.Container maxWidth={980} card my={5}>
+        <Atom.Flex alignCenter>
+          <Atom.Flex flex={1} p={4}>
+            <Atom.Box>
+              <Atom.Image
+                card
+                p={1}
+                boxShadow={4}
+                src="https://imgur.com/9hqmKMZ.png"
+                maxWidth={320}
+              />
+            </Atom.Box>
+          </Atom.Flex>
+          <Atom.Flex flex={2}>
+            <FormBecomeGuideFull />
+          </Atom.Flex>
+        </Atom.Flex>
       </Atom.Container>
 
       <Atom.Container my={5}>

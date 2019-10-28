@@ -18,27 +18,31 @@ Under Construction
 - Updates (Major 1MD Updates)
 
 #### Navigation
+
 Information
+
 - Articles
 - Coverage
 - Resources
 - News
 
 About
+
 - Stewards
 - Contribute
 - Overview
 - News
+
 ### Content
 
-
 #### Ideas
+
 - Monthly Developer Survey Email
-- Monlthy Guide Resource Pack Email
+- Monlthy Mentor Resource Pack Email
 - Monthly Analytics Email
 - 1 Year Long Token Experiment - DEV token for most active developers
 
-
 ### Needs to be built
+
 Quick Start `/resource/quick-start`
 Initial Setup `/resource/initial-setup`

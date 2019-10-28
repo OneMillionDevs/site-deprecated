@@ -11,44 +11,97 @@ export default props => (
           src="https://images.ui8.net/uploads/preview_6_1569070974155.png"
         />
         <A.Heading giga heavy>
-          Ethereum Developers Coalition
+          The One Million Developers Team
         </A.Heading>
-        <A.Heading lg>Contribute to the Positive Growth of Ethereum</A.Heading>
+        <A.Heading lg>
+          See who's ushering in a new wave of Ethereum developers
+        </A.Heading>
       </A.Box>
     </A.Box>
 
-    <Atom.Container maxWidth={780} mt={5}>
-      <Atom.Heading lg heavy>
-        What is The Coalition
-      </Atom.Heading>
-      <Atom.Paragraph>
-        The One Million Ethereum Developers coalition is a network of teams and
-        organizations committed to helping grow the Ethereum ecosystem.
-      </Atom.Paragraph>
-      <Atom.Heading md heavy>
-        Objectives
-      </Atom.Heading>
-      <ul>
-        <li>Substainly grow the number of Ethereum developers.</li>
-        <li>Teach new developers about powerful features of Ethereum.</li>
-        <li>Facilitate peer-to-peer connections for accelerated learning.</li>
-      </ul>
+    <A.Container py={5}>
+      <A.Box textCenter py={5}>
+        <A.Heading xl heavy>
+          Project Contributors
+        </A.Heading>
+        <A.Heading as="h4">
+          One Million Developers is an Open Collaboration but someone must tend
+          the fields.
+        </A.Heading>
+        <Atom.HorizontalRule dash center />
+      </A.Box>
 
-      <Atom.Paragraph>
-        <strong>Interested in joining the coalition?</strong> Register below.
-      </Atom.Paragraph>
-    </Atom.Container>
+      <A.Flex gutter3 my={3}>
+        <Feature
+          image="https://pbs.twimg.com/profile_images/1180616709629083648/sNLGeMk8_400x400.jpg"
+          title="Kevin Owocki"
+          tagline="Gitcoin Exraordinaire"
+          content="NOT going to invest in your ICO. NOT looking for work ( Updated July 2019 ). I do NOT work with 3rd party recruiters offshore development shops, or agencies. Kindly fuck off."
+        />
+        <Feature
+          image="https://avatars2.githubusercontent.com/u/84076?s=460&v=4"
+          title="Jim Jagielski"
+          tagline="Vision"
+          content="He is best known as cofounder, member, and director of The Apache Software Foundation (ASF) and as a core developer on several ASF projects, including the Apache HTTP Server, Apache Portable Runtime, and Apache Tomcat."
+        />
+        <Feature
+          image="https://media.licdn.com/dms/image/C4E03AQEdE6EMs0gaSQ/profile-displayphoto-shrink_200_200/0?e=1577318400&v=beta&t=qfByokFF2uECSKcVVUkuBGJ49oDlCYyl1UUp-DZLOfw"
+          title="Bryan Peters"
+          tagline="Helping Connect Everything"
+          content="My current mission is to find ways to leverage technology to facilitate more purpose driven, decentralized, people oriented ways of working."
+        />
+      </A.Flex>
+      <A.Container align="center">
+        <A.Link to="/contribute">
+          <A.Button>Start Contributing</A.Button>
+        </A.Link>
+        <Atom.HorizontalRule mt={5} />
+      </A.Container>
 
-    <Atom.Container my={2} maxWidth={780}>
-      <FormJoinCoalition />
-    </Atom.Container>
+      <A.Box textCenter py={5}>
+        <A.Heading xl heavy>
+          Project Stewards
+        </A.Heading>
+        <A.Heading as="h4">
+          Making sure the lights stay on and the dogs are walked.
+        </A.Heading>
+        <Atom.HorizontalRule dash center />
+      </A.Box>
+
+      <A.Flex gutter3 mt={3}>
+        <Feature
+          image="https://ipfs.infura.io/ipfs/QmYGh4a6cjH7a3mw9xSYezp2WenGb3d7wj7Wwo9TV44knE"
+          title="Kames Geraghty"
+          tagline="Fullstack Javascript Developer"
+          content="Buidling the 1MD application. Plus crafting developer education tools."
+        />
+        <Feature
+          image="https://ipfs.infura.io/ipfs/QmVCd2aApKytAPNBu4JatvuWiWGX7eAHazpEHBM9DsAxmz"
+          title="Billy Luedkete"
+          tagline="Project Manager"
+          content="Managing the project."
+        />
+        <Feature
+          image="https://ipfs.infura.io/ipfs/QmULnbXfmTEhiaQTi8S7k3oRvk6pR1BVLqYytqN37bUvEJ"
+          title="Joe Bernitt"
+          tagline="Infrastructure and Smart Contract Engineer"
+          content="Managing project infrastructure."
+        />
+      </A.Flex>
+      <A.Container align="center" mt={3}>
+        {/* <A.Link to="/"> */}
+        <A.Button>Become a Steward</A.Button>
+        {/* </A.Link> */}
+      </A.Container>
+      <A.HorizontalRule mt={5} />
+    </A.Container>
 
     <Atom.Box>
-      <Atom.Container my={4} maxWidth={1080}>
-        <Atom.Heading xxl heavy center mt={6}>
+      <Atom.Container maxWidth={1080}>
+        <Atom.Heading xxl heavy center mt={2}>
           Active Coalition Members
         </Atom.Heading>
-        <Atom.HorizontalRule dash center />
+        <A.HorizontalRule dash center />
         <CardLarge
           title="Gitcoin"
           createdBy="Kevi Owocki"
@@ -87,6 +140,15 @@ export default props => (
         />
       </Atom.Container>
     </Atom.Box>
+    <Atom.Container maxWidth={780} mt={5}>
+      <Atom.Paragraph center>
+        <strong>Interested in joining the coalition?</strong> Register below.
+      </Atom.Paragraph>
+    </Atom.Container>
+
+    <Atom.Container my={2} maxWidth={780}>
+      <FormJoinCoalition />
+    </Atom.Container>
   </Site>
 )
 
@@ -131,5 +193,39 @@ const CardLarge = props => {
         </Atom.Box>
       </Atom.Flex>
     </Atom.Flex>
+  )
+}
+
+const Feature = props => {
+  return (
+    <A.Flex card center column textCenter p={2}>
+      <Atom.Flex
+        mb={3}
+        mt={-40}
+        circle
+        card
+        overflow="hidden"
+        height={80}
+        width={80}
+      >
+        <A.BackgroundImage
+          src={
+            props.image ||
+            "https://images.assetsdelivery.com/compings_v2/mingirov/mingirov1904/mingirov190400568.jpg"
+          }
+        />
+      </Atom.Flex>
+      <A.Heading md heavy>
+        {props.title}
+      </A.Heading>
+      <A.Heading sm thin>
+        {props.tagline}
+      </A.Heading>
+      {/* <A.Heading md thin >{props.tagline}</A.Heading> */}
+      {/* <A.HorizontalRule dash center my={3} /> */}
+      <A.Paragraph sm px={3}>
+        {props.content}
+      </A.Paragraph>
+    </A.Flex>
   )
 }

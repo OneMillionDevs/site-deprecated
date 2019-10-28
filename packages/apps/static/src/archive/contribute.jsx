@@ -13,7 +13,7 @@ export default props => (
           Contribute to 1 Million Ethereum Developers
         </A.Heading>
         <A.Heading md>
-          Invite Developers - Become a Guide - Kickstart a Community
+          Invite Developers - Become a Mentor - Kickstart a Community
         </A.Heading>
         <A.Heading md>Join the Fellowship</A.Heading>
       </A.Box>
@@ -50,17 +50,17 @@ export default props => (
       <A.Flex center column order={2} flex={1} py={50} minHeight="600px">
         <A.Box px={100}>
           <A.Heading xl heavy>
-            Become a Guide
+            Become a Mentor
           </A.Heading>
           <A.Heading md>Teach Others About Ethereum</A.Heading>
           <A.Paragraph>
             Enjoy acting as a mentor, teaching others, or publishing educational
             content? Get rewarded for doing so! Become an official Ethereum
-            Guide by subscribing yourself to produce educational content, and
+            Mentor by subscribing yourself to produce educational content, and
             earn special rewards and reputation for your efforts.
           </A.Paragraph>
-          <A.Link to="/guide">
-            <A.Button>Become a Guide</A.Button>
+          <A.Link to="/mentor">
+            <A.Button>Become a Mentor</A.Button>
           </A.Link>
         </A.Box>
       </A.Flex>
