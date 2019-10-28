@@ -95,24 +95,39 @@ export default props => (
           <A.Flex center column flex={3} order={1}>
             <A.Box px={100}>
               <A.Heading xl heavy>
-                Kickstart a Community
+                Submit Your Work
               </A.Heading>
               <A.Heading md>
-                Get Support Growing the Etheruem Community
+                Make your work visible to the community
               </A.Heading>
               <A.Paragraph>
-                Are you a developer with an idea for a new and creative way to
-                onboard new developers to the ecosystem? Are you an active
-                Ethereum user and/or community member with ideas for ways to
-                introduce other community members to cool products, features,
-                theories, or technologies? Kickstart a community by building
-                your own platform, or by leveraging the tools built by others
-                (i.e. EthQuest) - and have your community featured here.
+                If you've built a platform, devised a new developer tool, written an article, or just want to ensure the work that's been done by someone else is highlighted, submit your request here and have it included in the One Million Developers hub.
               </A.Paragraph>
             </A.Box>
           </A.Flex>
 
           <Atom.Flex card center column flex={2} order={2}>
+            <FormBecomeGuide />
+          </Atom.Flex>
+        </A.Flex>
+      </Atom.Container>
+
+      <Atom.Container my={5}>
+        <A.Flex flex={1}>
+          <A.Flex center column flex={3} order={2}>
+            <A.Box px={100}>
+              <A.Heading xl heavy>
+                Join the Initiative
+              </A.Heading>
+              <A.Heading md>Help facilitate the One Million Developers initiative</A.Heading>
+              <A.Paragraph>
+              We need your help carrying this project forward. Join us as either an individual or a company, and support our drive towards one million developers.
+              </A.Paragraph>
+              <A.Button>Refer a Friend</A.Button>
+            </A.Box>
+          </A.Flex>
+
+          <Atom.Flex center card column flex={2}>
             <FormBecomeGuide />
           </Atom.Flex>
         </A.Flex>

@@ -112,19 +112,19 @@ export default props => (
             Web2 Developer
           </A.Heading>
           <A.Heading md>
-            Discover your "Ah-Ha" moment & become a Web3 developer
+            Discover your "Aha" moment & become a Web3 developer
           </A.Heading>
           <A.HorizontalRule dash my={3} />
           <A.Paragraph>
             So, you’ve made it this far. You’re interested, but not yet sold on
             the whole “Ethereum” thing. Don’t worry, everyone was in your
             position at one point - until they began to truly understand it.
-            Until they had their “ah-ha” Ethereum moment. We’re here to help
+            Until they had their “aha” Ethereum moment. We’re here to help
             give you those moments.
           </A.Paragraph>
           <A.Paragraph>
             Select a platform from the list below to discover your Ethereum
-            “ah-ha” moment(s):
+            “aha” moment(s):
           </A.Paragraph>
         </A.Flex>
       </A.Flex>
@@ -309,7 +309,7 @@ export default props => (
             Path:
           </A.Heading>
           <A.Heading giga heavy>
-            Expert Web3 Dev
+            Web3 Expert
           </A.Heading>
           <A.Heading md>
             Help foster the community and lead others through their Ethereum
@@ -318,7 +318,7 @@ export default props => (
           <A.HorizontalRule dash my={3} />
           <A.Paragraph>
             Regardless of your skillset, experience, or background, there is
-            something for you to do. Head on over to the{" "}
+            something for you to do. Head on over to the
             <A.Link to="/contribute">Contribute</A.Link> page to learn more.
           </A.Paragraph>
           <A.Container align="center">
