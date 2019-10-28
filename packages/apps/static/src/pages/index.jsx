@@ -81,23 +81,52 @@ const IndexPage = () => (
       <Atom.Heading noMargin>200,230 Active Developers</Atom.Heading>
       <Atom.Button>Sign Pledge</Atom.Button>
     </Atom.Flex> */}
+    <A.Box color="white" gradient="blueDark" py={4}>
+      <Container mt={5}>
+        <Flex center column>
+          <Heading xl heavy italic>
+            Take Part In <br />
+          </Heading>
+          <Heading xxl heavy>
+            The Next Internet Revolution
+          </Heading>
+          <Atom.Span fontWeight={300} tag="white" my={3}>
+            Web3 - Built with Ethereum Ideas & Technology
+          </Atom.Span>
+        </Flex>
+      </Container>
 
-    <Container mt={5}>
-      <Flex center column>
-        <Heading xl heavy italic>
-          Take Part In <br />
-        </Heading>
-        <Heading xxl heavy>
-          The Next Internet Revolution
-        </Heading>
-        <Atom.Span fontWeight={300} tag="white" my={3}>
-          Web3 - Built with Ethereum Ideas & Technology
-        </Atom.Span>
-      </Flex>
-    </Container>
+      <Atom.Container left>
+        <MainFeature />
+      </Atom.Container>
+    </A.Box>
 
-    <Atom.Container left maxWidth={780}>
-      <MainFeature />
+    <Atom.Container left>
+      <Atom.Heading lg heavy center mt={4} p={3}>
+        Why you, why now, and why Ethereum?
+      </Atom.Heading>
+      <Atom.Paragraph>
+        You already have the skills necessary to be a great asset to the
+        “history of the future.” Many of the coding skills you use daily are
+        directly transferable to what we do. Web3 merely puts a whole new
+        arsenal of developer tools at your disposal.
+      </Atom.Paragraph>
+
+      <Atom.Paragraph>
+        The best time to plant a tree was 20 years ago, the second best time is
+        now. The protocols are aligned, the dev tools are built, and teams are
+        ramping up hiring. When we look back on today, you’ll still be able to
+        say you planted one of the first trees in the new landscape of Web 3.0.
+      </Atom.Paragraph>
+
+      <Atom.Paragraph>
+        There are other platforms floating around in the blockchain ecosystem
+        competing for your attention; but let’s be real. Ethereum remains the
+        gold standard for smart contracts and decentralized apps. With a vast
+        and engaged developer community, the largest user base, and the most
+        exciting tools and applications at your disposal, Ethereum is the
+        logical choice for contributing to the Web 3.0 movement.
+      </Atom.Paragraph>
     </Atom.Container>
 
     <Atom.Box bg="gray" mt={5}>
@@ -141,18 +170,18 @@ const IndexPage = () => (
             imageCover='https://i.imgur.com/DpyjcVt.png'
           /> */}
           <PlatformCard
-            title="RAPID Adventures"
-            tagline="Earn Rewards for Interacting With Ethereum"
-            summary="RAPID Adventures provides a gamified way to interact with the Ethereum ecosystem itself. Whether its learning about how to set up a wallet, deploying your first contract, or interacting with some of the amazing dApps that have already been built, RAPID Adventures introduces you to Ethereum in an immersive and rewarding way."
-            imageCover="https://i.imgur.com/vaTcwti.png"
-            url="/adventures"
-          />
-          <PlatformCard
             title="Add Application"
             tagline="Create A New Application to Share"
             summary="This site is meant to be an open, communal hub of resources! Want your platform featured on One Million Devs? Submit a request here!"
             imageCover="https://s3.envato.com/files/f209c8a8-c7fc-49be-a948-6aa185b7fb4b/inline_image_preview.jpg"
             url="/community"
+          />
+          <PlatformCard
+            title="RAPID Adventures"
+            tagline="Earn Rewards for Interacting With Ethereum"
+            summary="RAPID Adventures provides a gamified way to interact with the Ethereum ecosystem itself. Whether its learning about how to set up a wallet, deploying your first contract, or interacting with some of the amazing dApps that have already been built, RAPID Adventures introduces you to Ethereum in an immersive and rewarding way."
+            imageCover="https://i.imgur.com/vaTcwti.png"
+            url="/adventures"
           />
         </Atom.Flex>
       </A.Container>
@@ -171,8 +200,8 @@ const IndexPage = () => (
     </Container>
 
     <Atom.Container>
-      <A.Flex alignCenter flex={1} mt={5}>
-        <A.Flex center column flex={1} mr={5}>
+      <A.Flex flex={1} mt={5}>
+        <A.Flex column flex={1} mr={5}>
           <A.Heading xxl heavy center>
             Embark On Your Web3 Journey
           </A.Heading>
@@ -186,9 +215,11 @@ const IndexPage = () => (
             a solid foundation, or hop right in by exploring and installing the
             basic tools required to operate effectively in the Ethereum space.
           </A.Paragraph>
-          <A.Link to="/started">
-            <Atom.Button variant="green">Get Started</Atom.Button>
-          </A.Link>
+          <A.Container align="center">
+            <A.Link to="/started">
+              <Atom.Button variant="green">Get Started</Atom.Button>
+            </A.Link>
+          </A.Container>
         </A.Flex>
         <A.Flex center column flex={1}>
           <A.Heading xxl heavy center>
@@ -361,71 +392,119 @@ export default IndexPage
 
 const MainFeature = props => {
   return (
-    <Atom.Box>
-      <Atom.Heading lg heavy left>
-        What is a Web 2.0 Developer?
-      </Atom.Heading>
-      <Atom.Paragraph>
-        That’s you. The first iteration of the web was basic landing pages,
-        tools, and protocols with limited functionality. Web 2.0 saw the
-        addition of more interactive content, such as web apps, social media
-        networking, and cloud storage. People are the product and data is the
-        price.
-      </Atom.Paragraph>
-      <Atom.Heading lg heavy>
-        What is a Web 3.0 Developer?
-      </Atom.Heading>
-      <Atom.Paragraph>
-        Web 3.0 is an Internet that can handle data, and rules for changing the
-        state of that data, in the way that the Internet handles messaging today
-        — more or less decentralized. an internet where your data is your own,
-        your identity is self-sovereign, and walled gardens are dissolved. an
-        internet where value can be exchanged as easily as data, and your assets
-        are inarguably yours.
-      </Atom.Paragraph>
+    <Atom.Container>
+      <A.Flex alignCenter flex={1} mt={5}>
+        <A.Flex center column flex={1} mr={5}>
+          <Atom.Heading lg heavy left>
+            What is a Web 2.0 Developer?
+          </Atom.Heading>
+          <Atom.Paragraph>
+            If you're visiting this site, you may be a Web 2.0 Developer! Prior
+            to the advent of Web 2.0, the internet was comprised of static
+            landing pages, basic tools, and protocols with limited
+            functionality. Web 2.0 saw the addition of more interactive content,
+            such as web apps, user-generated content, social media networking,
+            and cloud storage. Under this domain, people are the product and
+            data is the price. Most developers today are fluent in the language
+            of Web 2.0.
+          </Atom.Paragraph>
+        </A.Flex>
+        <A.Flex center column flex={1}>
+          <Atom.Heading lg heavy>
+            What is a Web 3.0 Developer?
+          </Atom.Heading>
+          <Atom.Paragraph>
+            A Web 3.0 developer is a Web 2.0 developer with an arsenal of
+            additional tools at his/her disposal. Web 3.0 is an internet where
+            devices are connected in decentralized networks rather than
+            depending on server-based data. In Web 3.0, you own your own data,
+            your own digital identity, and your own digital assets. You are not
+            reliant on single servers or institutions to tell you about the
+            truth of the world or the current state of the system. In Web 3.0,
+            Digital assets can be scarce, have value, and be transferred as
+            easily as data.
+          </Atom.Paragraph>
+        </A.Flex>
+      </A.Flex>
+      <A.Container align="center">
+        <A.Heading xxl>Take the Leap!</A.Heading>
+        <Atom.Heading>You already have most of the skills:</Atom.Heading>
+          <A.Paragraph>
+            The skills you have gained building products in Web 2.0 are directly
+            transferable to Web 3.0.{" "}
+          </A.Paragraph>
+        <Atom.Heading>We’ve already done the hard work for you.</Atom.Heading>
+          <A.Paragraph>
+            In the first few years of blockchain development, we laid the
+            scaffolding to make building on Ethereum easy{" "}
+          </A.Paragraph>
+      </A.Container>
+    </Atom.Container>
+    // <Atom.Box>
+    //   <Atom.Heading lg heavy left>
+    //     What is a Web 2.0 Developer?
+    //   </Atom.Heading>
+    //   <Atom.Paragraph>
+    //     That’s you. The first iteration of the web was basic landing pages,
+    //     tools, and protocols with limited functionality. Web 2.0 saw the
+    //     addition of more interactive content, such as web apps, social media
+    //     networking, and cloud storage. People are the product and data is the
+    //     price.
+    //   </Atom.Paragraph>
+    // <Atom.Heading lg heavy>
+    //   What is a Web 3.0 Developer?
+    // </Atom.Heading>
+    // <Atom.Paragraph>
+    //   Web 3.0 is an Internet that can handle data, and rules for changing the
+    //   state of that data, in the way that the Internet handles messaging today
+    //   — more or less decentralized. an internet where your data is your own,
+    //   your identity is self-sovereign, and walled gardens are dissolved. an
+    //   internet where value can be exchanged as easily as data, and your assets
+    //   are inarguably yours.
+    // </Atom.Paragraph>
 
-      <Atom.Heading>You already have most of the skills:</Atom.Heading>
-      <ul>
-        <li>
-          The skills you have gained building products in Web 2.0 are directly
-          transferable to Web 3.0.{" "}
-        </li>
-      </ul>
-      <Atom.Heading>We’ve already done the hard work for you.</Atom.Heading>
-      <ul>
-        <li>
-          In the first few years of blockchain development, we laid the
-          scaffolding to make building on Ethereum easy{" "}
-        </li>
-      </ul>
+    // <Atom.Heading>You already have most of the skills:</Atom.Heading>
+    // <ul>
+    //   <li>
+    //     The skills you have gained building products in Web 2.0 are directly
+    //     transferable to Web 3.0.{" "}
+    //   </li>
+    // </ul>
+    // <Atom.Heading>We’ve already done the hard work for you.</Atom.Heading>
+    // <ul>
+    //   <li>
+    //     In the first few years of blockchain development, we laid the
+    //     scaffolding to make building on Ethereum easy{" "}
+    //   </li>
+    // </ul>
 
-      <Atom.Heading lg heavy>
-        Why you, why now, and why Ethereum?
-      </Atom.Heading>
-      <Atom.Paragraph>
-        You already have the skills necessary to be a great asset to the
-        “history of the future.” Many of the coding skills you use daily are
-        transferable to what we do. You also get to play with a whole new set of
-        developer tools and write smart contracts (aka programmable money).
-      </Atom.Paragraph>
+    //   <Atom.Heading lg heavy>
+    //     Why you, why now, and why Ethereum?
+    //   </Atom.Heading>
+    //   <Atom.Paragraph>
+    //     You already have the skills necessary to be a great asset to the
+    //     “history of the future.” Many of the coding skills you use daily are
+    //     transferable to what we do. You also get to play with a whole new set of
+    //     developer tools and write smart contracts (aka programmable money).
+    //   </Atom.Paragraph>
 
-      <Atom.Paragraph>
-        There’s an old Chinese proverb that was adapted to the blockchain space:
-        “The best time to plant a tree was 20 years ago, the second best time is
-        now.” The protocols are aligned, the dev tools are built, and teams are
-        ramping up hiring. When we look back on today, you’ll still be able to
-        say you planted one of the first trees in the landscape.
-      </Atom.Paragraph>
+    //   <Atom.Paragraph>
+    //     There’s an old Chinese proverb that was adapted to the blockchain space:
+    //     “The best time to plant a tree was 20 years ago, the second best time is
+    //     now.” The protocols are aligned, the dev tools are built, and teams are
+    //     ramping up hiring. When we look back on today, you’ll still be able to
+    //     say you planted one of the first trees in the landscape.
+    //   </Atom.Paragraph>
 
-      <Atom.Paragraph>
-        You understand why Web 3.0 is important, but you might not be sold on
-        why Ethereum is the right place for you. There are other projects
-        competing to be “The World Computer,” but Ethereum remains the gold
-        standard for smart contracts and decentralized apps (dApps). With the
-        largest developer community, the largest user base, and the most amount
-        of tools at your disposal, Ethereum is the logical choice for
-        contributing to the Web3 movement.
-      </Atom.Paragraph>
-    </Atom.Box>
+    //   <Atom.Paragraph>
+    //     You understand why Web 3.0 is important, but you might not be sold on
+    //     why Ethereum is the right place for you. There are other projects
+    //     competing to be “The World Computer,” but Ethereum remains the gold
+    //     standard for smart contracts and decentralized apps (dApps). With the
+    //     largest developer community, the largest user base, and the most amount
+    //     of tools at your disposal, Ethereum is the logical choice for
+    //     contributing to the Web3 movement.
+    //   </Atom.Paragraph>
+    // </Atom.Box>
   )
 }

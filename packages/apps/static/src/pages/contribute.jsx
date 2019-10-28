@@ -65,43 +65,6 @@ export default props => (
         </A.Flex>
       </Atom.Container>
 
-      <Atom.Container maxWidth={680} my={5}>
-        <Atom.Flex column card between my={4}>
-          <Atom.Heading lg heavy>
-            The Growing Etheruem Community
-          </Atom.Heading>
-          <Atom.Paragraph sm>
-            Proin placerat, nibh vel porta fermentum, justo felis elementum
-            odio, sed porttitor purus massa eu eros. Nam mollis lorem eget
-            pretium interdum. Fusce consequat, lacus nec imperdiet posuere,
-            ligula tortor vulputate felis, quis sodales arcu nibh vel nibh.
-            Curabitur sit amet metus eleifend.
-          </Atom.Paragraph>
-          <Atom.Heading sm heavy>
-            Tap into What's Possible
-          </Atom.Heading>
-          <Atom.Paragraph sm>
-            Praesent ut cursus neque. Proin viverra luctus velit nec pharetra.
-            Praesent at dui non justo egestas laoreet. Quisque et euismod augue.
-            Phasellus luctus, libero et malesuada mollis, mi libero pretium
-            nibh, in varius orci enim quis purus. Pellentesque tincidunt eros
-            quis est ultricies, et efficitur mauris tempor. Donec mollis rhoncus
-            tortor sit amet finibus.
-          </Atom.Paragraph>
-          <Atom.Heading sm heavy>
-            The Growing Etheruem Community
-          </Atom.Heading>
-          <Atom.Paragraph sm>
-            Praesent ut cursus neque. Proin viverra luctus velit nec pharetra.
-            Praesent at dui non justo egestas laoreet. Quisque et euismod augue.
-            Phasellus luctus, libero et malesuada mollis, mi libero pretium
-            nibh, in varius orci enim quis purus. Pellentesque tincidunt eros
-            quis est ultricies, et efficitur mauris tempor. Donec mollis rhoncus
-            tortor sit amet finibus.
-          </Atom.Paragraph>
-        </Atom.Flex>
-      </Atom.Container>
-
       <Atom.Container my={5}>
         <A.Flex flex={1}>
           <A.Flex center column flex={3} order={2}>
@@ -125,37 +88,6 @@ export default props => (
             <FormBecomeGuide />
           </Atom.Flex>
         </A.Flex>
-      </Atom.Container>
-
-      <Atom.Container maxWidth={980} py={4}>
-        <Atom.Flex alignCenter card betweenp={5}>
-          <Atom.Box pr={5}>
-            <Atom.Box my={4}>
-              <Atom.Heading>Help Grow the Ethereum Community</Atom.Heading>
-              <Atom.Paragraph>
-                <em>
-                  Donec auctor vehicula turpis. In nulla elit, interdum vel dui
-                  at, venenatis fermentum mi. Aenean pretium nulla ac faucibus
-                  facilisis. Fusce sit amet felis in turpis pretium congue.
-                  Etiam non volutpat nibh, dictum facilisis nulla. Orci varius
-                  natoque penatibus et magnis dis parturient montes, nascetur
-                  ridiculus mus. Mauris venenatis nisi nibh, accumsan tempor
-                  nibh cursus id.
-                </em>
-              </Atom.Paragraph>
-            </Atom.Box>
-            <cite>
-              Kames Geraghty - FullStack Javascript Developer @ ConsenSys
-            </cite>
-          </Atom.Box>
-          <Atom.Image
-            circle
-            card
-            p={1}
-            maxWidth={200}
-            src="https://imgur.com/AQJxQdX.png"
-          />
-        </Atom.Flex>
       </Atom.Container>
 
       <Atom.Container py={5}>
@@ -184,11 +116,6 @@ export default props => (
             <FormBecomeGuide />
           </Atom.Flex>
         </A.Flex>
-      </Atom.Container>
-  
-      <Atom.Container>
-        <BecomeAGuide/>
-        <CommunityDevelopment />
       </Atom.Container>
 
     </Atom.Box>

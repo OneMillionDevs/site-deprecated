@@ -78,18 +78,14 @@ export default props => (
           </A.Heading>
           <A.HorizontalRule dash my={3} />
           <A.Paragraph>
-            We are Ethereum - the community. As a platform, Ethereum would not
-            exist in its current form if it were not for its dominant community.
-            This community is magnitudes larger than the next biggest blockchain
-            competitor - comprised of the thousands of buidlers, developers,
-            visionaries, entrepreneurs, philosophers, economists,
-            mathematicians, and leaders (and anyone we left out!) who have
-            gotten us to where we are today.
-            <br />
-            <br />
-            Every new member of our community is another unique perspective,
-            another source of potential talent and tools and ideas, another
-            teammate, and another friend. Our goal is to grow and foster this
+            As a platform, Ethereum would not exist in its current form if it
+            were not for its dominant community. This community is orders of
+            magnitude larger than the next biggest blockchain competitor, and is
+            comprised of thousands of brilliant collaborators.
+          </A.Paragraph>
+          <A.Paragraph>
+            Every member of this community brings a unique perspective to the
+            table. Our goal is to grow and nurture the potential within this
             community. To attract the best and the brightest. And to make sure
             they stick around - because in this open, composable, cooperative
             ecosystem, every individual truly matters.
@@ -105,78 +101,61 @@ export default props => (
       <A.Heading md center>
         What we hope to do | What we aim to achieve
       </A.Heading>
-      <A.Flex alignCenter flex={1}>
-        <A.Flex column flex={1}>
-          <A.Heading xl heavy>
+      <A.Flex flex={1}>
+        <A.Flex column flex={1} mt={5}>
+          <A.Heading xl heavy center>
             Developer Inspiration
           </A.Heading>
-          <A.HorizontalRule dash my={3} />
+          <A.HorizontalRule dash my={2} center />
           <A.Paragraph sm>
-            Given the overwhelmingly untapped potential of Ethereum, the
-            resources available to make building fun and easy, and the
-            incredible and dominant (and incredibly dominant) community,
-            participating in the Ethereum ecosystem should be a logical choice
-            for those looking for challenge, profit, and the opportunity to
-            change the world. However, not everyone has had their “ah-ha”
-            Ethereum moment - the moment when they realize what’s to come, and
-            truly dive head-first into Web3. This initiative hopes to provide
-            those “ah-ha” moments to developers who are new to the ecosystem, to
-            inspire them to hop on board the train (chugga chugga).
-          </A.Paragraph>
-          <A.Container align="center">
-            <A.Link to="/platforms">
-              <A.Button variant="green">Get Inspired</A.Button>
+            We aim to provide new developers with their “aha!” moment - the
+            moment they realize just how exciting Web3 can be, and consequently
+            cause them to hop aboard the train{" "}
+            <A.Link to="https://www.youtube.com/watch?v=9AOygJ52Dcw">
+              (chugga chugga)
             </A.Link>
-          </A.Container>
+            .
+          </A.Paragraph>
         </A.Flex>
-        <A.Flex column flex={1} order={1} p={5}>
-          <A.Heading xl heavy>
+        <A.Flex column flex={1} order={1} mt={5}>
+          <A.Heading xl heavy center>
             Developer Enablement
           </A.Heading>
-          <A.HorizontalRule dash my={3} />
+          <A.HorizontalRule dash my={2} center />
           <A.Paragraph sm>
-            Once a developer has been inspired to contribute, it is sometimes
-            too daunting, scary, and/or overwhelming for them to begin building.
-            Let’s face it - a young space full of new tools, terminology, and
-            possibilities can be intimidating! Luckily, the size and fervor of
-            the Ethereum community has resulted in the emergence of an
-            inordinate amount of developer tools and resources. However, it is
-            hard to separate the signal from the noise. This initiative hopes to
-            do just that - and make getting started fun and easy, by providing a
-            clear path for new Ethereum developers to go from “inspired” to
-            “contributing” by connecting them to the tools, resources, and
-            platforms they need.
+            Our goal is to enable new developers in the space and provide access
+            to the tools & resources needed to get started buidling on Ethereum.
           </A.Paragraph>
-          <A.Container align="center">
-            <A.Link to="/started">
-              <A.Button variant="green">Learn the Basics</A.Button>
-            </A.Link>
-          </A.Container>
         </A.Flex>
-        <A.Flex column flex={1} order={1}>
-          <A.Heading xl heavy>
+        <A.Flex column flex={1} order={1} mt={5}>
+          <A.Heading xl heavy center>
             Contribution
           </A.Heading>
-          <A.HorizontalRule dash my={3} />
+          <A.HorizontalRule dash my={2} center />
           <A.Paragraph sm>
-            Reaching 1,000,000 Ethereum developers will be no easy task, but it
-            will be a victory shared by all. The open, transparent,
-            decentralized, composable nature of Ethereum has made the Ethereum
-            community feel more like a family of cooperators rather than
-            competitors. However, at times, things can be hectic, disorganized,
-            and overwhelming, resulting in an uncoordinated approach to ushering
-            in the future of the internet. The One Million Developers initiative
-            seeks to foster the coordination of developer contributions, to
-            ensure energy is effectively channeled towards the community’s
-            primary goals - one of those goals being the pursuit of 1,000,000
-            Ethereum developers.
+            Ethereum is built on collaboration. We aim to make contributions to
+            the ecosystem as transparent and as visible as possible in an effort
+            to encourage new contributions and to ensure developers can
+            collaborate effectively.
           </A.Paragraph>
-          <A.Container align="center">
-            <A.Link to="/contribute">
-              <A.Button variant="green">Make An Impact</A.Button>
-            </A.Link>
-          </A.Container>
         </A.Flex>
+      </A.Flex>
+      <A.Flex row justityContent={"space-around"} center>
+        <A.Link to="/platforms" mx={5}>
+          <A.Button variant="green" minWidth={"250px"}>
+            Get Inspired
+            </A.Button>
+        </A.Link>
+        <A.Link to="/started" mx={5}>
+          <A.Button variant="blue" minWidth={"250px"}>
+            Learn the Basics
+            </A.Button>
+        </A.Link>
+        <A.Link to="/contribute" mx={5}>
+          <A.Button variant="purple" minWidth={"250px"}>
+            Make an Impact
+            </A.Button>
+        </A.Link>
       </A.Flex>
     </Atom.Container>
 
@@ -196,23 +175,18 @@ export default props => (
           <A.Heading md>How we plan to carry out our mission</A.Heading>
           <A.HorizontalRule dash my={3} />
           <A.Paragraph>
-            One Million Developers, as a site, aims to act as a hub for
-            resources that explicitly facilitate the growth of the Ethereum
-            ecosystem. Although it can be argued that every single thing built
-            on Ethereum contributes to Ethereum’s growth, some tools, platforms,
-            and resources do this better than others. As such, the One Million
-            Developers Hub seeks to filter, feature, and even foster the
-            development of these tools, platforms, and resources, with the
+            The One Million Developers Hub seeks to filter, feature, and foster
+            the development of tools, platforms, and resources, with the
             ultimate goal of presenting them to developers in an
-            easily-digestible manner. <br /> <br />
-            Because the growth of the Ethereum ecosystem should be a communal
-            effort, and because 1,000,000 Ethereum developers will be a
-            difficult number to achieve, the One Million Developers initiative
-            is open to contributions from all. Whether you want to draft
-            educational content, build a new platform, develop a developer tool,
-            help steward the One Million Developers effort, or even just refer a
-            friend, there is something for everyone. This initiative is entirely
-            in your hands.
+            easily-digestible format.
+          </A.Paragraph>
+          <A.Paragraph>
+            To reach our goal, we need your help! Everyone has something they
+            can bring to the table. Whether you can draft educational content,
+            build a new platform, workshop a developer tool, help steward the
+            One Million Developers effort, or even just refer a friend to our
+            community, this is a communal effort. This initiative is entirely in
+            your hands.
           </A.Paragraph>
         </A.Flex>
       </A.Flex>
@@ -225,16 +199,15 @@ export default props => (
         </A.Heading>
         <A.HorizontalRule center dash my={3} />
         <A.Paragraph sm center>
-          Reaching 1,000,000 Ethereum developers will be no easy task, but it
-          will be a victory shared by all. The open, transparent, decentralized,
-          composable nature of Ethereum has made the Ethereum community feel
-          more like a family of cooperators rather than competitors. However, at
-          times, things can be hectic, disorganized, and overwhelming, resulting
-          in an uncoordinated approach to ushering in the future of the
-          internet. The One Million Developers initiative seeks to foster the
-          coordination of developer contributions, to ensure energy is
-          effectively channeled towards the community’s primary goals - one of
-          those goals being the pursuit of 1,000,000 Ethereum developers.
+          The open, transparent, decentralized, composable nature of Ethereum
+          has made the Ethereum community feel more like a family of cooperators
+          rather than competitors. However, at times, things can be hectic,
+          disorganized, and overwhelming, resulting in an uncoordinated approach
+          to ushering in the future of the internet. The One Million Developers
+          initiative seeks to foster the coordination of developer
+          contributions, to ensure energy is effectively channeled towards the
+          community’s primary goals - one of those goals being the pursuit of
+          1,000,000 Ethereum developers
         </A.Paragraph>
 
         <A.Flex row justityContent={"space-around"} center>
@@ -244,17 +217,16 @@ export default props => (
             </A.Button>
           </A.Link>
           <A.Link to="/contribute" mx={5}>
-            <A.Button variant="green" minWidth={"250px"}>
+            <A.Button variant="blue" minWidth={"250px"}>
               Contribute
             </A.Button>
           </A.Link>
           <A.Link to="/events" mx={5}>
-            <A.Button variant="green" minWidth={"250px"}>
+            <A.Button variant="purple" minWidth={"250px"}>
               Attend an Event
             </A.Button>
           </A.Link>
         </A.Flex>
-
       </A.Flex>
     </Atom.Container>
 
