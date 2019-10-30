@@ -101,7 +101,7 @@ const IndexPage = () => (
       </Atom.Container>
     </A.Box>
 
-    <Atom.Container left>
+    <Atom.Container left maxWidth={780}>
       <Atom.Heading lg heavy center mt={4} p={3}>
         Why you, why now, and why Ethereum?
       </Atom.Heading>
@@ -133,7 +133,7 @@ const IndexPage = () => (
       <QuotesFull />
     </Atom.Box>
 
-    <A.Box color="white" gradient="blueDark" py={4}>
+    {/* <A.Box color="white" gradient="blueDark" py={4}>
       <A.Container my={4}>
         <Atom.Box textCenter>
           <Atom.Heading xxl heavy center>
@@ -163,12 +163,7 @@ const IndexPage = () => (
             imageCover="https://i.imgur.com/cHtxC04.png"
             url="https://gitcoin.co/quests"
           />
-          {/* <PlatformCard
-            title='3Box Developer Profile'
-            tagline='Conquer Decentraland in Style'
-            summary='Nulla malesuada, nisi in mollis volutpat, urna mi ultrices libero, non fermentum metus ante auctor eros. Nullam a facilisis felis.'
-            imageCover='https://i.imgur.com/DpyjcVt.png'
-          /> */}
+  
           <PlatformCard
             title="Add Application"
             tagline="Create A New Application to Share"
@@ -185,8 +180,8 @@ const IndexPage = () => (
           />
         </Atom.Flex>
       </A.Container>
-    </A.Box>
-
+    </A.Box> */}
+{/* 
     <Container mt={5}>
       <Flex center column>
         <Heading xxl heavy>
@@ -247,7 +242,7 @@ const IndexPage = () => (
           </A.Link>
         </A.Flex>
       </A.Flex>
-    </Atom.Container>
+    </Atom.Container> */}
 
     <A.Flex gradient="gray" flex={1}>
       <A.Flex center column flex={3} py={50} minHeight="600px" order={2}>
@@ -426,7 +421,7 @@ const MainFeature = props => {
           </Atom.Paragraph>
         </A.Flex>
       </A.Flex>
-      <A.Container align="center">
+      {/* <A.Container align="center">
         <A.Heading xxl>Take the Leap!</A.Heading>
         <Atom.Heading>You already have most of the skills:</Atom.Heading>
           <A.Paragraph>
@@ -438,7 +433,7 @@ const MainFeature = props => {
             In the first few years of blockchain development, we laid the
             scaffolding to make building on Ethereum easy{" "}
           </A.Paragraph>
-      </A.Container>
+      </A.Container> */}
     </Atom.Container>
     // <Atom.Box>
     //   <Atom.Heading lg heavy left>

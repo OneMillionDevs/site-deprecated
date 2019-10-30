@@ -21,29 +21,29 @@ const PopoverMenu = props => {
         <div style={{background: 'white', padding: 10, minWidth: 300, boxShadow: '2px 2px 2px #000'}}>
          <Atom.Flex>
            <Atom.Flex column p={3}>
-              <Atom.Link to="/contribute">
+              {/* <Atom.Link to="/contribute">
                 <A.Span mx={1}>
                   Contribute
                 </A.Span>
-              </Atom.Link>
+              </Atom.Link> */}
               <Atom.Link to="/team">
                 <A.Span mx={1}>
                   Team
                 </A.Span>
               </Atom.Link>
-              <Atom.Link to="/mentors">
+              {/* <Atom.Link to="/mentors">
                 <A.Span  mx={1}>
                   Mentors
                 </A.Span>
-              </Atom.Link>
-              <Atom.Link to="/news">
+              </Atom.Link> */}
+              {/* <Atom.Link to="/news">
                 <A.Span mx={1}>
                   Media
                 </A.Span>
-              </Atom.Link>
+              </Atom.Link> */}
            </Atom.Flex>
            <Atom.Flex column p={3}>
-              <Atom.Link to="/events">
+              {/* <Atom.Link to="/events">
                 <A.Span  mx={1}>
                   Events
                 </A.Span>
@@ -52,7 +52,7 @@ const PopoverMenu = props => {
               <Atom.Span mx={1}>
                 Platforms
               </Atom.Span>
-            </A.Link>
+            </A.Link> */}
             <A.Link to="/resources">
               <Atom.Span mx={1}>
                 Resources
@@ -94,7 +94,7 @@ const Branding = props => {
               Get Started
             </A.Span>
           </Atom.Link>
-          <Atom.Link to="/contribute">
+          {/* <Atom.Link to="/contribute">
             <A.Span xs tag="white" mx={1}>
               Contribute
             </A.Span>
@@ -113,7 +113,7 @@ const Branding = props => {
             <A.Span xxs tag="white" mx={1}>
               Events
             </A.Span>
-          </Atom.Link>
+          </Atom.Link> */}
 
         </A.Flex>
       </A.Flex>
@@ -124,28 +124,28 @@ const Branding = props => {
 
       {/* Right */}
       <Atom.Flex>
-        <A.Link to="/platforms">
+        {/* <A.Link to="/platforms">
           <Atom.Span xs mx={2}>
             Platforms
           </Atom.Span>
-        </A.Link>
+        </A.Link> */}
         <A.Link to="/resources">
           <Atom.Span xs mx={2}>
             Resources
           </Atom.Span>
         </A.Link>
-        <Atom.Link to="/team">
+        {/* <Atom.Link to="/team">
           <A.Span xxs tag="white" mx={1}>
             Team
           </A.Span>
-        </Atom.Link>
+        </Atom.Link> */}
 
         <A.Modal content={<FormUpdates />}>
           <A.Span pointer tag="white" xxs>
             Subscribe
           </A.Span>
         </A.Modal>
-      <PopoverMenu/>
+      {/* <PopoverMenu/> */}
       </Atom.Flex>
     </A.Flex>
   )

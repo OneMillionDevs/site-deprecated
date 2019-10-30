@@ -26,7 +26,7 @@ const Branding = props => {
 
         {/* Menu */}
         <A.Flex flex={5} pl={6}>
-          <A.Box>
+          {/* <A.Box>
             <A.Heading sm heavy>
               Information
             </A.Heading>
@@ -48,9 +48,9 @@ const Branding = props => {
                 <A.Span xs>Experiment</A.Span>
               </A.Link>
             </A.Flex>
-          </A.Box>
+          </A.Box> */}
 
-          <A.Box ml={5}>
+          {/* <A.Box ml={5}>
             <A.Heading sm heavy>
               News
             </A.Heading>
@@ -66,7 +66,7 @@ const Branding = props => {
                 <A.Span xs>Updates</A.Span>
               </A.Link>
             </A.Flex>
-          </A.Box>
+          </A.Box> */}
 
           <A.Box ml={5}>
             <A.Heading sm heavy>
