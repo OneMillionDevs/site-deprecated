@@ -33,16 +33,15 @@ const IndexPage = () => (
           </Heading>
           <Paragraph mt={3}>
             <strong>
-              Around the world, Ethereum developers are ushering in radical
-              change one keystroke at a time.
+              A collaborative initiative for growing the Ethereum developer community.
             </strong>
           </Paragraph>
 
           <Paragraph>
             We hope to expand the Ethereum developer family - and to bring that
-            family closer together - by providing an interactive and immersive
-            space for newbies and veterans alike, to learn, collaborate, share,
-            and buidl in a fun and easy manner.
+            family closer together - by providing a community-curated, interactive
+            space for newbies and veterans alike to learn, collaborate, share,
+            and buidl in the most frictionless way possible.
           </Paragraph>
 
           {/* <EmailSubmit /> */}
