@@ -32,38 +32,11 @@ const Branding = props => {
             </A.Heading>
             <A.HorizontalRule dash left />
             <A.Flex {...props.styledMenu}>
-              <A.Link to="/articles">
-                <A.Span xs>Articles</A.Span>
-              </A.Link>
               <A.Link to="/resources">
                 <A.Span xs>Resources</A.Span>
               </A.Link>
               <A.Link to="/platforms">
                 <A.Span xs>Platforms</A.Span>
-              </A.Link>
-              <A.Link to="/tools">
-                <A.Span xs>Tools</A.Span>
-              </A.Link>
-              <A.Link to="/experiment">
-                <A.Span xs>Experiment</A.Span>
-              </A.Link>
-            </A.Flex>
-          </A.Box>
-
-          <A.Box ml={5}>
-            <A.Heading sm heavy>
-              News
-            </A.Heading>
-            <A.HorizontalRule dash left />
-            <A.Flex {...props.styledMenu}>
-              <A.Link to="/news">
-                <A.Span xs>News</A.Span>
-              </A.Link>
-              <A.Link to="/coverage">
-                <A.Span xs>Coverage</A.Span>
-              </A.Link>
-              <A.Link to="/updates">
-                <A.Span xs>Updates</A.Span>
               </A.Link>
             </A.Flex>
           </A.Box>
@@ -86,26 +59,6 @@ const Branding = props => {
             </A.Flex>
           </A.Box>
 
-          <A.Box ml={5}>
-            <A.Heading sm heavy>
-              Contribute
-            </A.Heading>
-            <A.HorizontalRule dash left />
-            <A.Flex {...props.styledMenu}>
-              <A.Link to="/mentor">
-                <A.Span xs>Mentor Program</A.Span>
-              </A.Link>
-              <A.Link to="/community">
-                <A.Span xs>Community Program</A.Span>
-              </A.Link>
-              <A.Link to="/stewards">
-                <A.Span xs>Steward Program</A.Span>
-              </A.Link>
-              <A.Link to="/feedback">
-                <A.Span xs>Feedback</A.Span>
-              </A.Link>
-            </A.Flex>
-          </A.Box>
         </A.Flex>
 
         <Atom.Flex>

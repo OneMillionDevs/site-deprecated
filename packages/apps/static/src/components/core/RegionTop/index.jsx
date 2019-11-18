@@ -99,21 +99,6 @@ const Branding = props => {
               Contribute
             </A.Span>
           </Atom.Link>
-          <Atom.Link to="/mentors">
-            <A.Span xxs tag="white" mx={1}>
-              Mentors
-            </A.Span>
-          </Atom.Link>
-          <Atom.Link to="/news">
-            <A.Span xxs tag="white" mx={1}>
-              Media
-            </A.Span>
-          </Atom.Link>
-          <Atom.Link to="/events">
-            <A.Span xxs tag="white" mx={1}>
-              Events
-            </A.Span>
-          </Atom.Link>
 
         </A.Flex>
       </A.Flex>
@@ -124,28 +109,21 @@ const Branding = props => {
 
       {/* Right */}
       <Atom.Flex>
-        <A.Link to="/platforms">
-          <Atom.Span xs mx={2}>
-            Platforms
-          </Atom.Span>
-        </A.Link>
         <A.Link to="/resources">
           <Atom.Span xs mx={2}>
             Resources
           </Atom.Span>
         </A.Link>
-        <Atom.Link to="/team">
-          <A.Span xxs tag="white" mx={1}>
-            Team
-          </A.Span>
-        </Atom.Link>
-
         <A.Modal content={<FormUpdates />}>
-          <A.Span pointer tag="white" xxs>
+          <A.Span pointer tag="white" xs>
             Subscribe
           </A.Span>
         </A.Modal>
-      <PopoverMenu/>
+        <A.Link to="/analytics">
+          <Atom.Span pointer tag="red" xs mx={2}>
+            Dashboard
+          </Atom.Span>
+        </A.Link>
       </Atom.Flex>
     </A.Flex>
   )

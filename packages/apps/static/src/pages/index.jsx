@@ -101,36 +101,20 @@ const IndexPage = () => (
       </Atom.Container>
     </A.Box>
 
-    <Atom.Container left>
-      <Atom.Heading lg heavy center mt={4} p={3}>
-        Why you, why now, and why Ethereum?
-      </Atom.Heading>
-      <Atom.Paragraph>
-        You already have the skills necessary to be a great asset to the
-        “history of the future.” Many of the coding skills you use daily are
-        directly transferable to what we do. Web3 merely puts a whole new
-        arsenal of developer tools at your disposal.
-      </Atom.Paragraph>
-
-      <Atom.Paragraph>
-        The best time to plant a tree was 20 years ago, the second best time is
-        now. The protocols are aligned, the dev tools are built, and teams are
-        ramping up hiring. When we look back on today, you’ll still be able to
-        say you planted one of the first trees in the new landscape of Web 3.0.
-      </Atom.Paragraph>
-
-      <Atom.Paragraph>
-        There are other platforms floating around in the blockchain ecosystem
-        competing for your attention; but let’s be real. Ethereum remains the
-        gold standard for smart contracts and decentralized apps. With a vast
-        and engaged developer community, the largest user base, and the most
-        exciting tools and applications at your disposal, Ethereum is the
-        logical choice for contributing to the Web 3.0 movement.
-      </Atom.Paragraph>
-    </Atom.Container>
-
-    <Atom.Box bg="gray" mt={5}>
-      <QuotesFull />
+    <Atom.Box bg="white" mt={3}>
+      <A.Container align="center">
+        <A.Heading xxl>Take the Leap!</A.Heading>
+        <Atom.Heading>You already have most of the skills:</Atom.Heading>
+        <A.Paragraph>
+          The skills you have gained building products in Web 2.0 are directly
+            transferable to Web 3.0.{" "}
+        </A.Paragraph>
+        <Atom.Heading>We’ve already done the hard work for you.</Atom.Heading>
+        <A.Paragraph>
+          In the first few years of blockchain development, we laid the
+            scaffolding to make building on Ethereum easy{" "}
+        </A.Paragraph>
+      </A.Container>
     </Atom.Box>
 
     <A.Box color="white" gradient="blueDark" py={4}>
@@ -139,19 +123,8 @@ const IndexPage = () => (
           <Atom.Heading xxl heavy center>
             Discover Your "A-Ha" Moment
           </Atom.Heading>
-          <Atom.Paragraph>
-            If you’re not sold yet, don’t worry - in the world of Ethereum,
-            moving from a state of “intrigued” to “sold” typically takes the
-            discovery of an “ah-ha” moment - a moment when things finally click,
-            and the user understands why so many people believe an economic and
-            digital [r]evolution is taking place. <br />
-            In the past, discovering that “ah-ha” moment could take months.
-            Maybe years. Luckily, the Ethereum community has since built some
-            tools to help.
-          </Atom.Paragraph>
           <Atom.Span xxs tag="white">
-            Click here to learn <strong>why</strong> and <strong>how</strong> we
-            promote community tools.
+           Get inspired to join the Ethereum community
           </Atom.Span>
         </Atom.Box>
 
@@ -193,7 +166,7 @@ const IndexPage = () => (
           Start Buidling
         </Heading>
         <Atom.Paragraph>
-          What are you waiting for? Dive head-first into the action by
+          Dive head-first into the action by
           journeying down the path of your choice:
         </Atom.Paragraph>
       </Flex>
@@ -426,19 +399,6 @@ const MainFeature = props => {
           </Atom.Paragraph>
         </A.Flex>
       </A.Flex>
-      <A.Container align="center">
-        <A.Heading xxl>Take the Leap!</A.Heading>
-        <Atom.Heading>You already have most of the skills:</Atom.Heading>
-          <A.Paragraph>
-            The skills you have gained building products in Web 2.0 are directly
-            transferable to Web 3.0.{" "}
-          </A.Paragraph>
-        <Atom.Heading>We’ve already done the hard work for you.</Atom.Heading>
-          <A.Paragraph>
-            In the first few years of blockchain development, we laid the
-            scaffolding to make building on Ethereum easy{" "}
-          </A.Paragraph>
-      </A.Container>
     </Atom.Container>
     // <Atom.Box>
     //   <Atom.Heading lg heavy left>
