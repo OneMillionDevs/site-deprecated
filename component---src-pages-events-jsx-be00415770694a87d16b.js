@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[22],{502:function(e,t,n){"use strict";n.r(t),function(e,a,r){var l=n(481);n(258);t.default=function(t){return e.createElement(l.Site,null,e.createElement(a.Box,{color:"white",gradient:"blueDark",py:4,textCenter:!0},e.createElement(a.Flex,{between:!0,px:4},e.createElement(a.Heading,{lg:!0,heavy:!0},"Events"),e.createElement(a.Button,{xs:!0,variant:"green"},"Add Event"))))}}.call(this,n(0),n(10),n(10))}}]);
+//# sourceMappingURL=component---src-pages-events-jsx-be00415770694a87d16b.js.map
