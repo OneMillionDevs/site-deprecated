@@ -41,10 +41,6 @@ Then, cd into `site/packages/apps/static/` and run: <br />
     * Grants
     * Job Listings
     * Bounties
-  * Media (optional) 
-    * In the Media (posts about 1MD)
-    * 1MD Blog (optional / next phase)
-    * Impactful Media (optional / next phase) - top, hand-picked media from around the ecosystem
 * About
   * Mission
   * In the Media (posts about 1MD)
