@@ -1,5 +1,3 @@
 import wrapRootElement from './src/providers';
 
-export {
-  wrapRootElement,
-}
+export {wrapRootElement};

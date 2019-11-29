@@ -1,0 +1,34 @@
+{
+    "paths": [
+        {
+            "name": "/refer",
+            "lambdaFunction": "milliondevRefer",
+            "privacy": {
+                "open": true
+            }
+        }
+    ],
+    "resourceName": "milliondevRefer",
+    "apiName": "milliondevRefer",
+    "functionArns": [
+        {
+            "lambdaFunction": "milliondevRefer"
+        }
+    ],
+    "privacy": {
+        "auth": 0,
+        "unauth": 0,
+        "authRoleName": "amplify-onemilliondevs-dev-84757-authRole",
+        "unAuthRoleName": "amplify-onemilliondevs-dev-84757-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "milliondevRefer",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}

@@ -1,87 +1,94 @@
-// const path = require('path')
-const path = require('path');
-
-module.exports = {
-  pathPrefix: "/",
-  siteMetadata: {
-    title: `OneMillionDevs`,
-    description: `Growing the Ethereum Ecosystem`,
-    author: `@kamescg`,
-    url: 'https://onemillionsdevs.com',
-    twitter: 'OneMillionDevs',
-    facebook: 'OneMillionDevs',
-    linkedin: 'OneMillionDevs'
+require('dotenv').config();
+const queries = require('./src/utils/algolia');
+const config = require('./config');
+const plugins = [
+  'gatsby-plugin-sitemap',
+  'gatsby-plugin-sharp',
+  'gatsby-plugin-emotion',
+  'gatsby-plugin-remove-trailing-slashes',
+  'gatsby-plugin-react-helmet',
+  'gatsby-plugin-styled-components',
+  {
+    resolve: `gatsby-plugin-layout`,
+    options: {
+      component: require.resolve(`./src/templates/Site/index.jsx`),
+    },
   },
-  plugins: [
-    `gatsby-plugin-styled-components`,
-    `gatsby-plugin-react-helmet`,
-    // `gatsby-plugin-mdx`, // Markdown for the Component Era
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `content`,
-        path: `${__dirname}/src/content`,
-      },
-    },
-    {
-      resolve: "gatsby-plugin-page-creator",
-      options: {
-        path: `${__dirname}/src/content`,
-      },
-    },
-    {
-      resolve: `gatsby-plugin-mdx`,
-      options: {
-        defaultLayouts: {
-          content: path.resolve(__dirname,"./src/components/templates/Site"),
-          default: path.resolve(__dirname, "./src/components/templates/Site"),
+
+  /* --- Markdown --- */
+  {
+    resolve: 'gatsby-plugin-mdx',
+    options: {
+      gatsbyRemarkPlugins: [
+        {
+          resolve: 'gatsby-remark-images',
+          options: {
+            maxWidth: 1035,
+            sizeByPixelDensity: true,
+          },
         },
-      },
-    },
-    
-    
-    {
-      resolve: `gatsby-plugin-alias-imports`,
-      options: {
-        alias: {
-          'design-system': '@horizin/design-system',
-          'profiles': '@kames/3box-profiles',
-          'did': '@kames/3box-state',
-          'cms': '@kames/3box-system',
-          core: path.resolve(__dirname, './src/components/core'),
-          forms: path.resolve(__dirname, './src/components/forms'),
-          templates: path.resolve(__dirname, './src/components/templates'),
-          views: path.resolve(__dirname, './src/components/views'),
-          query: path.resolve(__dirname, './src/components/query'),
+        {
+          resolve: 'gatsby-remark-copy-linked-files',
         },
-        extensions: []
-      }
+      ],
+      extensions: ['.mdx', '.md'],
     },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: `${__dirname}/src/assets/images`,
-      },
+  },
+  {
+    resolve: 'gatsby-source-filesystem',
+    options: {
+      name: 'docs',
+      path: `${__dirname}/content/`,
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
-        start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
-        // icon: `src/assets/images/gatsby-icon.png`, // This path is relative to the root of the site.
-      },
+  },
+
+  /* --- Analytics --- */
+  {
+    resolve: `gatsby-plugin-gtag`,
+    options: {
+      // your google analytics tracking id
+      trackingId: config.gatsby.gaTrackingId,
+      // Puts tracking script in the head instead of the body
+      head: true,
+      // enable ip anonymization
+      anonymize: false,
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
-  
-  ],
-  
+  },
+];
+if (
+  config.header.search &&
+  config.header.search.enabled &&
+  config.header.search.algoliaAppId &&
+  config.header.search.algoliaAdminKey
+) {
+  plugins.push({
+    resolve: `gatsby-plugin-algolia`,
+    options: {
+      appId: config.header.search.algoliaAppId, // algolia application id
+      apiKey: config.header.search.algoliaAdminKey, // algolia admin key to index
+      queries,
+      chunkSize: 10000, // default: 1000
+    },
+  });
 }
+module.exports = {
+  pathPrefix: config.gatsby.pathPrefix,
+  siteMetadata: {
+    title: config.siteMetadata.title,
+    description: config.siteMetadata.description,
+    docsLocation: config.siteMetadata.docsLocation,
+    ogImage: config.siteMetadata.ogImage,
+    favicon: config.siteMetadata.favicon,
+    logo: {
+      link: config.header.logoLink ? config.header.logoLink : '/',
+      image: config.header.logo,
+    }, // backwards compatible
+    headerTitle: config.header.title,
+    githubUrl: config.header.githubUrl,
+    helpUrl: config.header.helpUrl,
+    tweetText: config.header.tweetText,
+    headerLinks: config.header.links,
+    siteUrl: config.gatsby.siteUrl,
+  },
+  plugins: plugins,
+};

@@ -11,7 +11,7 @@ html {
   overflow-x: hidden;
 }
 body {
-  font-family: "Roboto";
+  font-family: 'Roboto';
   overflow-x: hidden;
   min-height: 100%;
 }
@@ -22,13 +22,13 @@ a {
 }
 
 a:hover {
-text-decoration: none;
-cursor: pointer;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 a:hover {
-text-decoration: none;
-cursor: pointer;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 h1,
@@ -53,6 +53,10 @@ li {
   margin-bottom: 8px;
 }
 
+.bp3-overlay .bp3-overlay-open {
+  position: relative;
+  z-index: 1000;
+}
 
 .slick-dots {
   bottom: 20px !important;
@@ -74,7 +78,7 @@ li {
 }
 
 .react-tiny-popover-container {
-  z-index: 1000
+  z-index: 1000;
 }
 
 .alert-enter {
@@ -146,7 +150,7 @@ li {
   opacity: 0;
 }
 
-.fade-enter  {
+.fade-enter {
   opacity: 0;
   z-index: 1;
 }
@@ -163,13 +167,13 @@ li {
   transition: all 250ms ease-in;
 }
 
-.fade-exit  {
+.fade-exit {
   transform: translateY(30px);
   z-index: 1;
 }
 
 .fade-enter.fade-exit-active {
-  opacity: .4;
+  opacity: 0.4;
   transform: scale(0.9) translateY(9);
   right: 0px;
   transition: opacity 750ms ease-in;
