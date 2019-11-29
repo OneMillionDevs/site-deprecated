@@ -12,12 +12,12 @@ function createRootElement(id) {
 
 /**
  * Appends element as last child of body.
- * @param {HTMLElement} rootElem 
+ * @param {HTMLElement} rootElem
  */
 function addRootElement(rootElem) {
   document.body.insertBefore(
     rootElem,
-    document.body.lastElementChild.nextElementSibling,
+    document.body.lastElementChild.nextElementSibling
   );
 }
 
@@ -40,7 +40,6 @@ function usePortal(id) {
     const existingParent = document.querySelector(`#${id}`);
     // Parent is either a new root or the existing dom element
     const parentElem = existingParent || createRootElement(id);
-
 
     // If there is no existing DOM element, add a new one.
     if (!existingParent) {
@@ -79,4 +78,3 @@ function usePortal(id) {
 }
 
 export default usePortal;
-
