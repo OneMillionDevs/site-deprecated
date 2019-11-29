@@ -62,9 +62,11 @@ export const CardLarge = ({
           <Atom.Paragraph>{summary}</Atom.Paragraph>
         </Atom.Box>
         <Atom.Flex center column sx={styles.action}>
-          <Atom.Button m0 white>
-            Go
-          </Atom.Button>
+          <a href={props.link} target="_blank" rel="noopener noreferrer">
+            <Atom.Button m0 white>
+              Go
+            </Atom.Button>
+          </a>
         </Atom.Flex>
       </Atom.Flex>
     </Atom.Flex>

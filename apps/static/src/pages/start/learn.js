@@ -71,7 +71,6 @@ const Showcase = props => {
   return (
     <Atom.Flex flex={1} sx={styles.showcase.container}>
       <Atom.Flex center column sx={{flex: 1}}>
-        {/* <GraphAxis width={500} height={500} margin={20} /> */}
         <Atom.Heading giga heavy sx={{mt: 0}}>
           <Atom.Span heavy>Learn</Atom.Span>
         </Atom.Heading>
@@ -86,10 +85,14 @@ const Showcase = props => {
 const LearningLevels = props => {
   return (
     <Atom.Container>
-      <Tabs id="TabsExample" selectedTabId="ng">
-        <Tab id="ng" title="Beginner" panel={<BeginnerInformation />} />
-        <Tab id="rx" title="Intermediate" panel={<IntermediateInformation />} />
-        <Tab id="bb" title="Advanced" panel={<AdvancedInformation />} />
+      <Tabs id="TabsExample" selectedTabId="beginner">
+        <Tab id="beginner" title="Beginner" panel={<BeginnerInformation />} />
+        <Tab
+          id="intermediate"
+          title="Intermediate"
+          panel={<IntermediateInformation />}
+        />
+        <Tab id="advanced" title="Advanced" panel={<AdvancedInformation />} />
         <Tabs.Expander />
         <input className="bp3-input" type="text" placeholder="Search..." />
       </Tabs>
@@ -103,8 +106,7 @@ const listBeginner = [
     subtitle: 'Insert Learning Resource Tagline',
     summary:
       'Quisque sollicitudin id turpis sed elementum. Integer congue nunc id diam finibus, vel imperdiet augue blandit. Suspendisse sit amet tempus lacus.',
-    label: 'Learn',
-    link: 'decentralized/finance',
+    link: 'https://ethereum.org/beginners/',
     image: 'https://imgur.com/7a9ussp.png',
   },
 ];
@@ -114,8 +116,7 @@ const listIntermediate = [
     subtitle: 'Insert Learning Resource Tagline',
     summary:
       'Quisque sollicitudin id turpis sed elementum. Integer congue nunc id diam finibus, vel imperdiet augue blandit. Suspendisse sit amet tempus lacus.',
-    label: 'Learn',
-    link: 'decentralized/finance',
+    link: 'https://ethereum.org/beginners/',
     image: 'https://imgur.com/7a9ussp.png',
   },
 ];
@@ -125,8 +126,7 @@ const listAdvanced = [
     subtitle: 'Insert Learning Resource Tagline',
     summary:
       'Quisque sollicitudin id turpis sed elementum. Integer congue nunc id diam finibus, vel imperdiet augue blandit. Suspendisse sit amet tempus lacus.',
-    label: 'Learn',
-    link: 'decentralized/finance',
+    link: 'https://ethereum.org/beginners/',
     image: 'https://imgur.com/7a9ussp.png',
   },
 ];
