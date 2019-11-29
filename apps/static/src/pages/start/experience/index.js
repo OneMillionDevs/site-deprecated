@@ -1,8 +1,9 @@
-import {ResourceCard} from '@components/experiments';
 import {Tab, Tabs} from '@blueprintjs/core';
+import {ResourceCard} from '@components/experiments';
+import styles from './styles';
 
 /* --- Component --- */
-const Page = props => {
+const PageExperience = props => {
   return (
     <Atom.Flex column>
       <Showcase />
@@ -10,73 +11,16 @@ const Page = props => {
     </Atom.Flex>
   );
 };
-export default Page;
-
-const styles = {
-  // Section 1
-  showcase: {
-    container: {
-      py: 6,
-    },
-    left: {
-      flex: 5,
-      p: 4,
-      py: 5,
-    },
-    right: {
-      boxShadow: 'insetLeftHeavy',
-      gradient: 'blue',
-      borderRadius: '0 0 0 40px',
-      py: 50,
-      flex: 3,
-      p: 4,
-      zIndex: 1000,
-    },
-  },
-
-  reportCategory: {
-    flex: 1,
-    minHeight: '50vh',
-    py: 6,
-  },
-
-  // Components
-  featureCard: {
-    container: {
-      p: 3,
-    },
-  },
-  featuredAdventure: {
-    container: {
-      p: 3,
-    },
-  },
-  featured: {
-    container: {
-      py: 4,
-      px: [2, 2, 4],
-    },
-    left: {
-      flex: 1,
-      order: 1,
-    },
-    right: {
-      flex: 1,
-      order: 2,
-    },
-  },
-};
+export default PageExperience;
 
 const Showcase = props => {
   return (
     <Atom.Flex flex={1} sx={styles.showcase.container}>
       <Atom.Flex center column sx={{flex: 1}}>
         <Atom.Heading giga heavy sx={{mt: 0}}>
-          <Atom.Span heavy>Learn</Atom.Span>
+          <Atom.Span heavy>Experience</Atom.Span>
         </Atom.Heading>
-        <Atom.Paragraph>
-          Get started with Ethereum. Learn all of the basics and where to start.
-        </Atom.Paragraph>
+        <Atom.Paragraph>Experience the Ethereum blockchain.</Atom.Paragraph>
       </Atom.Flex>
     </Atom.Flex>
   );
@@ -102,32 +46,32 @@ const LearningLevels = props => {
 
 const listBeginner = [
   {
-    title: 'Ethereum Foundation',
+    title: 'Bankless Level-Up Guide',
     subtitle: 'Insert Learning Resource Tagline',
     summary:
       'Quisque sollicitudin id turpis sed elementum. Integer congue nunc id diam finibus, vel imperdiet augue blandit. Suspendisse sit amet tempus lacus.',
-    link: 'https://ethereum.org/beginners/',
-    image: 'https://imgur.com/7a9ussp.png',
+    link: 'https://bankless.substack.com/p/bankless-level-up-guide',
+    image: 'https://imgur.com/DzyiM7k.png',
   },
 ];
 const listIntermediate = [
   {
-    title: 'Ethereum Foundation',
+    title: 'Bankless Level-Up Guide',
     subtitle: 'Insert Learning Resource Tagline',
     summary:
       'Quisque sollicitudin id turpis sed elementum. Integer congue nunc id diam finibus, vel imperdiet augue blandit. Suspendisse sit amet tempus lacus.',
-    link: 'https://ethereum.org/beginners/',
-    image: 'https://imgur.com/7a9ussp.png',
+    link: 'https://bankless.substack.com/p/bankless-level-up-guide',
+    image: 'https://imgur.com/DzyiM7k.png',
   },
 ];
 const listAdvanced = [
   {
-    title: 'Ethereum Foundation',
+    title: 'Bankless Level-Up Guide',
     subtitle: 'Insert Learning Resource Tagline',
     summary:
       'Quisque sollicitudin id turpis sed elementum. Integer congue nunc id diam finibus, vel imperdiet augue blandit. Suspendisse sit amet tempus lacus.',
-    link: 'https://ethereum.org/beginners/',
-    image: 'https://imgur.com/7a9ussp.png',
+    link: 'https://bankless.substack.com/p/bankless-level-up-guide',
+    image: 'https://imgur.com/DzyiM7k.png',
   },
 ];
 
