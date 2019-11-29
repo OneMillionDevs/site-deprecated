@@ -2,7 +2,7 @@ import {ResourceCard} from '@components/experiments';
 import {Tab, Tabs} from '@blueprintjs/core';
 import styles from './styles';
 
-import {FormJoinIndividual, FormJoinOrganization} from '@forms';
+import {FormJoinIndividual, FormJoinOrganization, FormSubmitWork} from '@forms';
 /* --- Component --- */
 const Page = props => {
   return (
@@ -30,6 +30,10 @@ const Showcase = props => {
 const FormPlacholders = props => {
   return (
     <Atom.Container sx={{py: 5}}>
+      <Atom.Box>
+        <Atom.Heading xl>Submit Work</Atom.Heading>
+        <FormSubmitWork />
+      </Atom.Box>
       <Atom.Box>
         <Atom.Heading xl>Individual</Atom.Heading>
         <FormJoinIndividual />

@@ -14,7 +14,7 @@ const FormRegistration = props => {
       <Molecule.Field
         variant={['text']}
         name="name"
-        placeholder="Company Name"
+        placeholder="Name"
         register={register}
         errors={errors}
         sx={styles.field}
@@ -22,48 +22,49 @@ const FormRegistration = props => {
 
       <Molecule.Field
         variant={['text']}
-        name="site"
-        placeholder="Website"
+        name="email"
+        placeholder="Email"
         register={register}
         errors={errors}
         sx={styles.field}
       />
 
-      <Atom.Heading lg>Contact Information</Atom.Heading>
       <Molecule.Field
         variant={['text']}
-        name="email-individual"
-        placeholder="Email (Individual"
-        register={register}
-        errors={errors}
-        sx={styles.field}
-      />
-      <Molecule.Field
-        variant={['text']}
-        name="name-individual"
-        placeholder="Name (Individual"
+        name="company"
+        placeholder="Company"
         register={register}
         errors={errors}
         sx={styles.field}
       />
 
-      <Atom.Heading lg>Details</Atom.Heading>
+      <Molecule.Field
+        variant={['text']}
+        name="role"
+        placeholder="Role"
+        register={register}
+        errors={errors}
+        sx={styles.field}
+      />
+
+      <Atom.Heading lg>Project Details</Atom.Heading>
+
       <Molecule.Field
         variant={['text']}
         as="textarea"
-        name="interest"
-        placeholder="Involvement Interest"
+        name="description"
+        placeholder="Project Description"
         register={register}
         errors={errors}
         sx={styles.field}
       />
-      <Atom.Heading lg> Interests</Atom.Heading>
+      <Atom.Heading lg>Cateogories</Atom.Heading>
 
-      {ContributionInterests.map(i => (
+      {WorkTypeCategories.map(i => (
         <Molecule.Field
           as="input"
           type="checkbox"
-          name={`interest-${i.value}`}
+          name={`category-${i.value}`}
           value={i.value}
           label={i.label}
           register={register}
@@ -79,30 +80,26 @@ const FormRegistration = props => {
   );
 };
 
-const ContributionInterests = [
+const WorkTypeCategories = [
   {
-    value: 'marketing',
-    label: 'Marketing',
+    value: 'identity',
+    label: 'Identity',
   },
   {
-    value: 'design',
-    label: 'Design',
+    value: 'finance',
+    label: 'Finance',
   },
   {
-    value: 'analytics',
-    label: 'Analytics',
+    value: 'social-impact',
+    label: 'Social Impact',
   },
   {
-    value: 'software-development',
-    label: 'Software Development',
+    value: 'governance',
+    label: 'Governance',
   },
   {
-    value: 'content-creation',
-    label: 'Content Creation',
-  },
-  {
-    value: 'project-management',
-    label: 'Project Management',
+    value: 'scalability',
+    label: 'Scalability',
   },
 ];
 
