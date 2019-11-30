@@ -23,6 +23,7 @@ Then, cd into `site/packages/apps/static/` and run: <br />
   * Experience
   * Build
 * Community Growth
+  * Communities
   * Analytics
     * Live Metrics (link to Alethio Tableau profile)
     * Reports
