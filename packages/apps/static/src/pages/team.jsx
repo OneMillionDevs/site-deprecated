@@ -28,6 +28,7 @@ export default props => (
           One Million Developers is an Open Collaboration but someone must tend
           the fields.
         </A.Heading>
+        <Atom.HorizontalRule dash center />
       </A.Box>
 
       <A.Flex gutter3 my={3}>
@@ -54,6 +55,7 @@ export default props => (
         <A.Link to="/contribute">
           <A.Button>Start Contributing</A.Button>
         </A.Link>
+        <Atom.HorizontalRule mt={5} />
       </A.Container>
 
       <A.Box textCenter py={5}>
@@ -63,6 +65,7 @@ export default props => (
         <A.Heading as="h4">
           Making sure the lights stay on and the dogs are walked.
         </A.Heading>
+        <Atom.HorizontalRule dash center />
       </A.Box>
 
       <A.Flex gutter3 mt={3}>
@@ -86,18 +89,19 @@ export default props => (
         />
       </A.Flex>
       <A.Container align="center" mt={3}>
-        <A.Link to="/contribute">
-          <A.Button>Become a Steward</A.Button>
-        </A.Link>
+        {/* <A.Link to="/"> */}
+        <A.Button>Become a Steward</A.Button>
+        {/* </A.Link> */}
       </A.Container>
+      <A.HorizontalRule mt={5} />
     </A.Container>
 
     <Atom.Box>
       <Atom.Container maxWidth={1080}>
-        <Atom.Heading xxl heavy center mt={6}>
+        <Atom.Heading xxl heavy center mt={2}>
           Active Coalition Members
         </Atom.Heading>
-        <Atom.HorizontalRule dash center />
+        <A.HorizontalRule dash center />
         <CardLarge
           title="Gitcoin"
           createdBy="Kevi Owocki"

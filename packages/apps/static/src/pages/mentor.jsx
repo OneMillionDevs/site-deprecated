@@ -5,7 +5,7 @@ const GuideRegistration = props => {
   return (
     <Atom.Flex card center column>
       <Atom.Heading lg heavy>
-        Ethereum Community Guide
+        Ethereum Community Mentor
       </Atom.Heading>
       <Atom.Heading sm normal>
         Help Etheruem Reach it's Full Potential
@@ -41,7 +41,7 @@ export default props => (
             src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80"
           />
           <A.Heading giga heavy>
-            Become A Guide
+            Become A Mentor
           </A.Heading>
           <A.Heading lg thin>
             Help Grow the Next Wave of Ethereum Developers
@@ -53,14 +53,14 @@ export default props => (
         <Atom.Flex alignCenter card between mt={-50} p={4} mt={-50}>
           <Atom.Box>
             <Atom.Heading thin>
-              Get The Ethereum Guide Resource Kit
+              Get The Ethereum Mentor Resource Kit
             </Atom.Heading>
             <Atom.Paragraph sm heavy mb={0}>
               Teach Others. Start a meetup. Start a Open Source project.
             </Atom.Paragraph>
           </Atom.Box>
           <Atom.Modal content={<GuideRegistration />}>
-            <Atom.Button variant="green">Download Guide Kit</Atom.Button>
+            <Atom.Button variant="green">Download Mentor Kit</Atom.Button>
           </Atom.Modal>
         </Atom.Flex>
       </Atom.Container>
@@ -79,10 +79,10 @@ export default props => (
             difficult task.
           </Atom.Paragraph>
 
-          <Atom.Heading>The Guide Program</Atom.Heading>
+          <Atom.Heading>The Mentor Program</Atom.Heading>
           <Atom.Paragraph>
-            That is where the Guide program comes in. By curating a list of
-            guides, segregated by expertise, we hope to allow leaders to find
+            That is where the Mentor program comes in. By curating a list of
+            mentors, segregated by expertise, we hope to allow leaders to find
             followers, and followers to find leaders - and to encourage other
             parties to become leaders in the space.
           </Atom.Paragraph>
@@ -90,7 +90,7 @@ export default props => (
           <Atom.Heading md>Who Qualifies?</Atom.Heading>
           <Atom.Paragraph>
             Whether you're mentoring developers, regularly publishing content,
-            or maintaining an open source project, sign up to become a Guide so
+            or maintaining an open source project, sign up to become a Mentor so
             that newbies to the space know who you are, and where to look for
             your content.
           </Atom.Paragraph>

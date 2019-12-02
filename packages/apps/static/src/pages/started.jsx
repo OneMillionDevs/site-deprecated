@@ -1,4 +1,40 @@
 import { Site } from "templates"
+import { FormUpdates } from "core"
+import { SEO } from "core"
+import { Helmet } from "react-helmet"
+import {
+  FormBecomeGuide,
+  FormBecomeGuideFull,
+  FormBecomeCommunityManager,
+} from "forms"
+
+const GuideRegistration = props => {
+  return (
+    <Atom.Flex card center column flex={1}>
+      <Atom.Heading lg heavy>
+        Ethereum Community Mentor
+      </Atom.Heading>
+      <Atom.Heading sm normal>
+        Help Etheruem Reach it's Full Potential
+      </Atom.Heading>
+      <Atom.HorizontalRule dash center />
+      <Atom.Flex flex={2} p={3} width="100%">
+        <Atom.Flex flex={1}>
+          <FormBecomeGuide />
+        </Atom.Flex>
+        <Atom.Flex center column flex={1}>
+          <Atom.Box card p={1} display="inline-block">
+            <Atom.Image
+              src="https://imgur.com/bXAJm7B.png"
+              maxWidth={180}
+              display="inline-block"
+            />
+          </Atom.Box>
+        </Atom.Flex>
+      </Atom.Flex>
+    </Atom.Flex>
+  )
+}
 
 export default props => (
   <Site>
@@ -32,10 +68,30 @@ export default props => (
             No matter your level of involvement or expertise, we've provided a
             few methods for you to start your Ethereum developer journey.
           </Atom.Paragraph>
+          <A.Flex center my={1}>
+            <A.Span xs tag="green" mx={3}>
+              Web2 Dev
+            </A.Span>
+            <A.Span xs tag="blue" mx={3}>
+              Beginner Web3 Dev
+            </A.Span>
+            <A.Span xs tag="primary" mx={3}>
+              Expert Web3 Dev
+            </A.Span>
+          </A.Flex>
         </A.Box>
-          <Atom.Box mt={3}>
-            <Atom.Span card circle xs center p={4} pb={2}> <strong>Keep Scrolling to<br/>Learn More</strong><br/><Atom.Span lg>👇</Atom.Span></Atom.Span>
-          </Atom.Box>
+        <Atom.Box mt={3}>
+          <Atom.Span card circle xs center p={4} pb={2}>
+            {" "}
+            <strong>
+              Keep Scrolling to
+              <br />
+              Learn More
+            </strong>
+            <br />
+            <Atom.Span lg>👇</Atom.Span>
+          </Atom.Span>
+        </Atom.Box>
       </A.Flex>
     </A.Flex>
 
@@ -56,19 +112,19 @@ export default props => (
             Web2 Developer
           </A.Heading>
           <A.Heading md>
-            Discover your "Ah-Ha" moment & become a Web3 developer
+            Discover your "Aha" moment & become a Web3 developer
           </A.Heading>
           <A.HorizontalRule dash my={3} />
           <A.Paragraph>
             So, you’ve made it this far. You’re interested, but not yet sold on
             the whole “Ethereum” thing. Don’t worry, everyone was in your
             position at one point - until they began to truly understand it.
-            Until they had their “ah-ha” Ethereum moment. We’re here to help
+            Until they had their “aha” Ethereum moment. We’re here to help
             give you those moments.
           </A.Paragraph>
           <A.Paragraph>
             Select a platform from the list below to discover your Ethereum
-            “ah-ha” moment(s):
+            “aha” moment(s):
           </A.Paragraph>
         </A.Flex>
       </A.Flex>
@@ -84,6 +140,7 @@ export default props => (
           tagline="Battle the Baddies and Learn about Etheruem"
           summary="Gitcoin Quests is a fun, gamified way to learn about the web3 ecosystem, compete with your friends, earn rewards, and level up your decentralization-fu!"
           imageCover="https://i.imgur.com/cHtxC04.png"
+          url="https://gitcoin.co/quests"
         />
         {/* <PlatformCard
             title='3Box Developer Profile'
@@ -96,12 +153,14 @@ export default props => (
           tagline="Earn Rewards for Interacting With Ethereum"
           summary="RAPID Adventures provides a gamified way to interact with the Ethereum ecosystem itself. Whether its learning about how to set up a wallet, deploying your first contract, or interacting with some of the amazing dApps that have already been built, RAPID Adventures introduces you to Ethereum in an immersive and rewarding way."
           imageCover="https://i.imgur.com/vaTcwti.png"
+          url="/adventures"
         />
         <PlatformCard
           title="Add Application"
           tagline="Create A New Application to Share"
           summary="This site is meant to be an open, communal hub of resources! Want your platform featured on One Million Devs? Submit a request here!"
           imageCover="https://s3.envato.com/files/f209c8a8-c7fc-49be-a948-6aa185b7fb4b/inline_image_preview.jpg"
+          url="community"
         />
       </Atom.Flex>
       <A.Container align="center">
@@ -162,6 +221,7 @@ export default props => (
           image="https://cryptozombies.io/course/static/image/preview-zombie.png"
           imageCover="https://i.imgur.com/L6jfpUz.jpg"
           imageCreatedBy="https://cdn-images-1.medium.com/max/1200/1*K76UVoLq-FOL7l-_Fag-Qw@2x.png"
+          url="https://cryptozombies.io/"
         />
         <ToolCard
           title="Ethereum Studio"
@@ -171,6 +231,7 @@ export default props => (
           image="https://superblocks.com/static/img/lab/icon-blockchain-black.png"
           imageCover="https://i.imgur.com/E3bkmPX.png"
           imageCreatedBy="https://avatars1.githubusercontent.com/u/37122442?s=280&v=4"
+          url="https://studio.ethereum.org/"
         />
         <ToolCard
           title="Your Platform Here"
@@ -179,7 +240,7 @@ export default props => (
           summary="This site is meant to be an open, communal hub of resources! Want your platform featured on One Million Devs? Submit a request here!"
           image="https://avatars0.githubusercontent.com/u/16297473?s=280&v=4"
           imageCover="https://pbs.twimg.com/profile_images/3440615952/a385bce25fc4862ddf34adcddc434929_400x400.jpeg"
-          imageCreatedBy="https://pbs.twimg.com/profile_images/3440615952/a385bce25fc4862ddf34adcddc434929_400x400.jpeg"
+          url="/community"
         />
       </Atom.Flex>
       <A.Container align="center">
@@ -202,32 +263,29 @@ export default props => (
         </A.Paragraph>
       </Atom.Container>
       <Atom.Flex gutter3 my={4} mx={5} flex={1}>
-        <ToolCard
+        <PlatformCard
           title="Ethereum Developer Portal"
-          createdBy="ConsenSys"
           tagline="dev tools"
           summary="This developer portal is a place to get started and find the tools you need to develop and build applications on the Ethereum blockchain. Here you’ll find the most popular knowledge bases, infrastructure tools, programming libraries, and more that will teach you how to build software on Ethereum. "
           image="https://i.imgur.com/VCw60DN.png"
           imageCover="https://i.imgur.com/UeuyLD2.png"
-          imageCreatedBy="https://i.imgur.com/akQZCgw.png"
+          url="https://consensys.net/developers/"
         />
-        <ToolCard
+        <PlatformCard
           title="ConsenSys Academy"
-          createdBy="ConsenSys"
           tagline="education"
           summary="ConsenSys Academy’s mission is to develop the global blockchain ecosystem by bridging the Ethereum knowledge gap and being a beacon for Ethereum education. They offer a suite of offerings, both free and paid, to educate web 2 and web 3 developers about Ethereum and related technologies. They have offerings for non-developers as well."
           image="https://i.imgur.com/94G4REa.png"
           imageCover="https://consensys.net/academy/wp-content/themes/philosophie_consensys/assets/consensys_academy_02.jpg"
-          imageCreatedBy="https://i.imgur.com/akQZCgw.png"
+          url="https://consensys.net/academy/"
         />
-        <ToolCard
+        <PlatformCard
           title="Kauri"
-          createdBy="ConsenSys"
           tagline="education"
           summary="Kauri is a portal where project teams and individuals can engage, generate, and curate high quality and up-to-date technical resources, committed to enabling the community to curate the decentralized knowledge base and support network that the Ethereum ecosystem needs to reach its full potential. Kauri provides both new and experienced developers with completely free access to a curated, high-quality, and continuously expanding Ethereum knowledge base"
           image="https://miro.medium.com/fit/c/256/256/1*vxAe934PUE00NMflnJzX3g.png"
-          imageCover="https://miro.medium.com/max/2084/0*OOXE6y6nBaZRMG5f."
-          imageCreatedBy="https://i.imgur.com/akQZCgw.png"
+          imageCover="https://miro.medium.com/max/1200/0*1vVDRlGXhwwAZtzM"
+          url="https://kauri.io/"
         />
       </Atom.Flex>
       <A.Container align="center">
@@ -251,7 +309,7 @@ export default props => (
             Path:
           </A.Heading>
           <A.Heading giga heavy>
-            Expert Web3 Dev
+            Web3 Expert
           </A.Heading>
           <A.Heading md>
             Help foster the community and lead others through their Ethereum
@@ -259,27 +317,20 @@ export default props => (
           </A.Heading>
           <A.HorizontalRule dash my={3} />
           <A.Paragraph>
-            You're already a Web3 master. You don't need these platforms or
-            resources! You're busy cranking out code and content! Well don't
-            worry - we need your participation more than anyone else's.
-          </A.Paragraph>
-          <A.Paragraph>
-            The One Million Developers initiative is meant to be an open,
-            collaborative effort, owned by no one, but stewarded by everyone. We
-            cannot reach our goal of 1,000,000 developers alone. We need
-            collaboration with, and contribution from, the community.
-          </A.Paragraph>
-          <A.Paragraph>
             Regardless of your skillset, experience, or background, there is
-            something for you to do. Head on over to the{" "}
+            something for you to do. Head on over to the
             <A.Link to="/contribute">Contribute</A.Link> page to learn more.
           </A.Paragraph>
-          <A.Link to="/contribute">
-            <A.Button>Start Contributing</A.Button>
-          </A.Link>
+          <A.Container align="center">
+            <A.Link to="/contribute">
+              <A.Button variant="green">Start Contributing</A.Button>
+            </A.Link>
+          </A.Container>
         </A.Flex>
       </A.Flex>
     </Atom.Container>
+
+    <A.HorizontalRule my={5} />
 
     <Atom.Box>
       <MonthlyAnalytics />
@@ -332,14 +383,13 @@ const ToolCard = props => {
           </Atom.Heading>
         </Atom.Flex>
         {/* <Atom.Span xxs>Created By</Atom.Span> */}
-        {
-          props.url && 
+        {props.url && (
           <Atom.Flex justifyEnd flex={1}>
-            <a href={url}>
+            <a href={props.url}>
               <Atom.Button xs>Go</Atom.Button>
             </a>
           </Atom.Flex>
-        }
+        )}
       </Atom.Box>
     </Atom.Flex>
   )
@@ -382,7 +432,7 @@ const MonthlyAnalytics = props => {
             </Atom.Paragraph>
             <Atom.Modal content={<div></div>}>
               <Atom.Button variant="blue">
-                Register for Monthly Repots
+                Register for Monthly Reports
               </Atom.Button>
             </Atom.Modal>
             <Atom.Paragraph xs mt={3} mb={0}>
@@ -398,11 +448,76 @@ const MonthlyAnalytics = props => {
     </Atom.Container>
   )
 }
+const BecomeAGuide = props => {
+  return (
+    <Atom.Container maxWidth={1080} my={5}>
+      <Atom.Flex>
+        <Atom.Flex center column flex={1}>
+          <Atom.Box p={4}>
+            <Atom.Image
+              card
+              p={1}
+              boxShadow={4}
+              src="https://i.imgur.com/9hqmKMZ.png"
+              maxWidth={320}
+            />
+          </Atom.Box>
+        </Atom.Flex>
+        <Atom.Flex column card between p={4} my={4} flex={1}>
+          <Atom.Box>
+            <Atom.Heading lg heavy>
+              Become A Mentor
+            </Atom.Heading>
+            <Atom.Paragraph>
+              Invite new people to ecosystem, regularily publish content or help
+              maintain an Open Source project. As you contribute more and more
+              to the community, you will earn Kudos and other "stunning" flair
+              for your developer profile.
+            </Atom.Paragraph>
 
+            <Atom.Heading>Earn DEV Tokens. Get rewarded. </Atom.Heading>
+            <Atom.Paragraph>
+              Earn DEV tokens. Collect kudos. Become a star in the Ethereum
+              developer ecosystem.
+            </Atom.Paragraph>
+            <Atom.Flex my={3}>
+              <Atom.Span p={3} mx={2}>
+                <Atom.Image
+                  maxWidth={50}
+                  src="https://gitcoin.co/dynamic/kudos/1921/the_alchemist"
+                />
+              </Atom.Span>
+              <Atom.Span p={3} mx={2}>
+                <Atom.Image
+                  maxWidth={50}
+                  src="https://gitcoin.co/dynamic/kudos/430/resilience"
+                />
+              </Atom.Span>
+              <Atom.Span p={3} mx={2}>
+                <Atom.Image
+                  maxWidth={50}
+                  src="https://gitcoin.co/dynamic/kudos/388/ipfs"
+                />
+              </Atom.Span>
+            </Atom.Flex>
+            <Atom.Flex>
+              <Atom.Modal content={<GuideRegistration />}>
+                <Atom.Button variant="primary">Mentor Program</Atom.Button>
+              </Atom.Modal>
+              <Atom.Button variant="green" ml={3}>
+                View Kudos
+              </Atom.Button>
+            </Atom.Flex>
+          </Atom.Box>
+        </Atom.Flex>
+      </Atom.Flex>
+    </Atom.Container>
+  )
+}
 
 const PlatformCard = props => {
   return (
-    <Atom.Flex column >
+    <Atom.Flex column>
       <A.Flex center columnflex={1}>
         <A.Image src={props.imageCover} />
       </A.Flex>
@@ -414,15 +529,64 @@ const PlatformCard = props => {
           {props.tagline}
         </Atom.Heading>
         <Atom.Paragraph xs>{props.summary}</Atom.Paragraph>
-        {
-          props.url && 
+        {props.url && (
           <Atom.Flex justifyEnd flex={1}>
-            <a href={url}>
+            <a href={props.url}>
               <Atom.Button xs>Go</Atom.Button>
             </a>
           </Atom.Flex>
-        }
+        )}
       </Atom.Box>
     </Atom.Flex>
+  )
+}
+
+const CommunityDevelopment = props => {
+  return (
+    <Atom.Container maxWidth={1080} my={5}>
+      <Atom.Flex>
+        <Atom.Flex center column flex={1}>
+          <Atom.Box p={4}>
+            <Atom.Image
+              card
+              p={1}
+              boxShadow={4}
+              src="https://imgur.com/bXAJm7B.png"
+              maxWidth={320}
+            />
+          </Atom.Box>
+        </Atom.Flex>
+        <Atom.Flex column card between p={4} my={4} flex={1}>
+          <Atom.Box>
+            <Atom.Heading kg heavy>
+              Community Growth Managers
+            </Atom.Heading>
+            <Atom.Paragraph>
+              Connect the dots. Organize the people. And help shape the
+              foundation for Ethereum to blossom.{" "}
+              <strong>People are the heart of a project.</strong> It's essential
+              we teach new developers best practices. Get users familiar with
+              best practices
+            </Atom.Paragraph>
+
+            <Atom.Heading>Experience the Roots of ETH</Atom.Heading>
+            <Atom.Paragraph>
+              Help others stay connected with meetups, local hackthons, event
+              sponsors, coding parties, and other interesting events happening
+              in your area.{" "}
+              <strong>
+                The world is a big place and there is lots to do, so we need as
+                much help as possible!
+              </strong>
+            </Atom.Paragraph>
+            <Atom.Modal content={<GuideRegistration />}>
+              <Atom.Button variant="green">
+                Download Community Mentor Kit
+              </Atom.Button>
+            </Atom.Modal>
+          </Atom.Box>
+        </Atom.Flex>
+      </Atom.Flex>
+    </Atom.Container>
   )
 }

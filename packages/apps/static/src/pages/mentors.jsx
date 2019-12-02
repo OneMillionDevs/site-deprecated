@@ -28,7 +28,7 @@ export default props => (
             Teach Others. Start a meetup. Start a Open Source project.
           </Atom.Paragraph>
         </Atom.Box>
-        <A.Link to="/guide">
+        <A.Link to="/mentor">
           <Atom.Button variant="green">Mentor Program</Atom.Button>
         </A.Link>
       </Atom.Flex>
@@ -36,7 +36,7 @@ export default props => (
 
     <A.Container py={5}>
       <A.Heading xxl heavy center>
-        Current Guides
+        Current Mentors
       </A.Heading>
       <A.Box textCenter py={5}>
         <A.Heading xl heavy>
@@ -266,7 +266,7 @@ const GuideRegistration = props => {
   return (
     <Atom.Flex card center column>
       <Atom.Heading lg heavy>
-        Ethereum Community Guide
+        Ethereum Community Mentor
       </Atom.Heading>
       <Atom.Heading sm normal>
         Help Etheruem Reach it's Full Potential
