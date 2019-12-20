@@ -1,5 +1,6 @@
 import React from 'react';
 import useForm from 'react-hook-form';
+import {withAmplify} from 'amplify-system';
 
 /* --- Component --- */
 const FormRegistration = props => {
@@ -54,4 +55,5 @@ FormRegistration.defaultProps = {
   label: 'Get Monthly Updates',
 };
 
-export default FormRegistration;
+console.log(withAmplify, 'withAmplify');
+export default props => withAmplify(<FormRegistration />);
