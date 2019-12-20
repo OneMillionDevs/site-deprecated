@@ -55,5 +55,4 @@ FormRegistration.defaultProps = {
   label: 'Get Monthly Updates',
 };
 
-console.log(withAmplify, 'withAmplify');
-export default props => withAmplify(<FormRegistration />);
+export default props => <FormRegistration />;
