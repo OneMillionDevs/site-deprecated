@@ -1,0 +1,7 @@
+{
+    "tableName": "milliondevs",
+    "partitionKeyName": "email",
+    "partitionKeyType": "S",
+    "sortKeyName": "archetype",
+    "sortKeyType": "S"
+}

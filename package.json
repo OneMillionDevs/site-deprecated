@@ -1,5 +1,6 @@
 {
-  "name": "@rapid/platform",
+  "name": "3box-extensions",
+  "desription": "3Box Extensions and Plugins",
   "private": true,
   "scripts": {
     "bootstrap": "lerna bootstrap",
@@ -11,26 +12,20 @@
     "dev": "yarn watch > /dev/null | yarn start",
     "$": "yarn clean ; yarn bootstrap ; yarn setupPackages ; yarn dev",
     "setup": "yarn clean ; yarn bootstrap ; yarn setupPackages ; yarn dev",
-    "setupPackages": "lerna exec -- yarn install",
     "test": "FORCE_COLOR=true lerna run lint && CI=true FORCE_COLOR=true lerna run test -- --coverage"
   },
   "workspaces": {
     "package-entry": "main",
     "packages": [
-      "packages/apps/*",
-      "packages/build/*",
-      "packages/components/*",
-      "packages/external/*",
-      "packages/libraries/*",
-      "packages/storybook"
+      "apps/*",
+      "packages/*"
     ],
     "nohoist": [
       "**/webpack-dev-server",
       "**/webpack-cli",
       "**/babel-loader",
       "**/babel-jest",
-      "**/cross-env",
-      "**/@react-workspaces/react-scripts"
+      "**/cross-env"
     ]
   },
   "devDependencies": {

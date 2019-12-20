@@ -1,0 +1,34 @@
+{
+    "paths": [
+        {
+            "name": "/subscribe",
+            "lambdaFunction": "milliondevSubscribe",
+            "privacy": {
+                "open": true
+            }
+        }
+    ],
+    "resourceName": "milliondevrest",
+    "apiName": "milliondevrest",
+    "functionArns": [
+        {
+            "lambdaFunction": "milliondevSubscribe"
+        }
+    ],
+    "privacy": {
+        "auth": 0,
+        "unauth": 0,
+        "authRoleName": "amplify-onemilliondevs-dev-84757-authRole",
+        "unAuthRoleName": "amplify-onemilliondevs-dev-84757-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "milliondevSubscribe",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}
